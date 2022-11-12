@@ -1,5 +1,5 @@
 <p align="center" dir="auto">
-  <a target="_blank" rel="noopener noreferrer" href="/rocksdanister/lively/blob/core-separation/resources/figma_promo_16x9.jpg"><img alt="Files Logo" src="/rocksdanister/lively/raw/core-separation/resources/figma_promo_16x9.jpg" width="450" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/rocksdanister/lively/blob/core-separation/resources/figma_promo_16x9.jpg"><img alt="Files Logo" src="/LivelyWallpaper/lively/raw/core-separation/resources/figma_promo_16x9.jpg" width="450" style="max-width: 100%;"></a>
   </p>
 # Lively Wallpaper
 [![GitHub release](https://img.shields.io/github/release/rocksdanister/lively/all.svg)](https://github.com/rocksdanister/lively/releases)
