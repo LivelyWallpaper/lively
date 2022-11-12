@@ -1,142 +1,142 @@
-# Lively - Animated Wallpaper System
+
+# Lively Wallpaper
 [![GitHub release](https://img.shields.io/github/release/rocksdanister/lively/all.svg)](https://github.com/rocksdanister/lively/releases)
 [![Github all releases](https://img.shields.io/github/downloads/rocksdanister/lively/total.svg)](https://github.com/rocksdanister/lively/releases)
+[![GitHub stars](https://img.shields.io/github/stars/rocksdanister/lively.svg)](https://github.com/rocksdanister/lively/stargazers)
+[![Documentation](https://img.shields.io/badge/Docs-WIP-red.svg)](https://github.com/rocksdanister/lively/wiki)
+[![Issues](https://img.shields.io/github/issues/rocksdanister/lively.svg)](https://github.com/rocksdanister/lively/issues)
 
 ## Contents
 - [About](#about)
 - [Features](#features)
 - [Download](#download)
-- [Issues](#issues)
+- [Problems](#problems)
 - [Contributing](#contributing)
 - [Support](#support)
 - [License](#license)
 
 ## About
-![demo-gif](/resources/preview.gif?raw=true "demo")
+<img src="/resources/main_preview.gif" width="600" height="338"/>
 
-Turn Video & GIF Files, Emulators, HTML, Web address & Shaders, Games into Windows desktop wallpaper; **Wallpapers will completely pause playback( 0% cpu & gpu usage) when fullscreen application/games are running.**
+Lively is the only animated desktop wallpaper application that you will need.
 
-![demo-gif2](/resources/dragdrop.gif?raw=true "dragdrop")
+<img src="/resources/main_dragdrop.gif" width="600" height="338"/>
 
-Just drag & drop files, webpages to set as wallpaper..
+Its super easy.. barely an inconvenience, just drag & drop the files or webpages to set as wallpaper.
 
 #### Join Discussions:
-* <a href="https://discord.gg/TwwtBCm">Discord group</a>
 * <a href="https://www.reddit.com/r/LivelyWallpaper/">Reddit</a>
+* <a href="https://github.com/rocksdanister/lively/discussions/">Github</a>
 
-Lively is still in development, if you encounter bugs create a github Issue along with <a href="https://github.com/rocksdanister/lively/wiki/Common-Problems"> log file</a>
-
-Help translate lively to other languages: <a href="https://github.com/rocksdanister/lively-translations">Translation Files</a>
-
-<a href="https://github.com/rocksdanister/lively/wiki">Full Documentation</a>
 ## Features
 *Wait a sec, preview gif clips take some time to load.*
-#### Video
-![demo-gif2](/resources/vid.gif?raw=true "video")
+#### Videos / GIFs
+<img src="/resources/wallpaper_video.gif" width="600" height="338"/>
 
-<a href="https://www.pexels.com/video/aerial-view-of-a-foggy-landscape-2547258/">Foggy Landscape</a> by Tom Fisk
-* Use external codec packs or internal windows codec.
-* Play .mp4, mkv, webm, avi, mov etc 
-* Hardware Acceleration support.
-* Audio will mute when not on desktop.
-#### Youtube & streams
-![demo-gif3](/resources/yt-gif.gif?raw=true "html")
-
-* Just drag & drop youtube link to set as desktop wallpaper.
-* Video quality is adjustable in settings.
-* Additional software <a href="https://github.com/rocksdanister/lively/wiki/Youtube-Wallpaper">required.</a>
-#### Web Pages & html
-![demo-gif7](/resources/html.gif?raw=true "html")
+<a href="https://visualdon.uk/project/eternal-light/">Eternal Light</a> by VISUALDON
+* Powered by mpv / vlc player.
+* Customize videos with filters.
+* Hardware Acceleration supported.
+* Supports integer scaler for sharp image.
+#### Webpages
+<img src="/resources/wallpaper_html.gif" width="600" height="338"/>
 
 <a href="http://louie.co.nz/25th_hour/"> 25th Hour</a> by Loius Coyle
 * Load HTML file or web address as wallpaper.
-* Runs webgl, javascript .. basically anything that works on chrome.
-* Audio Reactive Wallpaper support, create wallpapers that react to <a href="https://github.com/rocksdanister/lively/wiki/Web-Guide-II-:-System-Audio-Data">system audio</a>
-* Customisation support, <a href="https://github.com/rocksdanister/lively/wiki/Web-Guide-IV-:-Interaction">documentation.</a>
+* Runs webgl, javascript.. basically anything that works on chrome.
+* Audio Reactive Wallpaper support.
+#### Video Streams
+<img src="/resources/wallpaper_yt.gif" width="600" height="338"/>
+
+* Just drag & drop stream links.
+* Adjustable video quality.
+* Autofills wallpaper data.
 #### Shaders
-![demo-gif7](/resources/shadertoy.gif?raw=true "htmlshadertoy") 
+<img src="/resources/wallpaper_shadertoy.gif" width="600" height="338"/>
 
-<a href="https://www.shadertoy.com/view/lscczl">The Universe Within</a>, <a href="https://www.shadertoy.com/view/MdfBRX">The Drive Home</a> by BigWIngs
+<a href="https://www.shadertoy.com/view/ltffzl">Heartfelt </a> by BigWIngs
 * Run GLSL shaders in browser.
+* Custom shader renderer (coming soon.)
 * Shadertoy.com urls are supported as wallpaper.
-#### Retro Game Emulators
-![demo-gif4](/resources/emulator.gif?raw=true "html") 
-* Coming soon
-#### Games
-![demo-gif5](/resources/unity.gif?raw=true "unity") 
-* Can launch Unity & Godot games as wallpaper.
-* Dynamic audio visualisers, 3D scenes..
-#### GIFs
-![demo-gif6](/resources/gif.gif?raw=true "gif")
+#### Games & Applications
+<img src="/resources/wallpaper_emulator.gif" width="600" height="338"/>
 
-<a href="https://giphy.com/gifs/nyan-cat-sIIhZliB2McAo"> Nyan cat</a>
-* Make Memes/Cinemagraphs as wallpaper ... 
-#### Other Applications
-* Experimentail, works for some.
-#### & more:
-- Easy to use, Just drag & drop media files & webpages into lively window to set it as wallpaper.
-- Real-time customisable web wallpaper support.
-- Easy to share Lively-zip format, just drag & drop the zip file to import it into Library, use the built-in creator to make them (ensures compatibility).
-- Hardware accelerated video playback, with option to use external Directshow codec of your choice. ( LAV(recommended), K-Lite, Kawaii Codec..)
-- Library to browse and preview wallpapers.
-- You can use it alongside rainmeter.
-- Efficient, its a native c# wpf application with c++ calls. 
+* Support Unity, Godot games as wallpaper.
+* Limited support for gui applications as wallpaper.
+* [Learn more..](https://github.com/rocksdanister/lively/wiki/Application-Wallpaper)
+#### Screensavers
+<img src="/resources/screen_saver.gif" width="600" height="338"/>
+
+* Lively supports Windows screensaver.
+* Any wallpaper can be used as screensaver.
+* Multiple monitor supported.
+* [Learn more..](https://github.com/rocksdanister/lively/wiki/Screen-Saver)
+#### Automation
+<img src="/resources/cmd_rm.gif" width="600" height="338"/>
+
+* Lively can be controlled with command line arguments from terminal.
+* Can be paired with third party scripting software like AutoHotkey.
+* [Learn more..](https://github.com/rocksdanister/lively/wiki/Command-Line-Controls)
+#### Lively API
+<img src="/resources/hw_api.gif" width="600" height="338"/>
+
+* Powerful set of API for developers to create interactive wallpapers.
+* Get system information, audio graph, music information..
+* [Learn more..](https://github.com/rocksdanister/lively/wiki/API)
+#### Taskbar Customization
+<img src="/resources/taskbar_theme.gif" width="600" height="338"/>
+
+* Several system taskbar theme : Clear, Blur, Fluent..
+* Can adapt taskbar color based on live wallpaper color.
+* [Learn more..](https://github.com/rocksdanister/lively/wiki/Taskbar)
+#### & more
+- Easy to use; Just drag'n'drop media files & webpages into lively window to set it as wallpaper.
+- Hardware accelerated video playback, powered by mpv player.
+- Interactive webgl wallpapers, powered by lightweight chromium engine Cef.
+- Windows 10 fluent design, native windows theme.
+- Efficient, Lively is a native .net core application.
 - Fully opensource & free; no blackmagic, no features behind paywall.
-#### multiple monitor support:
-- Full Multiple monitor support.
-- Span single wallpaper across all screens.
-- Duplicate same wallpaper all screens.
-- Different wallpaper per screens.
-#### Regarding Performance:
+- Supports converting any wallpaper to video via screen recording.
+#### Performance
  * Wallpaper playback pauses when fullscreen application/games run on the machine (~0% cpu, gpu usage). 
- * Optionally you can set wallpaper to only play when on desktop.
- * Application rules: Set wallpaper playback rules based on running foreground application.(like always pause when photoshop is open etc)
- * Based on display(multiple monitor): Pause wallpaper playback per-display(depending on which monitor fullscreen apps/games run) or all display(s).
- * Kill wallpaper when fullscreen apps/games run(coming soon).
- * Mute audio when not on desktop (or optionally always mute).
+ * Set wallpaper playback rules based on running foreground application.
+ * Can be set to pause wallpaper when running on battery power (laptops.)
+ * Wallpaper automatically pauses when running remote desktop session.
+#### Multiple displays
+- Supports any number of monitors.
+- Wallpaper adjusts automatically to monitor settings change.
+- Span single wallpaper across all screens.
+- Duplicate same wallpaper across all screens.
+- HiDPI and Ultrawide resolutions supported.
 
 **_I'm not officially affiliated with Unity technologies, godot, shadertoy;_**
 ## Download
-##### Latest version: v0.9.6.0 (Windows 10, 8.1)[What's new?](https://github.com/rocksdanister/lively/releases/tag/v0.9.6.0)
-- [`Download Lively Installer`][direct-full-win32]  
-   _102MB, Web wallpaper support & some sample wallpapers included._
-- [`Download Lively Portable`][direct-full-portable-win32]  
-  _111MB, (No Installation & updater) Web wallpaper support & some sample wallpapers included._
-  
-**Portable build: Latest Visual C++ Redistributable is required: [vc_redist.x86.exe](https://aka.ms/vs/16/release/vc_redist.x86.exe)**
-   
-[direct-full-win32]: https://github.com/rocksdanister/lively/releases/download/v0.9.6.0/lively_setup_x86_full_v0960.exe
+##### Latest version: v1.7.4.2 (Windows 10 1903 or above)[What's new?](https://github.com/rocksdanister/lively/releases/tag/v1.7.4.2)
+- [`Installer`][direct-full-win32] 
 
-[direct-full-portable-win32]: https://github.com/rocksdanister/lively/releases/download/v0.9.6.0/lively_portable_x86_full_v0960.zip
+SHA256: 0683fe78bede802eece570da143e8c26c75753374f57c964907c672b66d12b6e
+     
+[direct-full-win32]: https://github.com/rocksdanister/lively/releases/download/v1.7.4.2/lively_setup_x86_full_v1742.exe
 
-**Installer will give Smartscreen warning, [discussion.](https://github.com/rocksdanister/lively/issues/9)**
+Installer will give Smartscreen warning, [discussion.](https://github.com/rocksdanister/lively/issues/9)
 
-Certain antivirus software heuristics algorithm will detect lively as a virus, this is a false positive
-**lively is fully [opensource](https://en.wikipedia.org/wiki/Free_and_open-source_software), you are free to inspect the code.**
+<a href='//www.microsoft.com/store/apps/9ntm2qc6qws7?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' width="142px" height="52px"/></a>
 
-[Having trouble? ](https://github.com/rocksdanister/lively/wiki/Common-Problems)
-## Issues
-~~[TODO List](https://trello.com/b/rdFFxuMF/lively-wallpaper-system)~~
-
+[Which version do I download?](https://github.com/rocksdanister/lively/wiki/Differences-Between-Distributions)
+## Problems
 See github [issues.](https://github.com/rocksdanister/lively/issues)
 
 ## Contributing
-Code contributions are welcome, check [guidelines](https://github.com/rocksdanister/lively/wiki) for making pull request.
 
-Some Lively languages are machine translated,
+#### Coding
+Pull requests are welcome, check [guidelines](https://github.com/rocksdanister/lively/wiki/Contributing-Guidelines) for further instructions.
 
-Help translate lively to other languages: <a href="https://github.com/rocksdanister/lively-translations">Translation Files</a>
-
-##### Related Projects
-https://github.com/rocksdanister/lively-cef
-
-https://github.com/rocksdanister/lively-gallery
+#### Translation
+Help translate lively to other <a href="https://github.com/rocksdanister/lively-translations">languages.</a>
 
 ## Support
 You can always help development by buying me a cup of coffee(paypal):
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P1U8NQ)
 
 ## License
-Lively is licensed under Microsoft Public License (Ms-PL). 
-Individual license of libraries used is found in license file in the source.
-
+Lively v1.0 onwards is licensed under GPL-3.

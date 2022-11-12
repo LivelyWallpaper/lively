@@ -117,610 +117,800 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="cmbBoxAllDisplays" xml:space="preserve">
-    <value>All Display(s)</value>
+  <data name="DescCommunity" xml:space="preserve">
+    <value>Online discussion forum</value>
   </data>
-  <data name="cmbBoxGIFPlayer1" xml:space="preserve">
-    <value>XamlAnimatedGif</value>
+  <data name="DescDocumentation" xml:space="preserve">
+    <value>API documentation and help</value>
   </data>
-  <data name="cmbBoxGIFPlayer1ToolTip" xml:space="preserve">
-    <value>Low memory usage, high cpu usage</value>
+  <data name="DescExplorerCrash" xml:space="preserve">
+    <value>Lively has encountered a fatal error.
+
+Windows Explorer restarted twice in the last 30 seconds! This may be a conflict between Lively and other desktop customization software or Windows. To avoid further issues, all wallpapers are terminated.</value>
   </data>
-  <data name="cmbBoxGIFPlayer2" xml:space="preserve">
-    <value>DirectShow</value>
+  <data name="DescIncompatibleTaskbarTheme" xml:space="preserve">
+    <value>Incompatible program found, taskbar theming disabled.</value>
   </data>
-  <data name="cmbBoxGIFPlayer2ToolTip" xml:space="preserve">
-    <value>Lower cpu usage (depending on codec settings)</value>
+  <data name="DescOfficialWebpage" xml:space="preserve">
+    <value>Official webpage of Lively Wallpaper</value>
   </data>
-  <data name="cmbBoxKill" xml:space="preserve">
-    <value>Kill(Free Memory)</value>
+  <data name="DescOledScreensaverNotice" xml:space="preserve">
+    <value>Most modern LCD and LED displays do not suffer from burn-in issue and therefore any wallpaper can be used as screensaver.
+
+For OLED, Plasma or CRT displays which are susceptibe to burn-in it is advised to use wallpaper with regular motion and an overall dark theme which is supposed to mitigate burn-in but this feature is untested and its effectiveness cannot be guaranteed.
+
+The main purpose of Lively's screensavers is to add another layer of customization to your pc, use screensavers as burn-in protection at your own risk!</value>
   </data>
-  <data name="cmbBoxNothing" xml:space="preserve">
-    <value>Nothing</value>
+  <data name="DescReportBug" xml:space="preserve">
+    <value>Report a problem with the software</value>
   </data>
-  <data name="cmbBoxPaugeAlgorithmAllProcess" xml:space="preserve">
-    <value>All Processes (Experimental)</value>
+  <data name="DescriptionAddWallpaper" xml:space="preserve">
+    <value>Select a file or specify a website url to set as a wallpaper.</value>
   </data>
-  <data name="cmbBoxPause" xml:space="preserve">
-    <value>Pause</value>
+  <data name="DescriptionAppRules" xml:space="preserve">
+    <value>Wallpaper playback behaviour based on running application.</value>
   </data>
-  <data name="cmbBoxPauseAlgorithmForeground" xml:space="preserve">
-    <value>Foreground Process</value>
+  <data name="DescriptionCancelQuestion" xml:space="preserve">
+    <value>Are you sure you want to cancel?</value>
   </data>
-  <data name="cmbBoxPerDisplay" xml:space="preserve">
-    <value>Per Display</value>
+  <data name="DescriptionDeleteConfirmation" xml:space="preserve">
+    <value>Are you sure you want to permanently delete this wallpaper from the disk?</value>
   </data>
-  <data name="cmbBoxSpan" xml:space="preserve">
-    <value>Span</value>
+  <data name="DescriptionDeleteConfirmationLibrary" xml:space="preserve">
+    <value>Are you sure you want to delete this wallpaper from the Library?</value>
   </data>
-  <data name="cmbBoxVideoPlayer1" xml:space="preserve">
-    <value>Media Foundation</value>
+  <data name="DescriptionDragDropFIle" xml:space="preserve">
+    <value>Simply drag and drop files into Library.</value>
   </data>
-  <data name="cmbBoxVideoPlayer2" xml:space="preserve">
-    <value>DirectShow(Lav, ffdshow..)</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="license" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\docs\license.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="msgAppCommandLineArgs" xml:space="preserve">
-    <value>Enter commandline arguments for the application if any (optional, leave blank if none):-</value>
-  </data>
-  <data name="msgAppCommandLineArgsTitle" xml:space="preserve">
-    <value>Start Arguments</value>
-  </data>
-  <data name="msgAppGUIFailure" xml:space="preserve">
-    <value>The selected wallpaper(application) has no graphical user interface(GUI).
-Terminating application...</value>
-  </data>
-  <data name="msgAppTimeout" xml:space="preserve">
-    <value>Failed to catch application window.
-The wallpaper(application) is taking too long to start(more than ~30sec), it could be due to:
-Virus scan/ Application is too big.
-Wait &amp; try again. (optionally you can edit the waiting time, check out wiki for more information.)
-Terminating application...</value>
-  </data>
-  <data name="msgDamangedLivelyFile" xml:space="preserve">
-    <value>Damaged wallpaper file, try redownloading.</value>
-  </data>
-  <data name="msgDeleteConfirmation" xml:space="preserve">
-    <value>Are you sure you want to permanently delete the wallpaper from the disk?</value>
-  </data>
-  <data name="msgDeleteConfirmationTitle" xml:space="preserve">
-    <value>Confirm Deletion</value>
-  </data>
-  <data name="msgDeletionFailure" xml:space="preserve">
-    <value>Currently running as wallpaper, cannot delete!
-Close this wallpaper to delete it.</value>
-  </data>
-  <data name="msgDeletionFailureTitle" xml:space="preserve">
-    <value>Deletion Failed</value>
-  </data>
-  <data name="msgDragDropOtherFormats" xml:space="preserve">
-    <value>This file format is not supported for drag &amp; drop, open it in 'Type' page instead.</value>
-  </data>
-  <data name="msgDragDropOtherFormatsTitle" xml:space="preserve">
-    <value>Lively: Not Supported</value>
-  </data>
-  <data name="msgExternalAppWarning" xml:space="preserve">
+  <data name="DescriptionExternalAppWarning" xml:space="preserve">
     <value>You are opening an external application as wallpaper.
 Malicious applications can host malware, virus.. and do harm to your system.
 Only continue if this application comes from a trusted source.</value>
   </data>
-  <data name="msgExternalAppWarningTitle" xml:space="preserve">
-    <value>Warning</value>
+  <data name="DescriptionMinimizedTray" xml:space="preserve">
+    <value>Lively is minimized to systemtray, right click lively icon to continue.</value>
   </data>
-  <data name="msgGIFfailure" xml:space="preserve">
-    <value>GIF file playback failed.
-Is the GIF file corrupted? Try redownloading.</value>
+  <data name="DescriptionPleaseRestartLively" xml:space="preserve">
+    <value>Please restart Lively for settings to take effect.</value>
   </data>
-  <data name="msgHighContrastFailure" xml:space="preserve">
+  <data name="DescriptionPleaseStop" xml:space="preserve">
+    <value>Please stop before proceeding.</value>
+  </data>
+  <data name="DescriptionRecordStart" xml:space="preserve">
+    <value>Press to begin recording.</value>
+  </data>
+  <data name="DescriptionRestoringWallpaper" xml:space="preserve">
+    <value>Currently restoring previous wallpaper(s), please wait...</value>
+  </data>
+  <data name="DescriptionScreenLayout" xml:space="preserve">
+    <value>Choose Display</value>
+  </data>
+  <data name="DescriptionUpdateAvailable" xml:space="preserve">
+    <value>A new version of software is available!</value>
+  </data>
+  <data name="DescriptionWebpageLoad" xml:space="preserve">
+    <value>Enter website link to load, shadertoy.com shader links are supported</value>
+  </data>
+  <data name="DescriptionWelcomeWizard" xml:space="preserve">
+    <value>This wizard will get you started on setting up Lively.</value>
+  </data>
+  <data name="DescriptionWindowsNCodecInstall" xml:space="preserve">
+    <value>Your Windows N/KN version will require the download of additional codecs to support video playback in wallpapers.</value>
+  </data>
+  <data name="DescSupperDev" xml:space="preserve">
+    <value>Show support by buying the developer coffee</value>
+  </data>
+  <data name="DescSwitchBranchBetaWarning" xml:space="preserve">
+    <value>You are about to change to beta (developer) build of Lively.
+Updates will be frequent and may contain bugs!</value>
+  </data>
+  <data name="LivelyExceptionAppUpdateFail" xml:space="preserve">
+    <value>Failed to update; try downloading the installer from:
+https://github.com/rocksdanister/lively/releases</value>
+  </data>
+  <data name="LivelyExceptionDamagedZipFile" xml:space="preserve">
+    <value>Damaged wallpaper file, try redownloading.</value>
+  </data>
+  <data name="LivelyExceptionGeneral" xml:space="preserve">
+    <value>Oops... Looks like something went wrong :(
+In order to better understand this error and fix the issue, share the log file with the developer.
+Instructions for sharing log file:
+https://github.com/rocksdanister/lively/wiki</value>
+  </data>
+  <data name="LivelyExceptionHighContrastMode" xml:space="preserve">
     <value>Lively cannot work properly with Windows High Contrast mode enabled!
-Disable High Contrast mode &amp; Try again.</value>
+Disable High Contrast mode and try again.</value>
   </data>
-  <data name="msgLoadExternalLink" xml:space="preserve">
-    <value>You are about to open an external webpage on your browser.
+  <data name="LivelyExceptionMediaPlayback" xml:space="preserve">
+    <value>Media playback failed :(
+Try changing the videoplayer in lively settings.
 
-URL:-</value>
+In order to better understand this error and fix the issue, share the log file with the developer.
+Instructions for sharing log file:
+https://github.com/rocksdanister/lively/wiki</value>
   </data>
-  <data name="msgLoadExternalLinkTitle" xml:space="preserve">
-    <value>Load Webpage?</value>
+  <data name="LivelyExceptionNotLivelyZip" xml:space="preserve">
+    <value>Not Lively wallpaper file.</value>
   </data>
-  <data name="msgLoadingAppWallpaper" xml:space="preserve">
-    <value>Starting up external application..</value>
-  </data>
-  <data name="msgMediaFoundationFailure" xml:space="preserve">
-    <value>Media playback failed: Missing Codec/ Corrupted File.
-Install LAV codec &amp; Try switching to Directshow videoplayer.
-</value>
-  </data>
-  <data name="msgMediakitFailure" xml:space="preserve">
-    <value>Media playback failed: Missing Codec/ Corrupted File.
-Don't forget to install LAV codec.
-</value>
-  </data>
-  <data name="msgRestoringInProgress" xml:space="preserve">
-    <value>Currently restoring previous wallpaper(s), please wait.</value>
-  </data>
-  <data name="msgRestoringPrevWallpapers" xml:space="preserve">
-    <value>Restoring previous wallpaper(s)..</value>
-  </data>
-  <data name="msgSafeModeWarning" xml:space="preserve">
+  <data name="LivelyExceptionSafeModeStart" xml:space="preserve">
     <value>Lively was not closed properly, starting in safe mode.
-Do you wish to restore previously running wallpapers?
-Error information is saved at:-
-</value>
+Do you wish to restore previously running wallpapers?</value>
   </data>
-  <data name="msgSingleInstanceOnly" xml:space="preserve">
-    <value>Lively is already running!
-If not-responding terminate process "livelywpf" in taskmanager &amp; try again.</value>
-  </data>
-  <data name="msgUrlLoad" xml:space="preserve">
-    <value>Enter website link to load, Shadertoy.com shader links are supported:-</value>
-  </data>
-  <data name="msgUrlLoadTitle" xml:space="preserve">
-    <value>Load webpage</value>
-  </data>
-  <data name="msgUrlWarning" xml:space="preserve">
-    <value>You are about to load an external website.
-Malicious Web pages can be harmful to your computer (malware, virus ..)
-Only enter links to websites that you trust.</value>
-  </data>
-  <data name="msgUrlWarningTitle" xml:space="preserve">
-    <value>Warning</value>
-  </data>
-  <data name="msgWebBrowserMissing" xml:space="preserve">
-    <value>Web browser component is missing, either download separately:-
-https://github.com/rocksdanister/lively-cef 
-OR
-Download the full version of lively.</value>
-  </data>
-  <data name="msgWorkerWFailure" xml:space="preserve">
-    <value>It looks like some settings needs to be set to make Lively work:-  
-1. Open This PC(My Computer)
-2. Right-click empty area
-3. Select Properties
-4. Select Advanced System Settings
-5. Under Performance tab select Settings
-6. Enable Animate controls and elements inside windows &amp; Apply.
+  <data name="LivelyExceptionWorkerWSetupFail" xml:space="preserve">
+    <value>It looks like some settings need to be set to make Lively work:  
+1. Press the Win + R keys to open Run, 
+2. Type SystemPropertiesPerformance.exe into Run, click on "OK" to open Performance Options.
+3. Enable/Check "Animate controls and elements inside windows" (If already checked, then uncheck and check) &amp; Apply.
+4. Click "Apply" then press "OK" to close the window.
 
-If Windows 7 just set - Adjust for best appearance &amp; Apply.
-If still not working, close &amp; start Lively again/ restart windows.
-(Does not work in insider windows 10 builds)</value>
+If Windows 7 just set - Adjust for best appearance &amp;amp; Apply.
+If still not working, close &amp; start Lively again/restart windows.
+(Does not work in some insider windows 10 builds)</value>
   </data>
-  <data name="titleAbout" xml:space="preserve">
-    <value>About</value>
-  </data>
-  <data name="titleLibrary" xml:space="preserve">
-    <value>Library</value>
-  </data>
-  <data name="titleSettings" xml:space="preserve">
-    <value>Settings</value>
-  </data>
-  <data name="titleType" xml:space="preserve">
-    <value>Type</value>
-  </data>
-  <data name="toolTipMinimizeMsg" xml:space="preserve">
-    <value>I'm minimized to systemtray, right click lively icon for more options.</value>
-  </data>
-  <data name="toolTipUpdateMsg" xml:space="preserve">
-    <value>A new version is available!</value>
-  </data>
-  <data name="toolTipWallpaperSkip" xml:space="preserve">
-    <value>Some wallpaper(s) were skipped because of missing file(s)!</value>
-  </data>
-  <data name="txtApplicationRules" xml:space="preserve">
-    <value>Application Rules</value>
-  </data>
-  <data name="txtAudioIn" xml:space="preserve">
-    <value>Audio In:</value>
-  </data>
-  <data name="txtAudioInToolTip" xml:space="preserve">
-    <value>Blocks browsers access to system audio.</value>
-  </data>
-  <data name="txtAudioLabel1" xml:space="preserve">
-    <value>Audio is always disabled in multiple monitor systems.</value>
-  </data>
-  <data name="txtAudioLabel2" xml:space="preserve">
-    <value>"Audio In" is disabled, Web audio visualisers will not work.</value>
-  </data>
-  <data name="txtAudioOut" xml:space="preserve">
-    <value>Audio Out:</value>
-  </data>
-  <data name="txtAudioOutToolTip" xml:space="preserve">
-    <value>Unmute/mute video player.</value>
-  </data>
-  <data name="txtBrowser" xml:space="preserve">
-    <value>Web Browser:</value>
-  </data>
-  <data name="txtBrowserToolTip" xml:space="preserve">
-    <value>Select web browser for web wallpapers(coming soon)</value>
-  </data>
-  <data name="txtCloseAllWallpapers" xml:space="preserve">
-    <value>Close All Wallpapers</value>
-  </data>
-  <data name="txtComingSoon" xml:space="preserve">
-    <value>Coming Soon</value>
-  </data>
-  <data name="txtContextMenuCloseAll" xml:space="preserve">
-    <value>Close All Wallpapers</value>
-  </data>
-  <data name="txtContextMenuCloseWallpaper" xml:space="preserve">
-    <value>Close Wallpaper</value>
-  </data>
-  <data name="txtContextMenuDeleteWallpaper" xml:space="preserve">
-    <value>Delete Wallpaper</value>
-  </data>
-  <data name="txtContextMenuExit" xml:space="preserve">
-    <value>Exit</value>
-  </data>
-  <data name="txtContextMenuExport" xml:space="preserve">
-    <value>Export lively .zip</value>
-  </data>
-  <data name="txtContextMenuOpenLively" xml:space="preserve">
-    <value>Open Lively</value>
-  </data>
-  <data name="txtContextMenuShowOnDisk" xml:space="preserve">
-    <value>Show on Disk</value>
-  </data>
-  <data name="txtContextMenuUpdate1" xml:space="preserve">
-    <value>Checking for update</value>
-  </data>
-  <data name="txtContextMenuUpdate2" xml:space="preserve">
-    <value>Update Available!</value>
-  </data>
-  <data name="txtContextMenuUpdate3" xml:space="preserve">
-    <value>Is this Beta software?</value>
-  </data>
-  <data name="txtContextMenuUpdate4" xml:space="preserve">
-    <value>Lively is up-to-date!</value>
-  </data>
-  <data name="txtContextMenuUpdate5" xml:space="preserve">
-    <value>Error Checking for Update</value>
-  </data>
-  <data name="txtCreateWallpaper" xml:space="preserve">
-    <value>Create Wallpaper</value>
-  </data>
-  <data name="txtCreatingZip" xml:space="preserve">
-    <value>Creating Lively zip file</value>
-  </data>
-  <data name="txtDisplayPauseRule" xml:space="preserve">
-    <value>Display Pause Rule:</value>
-  </data>
-  <data name="txtDownload" xml:space="preserve">
-    <value>Download</value>
-  </data>
-  <data name="txtGIFPlayer" xml:space="preserve">
-    <value>GIF Player:</value>
-  </data>
-  <data name="txtGifPlayerToolTip" xml:space="preserve">
-    <value>Directshow requires additionals plugins to be installed.</value>
-  </data>
-  <data name="txtGifScaling" xml:space="preserve">
-    <value>GIF Scaling/Fit:</value>
-  </data>
-  <data name="txtHelp" xml:space="preserve">
-    <value>Help</value>
-  </data>
-  <data name="txtIgnore" xml:space="preserve">
-    <value>Ignore</value>
-  </data>
-  <data name="txtInstall" xml:space="preserve">
-    <value>Install</value>
-  </data>
-  <data name="txtInstallWallpaper" xml:space="preserve">
-    <value>Install Wallpaper</value>
-  </data>
-  <data name="txtLabel1" xml:space="preserve">
-    <value>Select wallpaper type to load:-</value>
-  </data>
-  <data name="txtLabel10" xml:space="preserve">
-    <value>Attribution:</value>
-  </data>
-  <data name="txtLabel11" xml:space="preserve">
-    <value>What should I use?</value>
-  </data>
-  <data name="txtLabel12" xml:space="preserve">
-    <value>Type:</value>
-  </data>
-  <data name="txtLabel120FPS" xml:space="preserve">
-    <value>Force 120FPS UI</value>
-  </data>
-  <data name="txtLabel13" xml:space="preserve">
-    <value>Author:</value>
-  </data>
-  <data name="txtLabel14" xml:space="preserve">
-    <value>Contact:</value>
-  </data>
-  <data name="txtLabel15" xml:space="preserve">
-    <value>General</value>
-    <comment>settings tab</comment>
-  </data>
-  <data name="txtLabel16" xml:space="preserve">
-    <value>Require app restart</value>
-    <comment>settings tab</comment>
-  </data>
-  <data name="txtLabel17" xml:space="preserve">
-    <value>Video</value>
-    <comment>settings tab</comment>
-  </data>
-  <data name="txtLabel18" xml:space="preserve">
-    <value>Gif</value>
-    <comment>settings tab</comment>
-  </data>
-  <data name="txtLabel19" xml:space="preserve">
-    <value>Web Browser</value>
-    <comment>settings tab</comment>
-  </data>
-  <data name="txtLabel2" xml:space="preserve">
-    <value>Just drag and drop files if you prefer it that way instead.</value>
-  </data>
-  <data name="txtLabel20" xml:space="preserve">
-    <value>Performance</value>
-    <comment>settings tab</comment>
-  </data>
-  <data name="txtLabel21" xml:space="preserve">
-    <value>Set wallpaper(s) playback behaviour based on running application:-</value>
-  </data>
-  <data name="txtLabel22" xml:space="preserve">
+  <data name="TextAdd" xml:space="preserve">
     <value>Add</value>
   </data>
-  <data name="txtLabel23" xml:space="preserve">
-    <value>Remove</value>
+  <data name="TextAllFiles" xml:space="preserve">
+    <value>All Files</value>
   </data>
-  <data name="txtLabel24" xml:space="preserve">
-    <value>Select Wallpaper Layout:-</value>
+  <data name="TextApplication" xml:space="preserve">
+    <value>Application</value>
   </data>
-  <data name="txtLabel25" xml:space="preserve">
-    <value>Pick a wallpaper type to create:-</value>
+  <data name="TextAttribution" xml:space="preserve">
+    <value>Attribution</value>
   </data>
-  <data name="txtLabel26" xml:space="preserve">
-    <value>Library File: Create easy to share .zip file that loads wallpaper into Lively's library.
-To simply play a file as wallpaper, this is not required; just drag and drop the file to lively window.</value>
+  <data name="TextAuthor" xml:space="preserve">
+    <value>Author</value>
   </data>
-  <data name="txtLabel27" xml:space="preserve">
-    <value>Contact Website(optional):-</value>
-  </data>
-  <data name="txtLabel28" xml:space="preserve">
-    <value>License(optional):-</value>
-  </data>
-  <data name="txtLabel29" xml:space="preserve">
-    <value>Title:-</value>
-  </data>
-  <data name="txtLabel3" xml:space="preserve">
-    <value>These materials are not sponsored by or affiliated with Unity Technologies, Godot, Bizhawk, Shadertoy.com</value>
-  </data>
-  <data name="txtLabel30" xml:space="preserve">
-    <value>Description:-</value>
-  </data>
-  <data name="txtLabel31" xml:space="preserve">
-    <value>Select File</value>
-  </data>
-  <data name="txtLabel32" xml:space="preserve">
-    <value>Thumbnail (200x200)</value>
-  </data>
-  <data name="txtLabel33" xml:space="preserve">
-    <value>Create</value>
-  </data>
-  <data name="txtLabel34" xml:space="preserve">
-    <value>Preview Gif</value>
-  </data>
-  <data name="txtLabel35" xml:space="preserve">
-    <value>Wallpaper Type:-</value>
-  </data>
-  <data name="txtLabel36" xml:space="preserve">
-    <value>Files and Folders being added:-</value>
-  </data>
-  <data name="txtLabel37" xml:space="preserve">
-    <value>Ok</value>
-  </data>
-  <data name="txtLabel38" xml:space="preserve">
+  <data name="TextBack" xml:space="preserve">
     <value>Back</value>
   </data>
-  <data name="txtLabel39" xml:space="preserve">
-    <value>Installing Wallpaper</value>
+  <data name="TextBrowse" xml:space="preserve">
+    <value>Browse</value>
   </data>
-  <data name="txtLabel4" xml:space="preserve">
-    <value>Media</value>
+  <data name="TextCancel" xml:space="preserve">
+    <value>Cancel</value>
   </data>
-  <data name="txtLabel5" xml:space="preserve">
-    <value>Games</value>
+  <data name="TextChangeWallpaper" xml:space="preserve">
+    <value>Change Wallpapers</value>
   </data>
-  <data name="txtLabel6" xml:space="preserve">
-    <value>Retro</value>
+  <data name="TextClose" xml:space="preserve">
+    <value>Close</value>
   </data>
-  <data name="txtLabel7" xml:space="preserve">
-    <value>Other</value>
+  <data name="TextCloseWallpapers" xml:space="preserve">
+    <value>Close Wallpapers</value>
   </data>
-  <data name="txtLabel8" xml:space="preserve">
-    <value>Web</value>
+  <data name="TextCompleted" xml:space="preserve">
+    <value>Completed!</value>
   </data>
-  <data name="txtLabel9" xml:space="preserve">
-    <value>Audio Visualiser</value>
+  <data name="TextControlPanelOpen" xml:space="preserve">
+    <value>Click here to manage wallpapers.</value>
   </data>
-  <data name="txtLabelApplication" xml:space="preserve">
-    <value>Application</value>
+  <data name="TextConvertVideo" xml:space="preserve">
+    <value>Convert to Video</value>
   </data>
-  <data name="txtLabelAppName" xml:space="preserve">
-    <value>Lively</value>
+  <data name="TextCreatePreview" xml:space="preserve">
+    <value>Create Preview</value>
   </data>
-  <data name="txtLabelInteraction" xml:space="preserve">
-    <value>Interaction</value>
+  <data name="TextCustomise" xml:space="preserve">
+    <value>Customise</value>
   </data>
-  <data name="txtLabelRule" xml:space="preserve">
-    <value>Rule</value>
+  <data name="TextCustomiseWallpaper" xml:space="preserve">
+    <value>Customise Wallpaper</value>
   </data>
-  <data name="txtLabelSoftwareUIRendering" xml:space="preserve">
-    <value>Disable Hardware Acceleration</value>
+  <data name="TextDeleteWallpaper" xml:space="preserve">
+    <value>Delete</value>
   </data>
-  <data name="txtLabelStream" xml:space="preserve">
-    <value>Stream</value>
+  <data name="TextDescription" xml:space="preserve">
+    <value>Description</value>
   </data>
-  <data name="txtLabelVideoQuality" xml:space="preserve">
-    <value>Video Quality</value>
+  <data name="TextDisplayPauseRuleAllScreen" xml:space="preserve">
+    <value>All Screen</value>
   </data>
-  <data name="txtLivelyAppWarning" xml:space="preserve">
-    <value>This feature is currently in development.
-Do NOT run programs such as CHROME, STEAM.. which spawn multiple Subprocesses.
-THERE WILL BE BUGS &amp; CRASHES, PROCEED WITH CAUTION!!!</value>
+  <data name="TextDisplayPauseRulePerScreen" xml:space="preserve">
+    <value>Per Screen</value>
   </data>
-  <data name="txtLivelyErrorMsgTitle" xml:space="preserve">
+  <data name="TextDownload" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="TextEditWallpaper" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="TextError" xml:space="preserve">
     <value>Error</value>
-    <comment>title for messagebox.</comment>
   </data>
-  <data name="txtLivelyWaitMsgTitle" xml:space="preserve">
-    <value>Please Wait</value>
-    <comment>title for messagebox</comment>
+  <data name="TextExit" xml:space="preserve">
+    <value>Exit</value>
   </data>
-  <data name="txtLivelyWallpaperTypeApp" xml:space="preserve">
-    <value>Application</value>
+  <data name="TextExportWallpaperZip" xml:space="preserve">
+    <value>Export lively .zip</value>
   </data>
-  <data name="txtLivelyWallpaperTypeGIF" xml:space="preserve">
+  <data name="TextFeatureMissing" xml:space="preserve">
+    <value>Some features are not available in this version of Lively.</value>
+  </data>
+  <data name="TextFileNotFound" xml:space="preserve">
+    <value>File not found</value>
+  </data>
+  <data name="TextGIF" xml:space="preserve">
     <value>Animated GIF</value>
   </data>
-  <data name="txtLivelyWallpaperTypeGodot" xml:space="preserve">
-    <value>Godot Application</value>
+  <data name="TextGitHubStar" xml:space="preserve">
+    <value>Show some love by dropping a star</value>
   </data>
-  <data name="txtLivelyWallpaperTypeUnity" xml:space="preserve">
-    <value>Unity Application</value>
+  <data name="TextGo" xml:space="preserve">
+    <value>GO</value>
   </data>
-  <data name="txtLivelyWallpaperTypeUnityAudio" xml:space="preserve">
-    <value>Unity Audio Reactive</value>
+  <data name="TextHelpTranslate" xml:space="preserve">
+    <value>Help translate</value>
   </data>
-  <data name="txtLivelyWallpaperTypeUrl" xml:space="preserve">
-    <value>Online</value>
+  <data name="TextHours" xml:space="preserve">
+    <value>hour(s)</value>
   </data>
-  <data name="txtLivelyWallpaperTypeVideo" xml:space="preserve">
-    <value>Video</value>
+  <data name="TextInstall" xml:space="preserve">
+    <value>Install</value>
   </data>
-  <data name="txtLivelyWallpaperTypeWeb" xml:space="preserve">
-    <value>Web</value>
+  <data name="TextKeyboard" xml:space="preserve">
+    <value>Keyboard</value>
   </data>
-  <data name="txtLivelyWallpaperTypeWebAudio" xml:space="preserve">
-    <value>Web Audio Reactive</value>
+  <data name="TextLastChecked" xml:space="preserve">
+    <value>Last checked</value>
   </data>
-  <data name="txtLiveTile" xml:space="preserve">
-    <value>Animated Tile:</value>
+  <data name="TextLearnMore" xml:space="preserve">
+    <value>Learn more</value>
   </data>
-  <data name="txtLiveTileToolTip" xml:space="preserve">
-    <value>(Experimental) Wallpaper preview on tile.</value>
+  <data name="TextLicense" xml:space="preserve">
+    <value>License</value>
   </data>
-  <data name="txtMoreWp" xml:space="preserve">
-    <value>More Wallpapers...</value>
+  <data name="TextMinutes" xml:space="preserve">
+    <value>minute(s)</value>
   </data>
-  <data name="txtMouse" xml:space="preserve">
+  <data name="TextmoreInfo" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="TextMoreWallpapers" xml:space="preserve">
+    <value>More Wallpapers</value>
+  </data>
+  <data name="TextMouse" xml:space="preserve">
     <value>Mouse</value>
   </data>
-  <data name="txtMsgFillAllFields" xml:space="preserve">
-    <value>Fille all the required text fields.</value>
+  <data name="TextMouseInteractOnDesktop" xml:space="preserve">
+    <value>Mouse interaction when application focused</value>
   </data>
-  <data name="txtMsgSelectWallpaperFile" xml:space="preserve">
-    <value>Wallpaper file not selected</value>
+  <data name="TextNext" xml:space="preserve">
+    <value>Next</value>
   </data>
-  <data name="txtMsgUpdaterPortableUnsupported" xml:space="preserve">
-    <value>Updater is not supported in portable version of Lively, download latest portable release from the website.</value>
+  <data name="TextNo" xml:space="preserve">
+    <value>No</value>
   </data>
-  <data name="txtNotes" xml:space="preserve">
-    <value>Note:
-(1) Lively window ignores these rules.
-(2) Audio is always muted when other apps are in focus {except (1), Lively window}.
-(3) Foreground Process algorithm has some limitations, check wiki for more information.
-(4) Application Rules has the highest priority.</value>
+  <data name="TextOff" xml:space="preserve">
+    <value>OFF</value>
   </data>
-  <data name="txtOff" xml:space="preserve">
-    <value>Off</value>
+  <data name="TextOK" xml:space="preserve">
+    <value>OK</value>
   </data>
-  <data name="txtOn" xml:space="preserve">
-    <value>On</value>
+  <data name="TextOn" xml:space="preserve">
+    <value>ON</value>
   </data>
-  <data name="txtOtherAppsFocus" xml:space="preserve">
-    <value>Other Application Focused:</value>
+  <data name="TextOnline" xml:space="preserve">
+    <value>Online</value>
   </data>
-  <data name="txtOtherAppsFullScreen" xml:space="preserve">
-    <value>Other Application Fullscreen:</value>
+  <data name="TextOpenLively" xml:space="preserve">
+    <value>Open Lively</value>
   </data>
-  <data name="txtPauseAlgorith" xml:space="preserve">
-    <value>Pause Algorithm:</value>
+  <data name="TextPauseAlgoAllProcess" xml:space="preserve">
+    <value>All Process</value>
   </data>
-  <data name="txtPleaseWait" xml:space="preserve">
-    <value>Load Failed</value>
+  <data name="TextPauseAlgoExclusiveMode" xml:space="preserve">
+    <value>Direct3D</value>
   </data>
-  <data name="txtPleaseWait2" xml:space="preserve">
-    <value>Please Wait</value>
+  <data name="TextPauseAlgoForegroundProcess" xml:space="preserve">
+    <value>Foreground Process</value>
   </data>
-  <data name="txtPreviewWallpaperNote" xml:space="preserve">
-    <value>Keep this window in focus while processing.</value>
+  <data name="TextPauseWallpapers" xml:space="preserve">
+    <value>Pause Wallpapers</value>
   </data>
-  <data name="txtSelectPreviewThumb" xml:space="preserve">
-    <value>Select previewclip/thumbnail file.</value>
+  <data name="TextPerformanceKill" xml:space="preserve">
+    <value>Kill</value>
   </data>
-  <data name="txtSetWallpaper" xml:space="preserve">
+  <data name="TextPerformanceNone" xml:space="preserve">
+    <value>Nothing</value>
+  </data>
+  <data name="TextPerformancePause" xml:space="preserve">
+    <value>Pause</value>
+  </data>
+  <data name="TextPicture" xml:space="preserve">
+    <value>Picture</value>
+  </data>
+  <data name="TextPreviewWallpaper" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="TextPrivacyPolicy" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="TextProcessingWallpaper" xml:space="preserve">
+    <value>Processing</value>
+  </data>
+  <data name="TextRemove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="TextRule" xml:space="preserve">
+    <value>Rule</value>
+  </data>
+  <data name="TextScreen" xml:space="preserve">
+    <value>Screen</value>
+  </data>
+  <data name="TextSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="TextSetWallpaper" xml:space="preserve">
     <value>Set as Wallpaper</value>
   </data>
-  <data name="txtSpanWallpaperWarning" xml:space="preserve">
-    <value>Some wallpapers will not span across displays properly.</value>
+  <data name="TextShowOnDisk" xml:space="preserve">
+    <value>Open File Location</value>
   </data>
-  <data name="txtStartup" xml:space="preserve">
-    <value>Start with Windows:</value>
+  <data name="TextSource" xml:space="preserve">
+    <value>Source</value>
   </data>
-  <data name="txtStartupToolTip" xml:space="preserve">
-    <value>Make sure to uncheck this before uninstalling lively.</value>
+  <data name="TextStart" xml:space="preserve">
+    <value>Start</value>
   </data>
-  <data name="txtSupport" xml:space="preserve">
+  <data name="TextStop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="TextStoreReview" xml:space="preserve">
+    <value>Do you enjoy using Lively? Leave a review :)</value>
+  </data>
+  <data name="TextSupport" xml:space="preserve">
     <value>Support</value>
   </data>
-  <data name="txtTileGIF" xml:space="preserve">
-    <value>Animated GIF</value>
+  <data name="TextSwitchBranchDev" xml:space="preserve">
+    <value>Switch to beta (Dev channel)</value>
   </data>
-  <data name="txtTileGodot" xml:space="preserve">
-    <value>Godot Software</value>
+  <data name="TextSwitchBranchOfficial" xml:space="preserve">
+    <value>Switch to stable (Default channel)</value>
   </data>
-  <data name="txtTileHTML" xml:space="preserve">
-    <value>HTML</value>
+  <data name="TextTags" xml:space="preserve">
+    <value>Tags</value>
   </data>
-  <data name="txtTileOther" xml:space="preserve">
-    <value>Other</value>
+  <data name="TextTaskbarThemeBlur" xml:space="preserve">
+    <value>Blur</value>
   </data>
-  <data name="txtTileUnity" xml:space="preserve">
-    <value>Unity Software</value>
+  <data name="TextTaskbarThemeClear" xml:space="preserve">
+    <value>Clear</value>
   </data>
-  <data name="txtTileVideo" xml:space="preserve">
+  <data name="TextTaskbarThemeColor" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="TextTaskbarThemeFluent" xml:space="preserve">
+    <value>Fluent</value>
+  </data>
+  <data name="TextTaskbarThemeWallpaper" xml:space="preserve">
+    <value>Wallpaper</value>
+  </data>
+  <data name="TextTaskbarThemeWallpaperFluent" xml:space="preserve">
+    <value>Wallpaper Fluent</value>
+  </data>
+  <data name="TextTileSizeLarge" xml:space="preserve">
+    <value>Large</value>
+  </data>
+  <data name="TextTileSizeNormal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="TextTileSizeSmall" xml:space="preserve">
+    <value>Small</value>
+  </data>
+  <data name="TextTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="TextUIHeadless" xml:space="preserve">
+    <value>Headless</value>
+  </data>
+  <data name="TextUILite" xml:space="preserve">
+    <value>Lite</value>
+  </data>
+  <data name="TextUINormal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="TextUnsupportedFile" xml:space="preserve">
+    <value>File format not supported</value>
+  </data>
+  <data name="TextUpdateAvailable" xml:space="preserve">
+    <value>Update available!</value>
+  </data>
+  <data name="TextUpdateCheck" xml:space="preserve">
+    <value>Check for update</value>
+  </data>
+  <data name="TextupdateCheckFail" xml:space="preserve">
+    <value>Failed to check for software update</value>
+  </data>
+  <data name="TextUpdateChecking" xml:space="preserve">
+    <value>Checking for update</value>
+  </data>
+  <data name="TextUpdateUptodate" xml:space="preserve">
+    <value>Software is up-to-date!</value>
+  </data>
+  <data name="TextVideo" xml:space="preserve">
     <value>Video</value>
   </data>
-  <data name="txtTileWebsite" xml:space="preserve">
+  <data name="TextWallpaperCommandlineArgs" xml:space="preserve">
+    <value>Enter optional commandline arguments</value>
+  </data>
+  <data name="TextWallpaperFitFill" xml:space="preserve">
+    <value>Fill</value>
+  </data>
+  <data name="TextWallpaperFitNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="TextWallpaperFitUniform" xml:space="preserve">
+    <value>Uniform</value>
+  </data>
+  <data name="TextWallpaperFitUniformToFill" xml:space="preserve">
+    <value>Uniform Fill</value>
+  </data>
+  <data name="TextWallpaperLayoutDuplicate" xml:space="preserve">
+    <value>Duplicate same wallpaper</value>
+  </data>
+  <data name="TextWallpaperLayoutPerScreen" xml:space="preserve">
+    <value>Selected screen only</value>
+  </data>
+  <data name="TextWallpaperLayoutSpan" xml:space="preserve">
+    <value>Span across screens</value>
+  </data>
+  <data name="TextWallpaperType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="TextWebsite" xml:space="preserve">
     <value>Website</value>
   </data>
-  <data name="txtTitlebar" xml:space="preserve">
-    <value>Lively Wallpaper System</value>
+  <data name="TextWebStream" xml:space="preserve">
+    <value>Web Stream</value>
   </data>
-  <data name="txtTransparency" xml:space="preserve">
-    <value>Transparent UI:</value>
+  <data name="TextWelcome" xml:space="preserve">
+    <value>Welcome</value>
   </data>
-  <data name="txtTransparencyToolTip" xml:space="preserve">
-    <value>Make lively window semi-transparent.</value>
+  <data name="TextYes" xml:space="preserve">
+    <value>Yes</value>
   </data>
-  <data name="txtUpdateBanner" xml:space="preserve">
-    <value>Update available Lively</value>
+  <data name="TileVideoPlayer" xml:space="preserve">
+    <value>Video Player</value>
   </data>
-  <data name="txtUpdateDownloadErrorMsg" xml:space="preserve">
-    <value>Failed to update. Try downloading the installer from</value>
+  <data name="TipAddWallpaperFileBrowse" xml:space="preserve">
+    <value>Set all supported file types as wallpaper.</value>
   </data>
-  <data name="txtVideoPlayer" xml:space="preserve">
-    <value>Video Player:</value>
+  <data name="TipAddWallpaperURL" xml:space="preserve">
+    <value>Set the web page of the URL you entered as wallpaper.</value>
   </data>
-  <data name="txtVideoPlayerToolTip" xml:space="preserve">
-    <value>Directshow requires additionals plugins to be installed.</value>
+  <data name="TipAppFocus" xml:space="preserve">
+    <value>Set what to do when any application is in focus.</value>
   </data>
-  <data name="txtVideoScaling" xml:space="preserve">
-    <value>Video Scaling/Fit:</value>
+  <data name="TipAppFullScreen" xml:space="preserve">
+    <value>Set what to do when fullscreen games/applications are running.</value>
   </data>
-  <data name="txtWallpaperPlayback" xml:space="preserve">
-    <value>Wallpaper Playback:</value>
+  <data name="TipAppRules" xml:space="preserve">
+    <value>Set different wallpaper playback rules based on running application.</value>
   </data>
-  <data name="txtWhenBattery" xml:space="preserve">
-    <value>When on Battery Power:</value>
+  <data name="TipAppTheme" xml:space="preserve">
+    <value>Lively adapts to system theme settings, to change appearance goto</value>
   </data>
-  <data name="txtWindowTitleSelectDisplay" xml:space="preserve">
-    <value>Select Display</value>
+  <data name="TipAudioMaster" xml:space="preserve">
+    <value>Volume level of all wallpapers.</value>
+  </data>
+  <data name="TipBatteryPower" xml:space="preserve">
+    <value>Change playback when AC power is disconnected.</value>
+  </data>
+  <data name="TipBrowserDebuggingPort" xml:space="preserve">
+    <value>Enter the port for debugging webpage wallpapers, browser restart is required for changes to take effect.
+When ready navigate to http://localhost:portnumber to access developer console.</value>
+  </data>
+  <data name="TipDebug" xml:space="preserve">
+    <value>Show developer menu.</value>
+  </data>
+  <data name="TipDesktopPicture" xml:space="preserve">
+    <value>Set a picture of animated wallpaper as desktop wallpaper.</value>
+  </data>
+  <data name="TipDisplayPauseRule" xml:space="preserve">
+    <value>Choose whether to pause wallpaper on all screens or only the relevant screen in which application is focused/fullscreen.</value>
+  </data>
+  <data name="TipExportLogs" xml:space="preserve">
+    <value>Create log report file.</value>
+  </data>
+  <data name="TipGifPlayer" xml:space="preserve">
+    <value>Select the player used for gif wallpaper.</value>
+  </data>
+  <data name="TipHideSysTray" xml:space="preserve">
+    <value>System-tray icon visibility, lively will continue to run with the icon hidden.</value>
+  </data>
+  <data name="TipLanguage" xml:space="preserve">
+    <value>Lively will restart to apply the new language.</value>
+  </data>
+  <data name="TipLivelySetupOnClose" xml:space="preserve">
+    <value>Finish the setup to continue.</value>
+  </data>
+  <data name="TipLockscreenPicture" xml:space="preserve">
+    <value>Set a picture of animated wallpaper as lockscreen wallpaper.</value>
+  </data>
+  <data name="TipPauseAlgorithm" xml:space="preserve">
+    <value>Wallpaper pause algorithm.</value>
+  </data>
+  <data name="TipPowerSavingModePower" xml:space="preserve">
+    <value>Change playback when Windows Power Saving Mode is enabled.</value>
+  </data>
+  <data name="TipRemoteDesktopPower" xml:space="preserve">
+    <value>Change playback when running a Remote Desktop session.</value>
+  </data>
+  <data name="TipScreensaver" xml:space="preserve">
+    <value>After the selected inactivity period use the current wallpaper as your screensaver.</value>
+  </data>
+  <data name="TipStreamWallpaperDetect" xml:space="preserve">
+    <value>If supported video stream link is detected use the video player instead of loading the webpage.</value>
+  </data>
+  <data name="TipStreamWallpaperVideoQuality" xml:space="preserve">
+    <value>Select the desired video quality for online streams.</value>
+  </data>
+  <data name="TipSwitchSoftwareBranch" xml:space="preserve">
+    <value>Change software release from beta to stable or vice versa.</value>
+  </data>
+  <data name="TipTaskbarTheme" xml:space="preserve">
+    <value>Change system taskbar appearance.</value>
+  </data>
+  <data name="TipTileSize" xml:space="preserve">
+    <value>Size of the wallpaper tiles in Library.</value>
+  </data>
+  <data name="TipUIMode" xml:space="preserve">
+    <value>For low-end systems select Lite mode.</value>
+  </data>
+  <data name="TipVideoHardwareDecode" xml:space="preserve">
+    <value>Use hardware acceleration when possible.</value>
+  </data>
+  <data name="TipVideoPlayer" xml:space="preserve">
+    <value>Select the player used for video wallpaper.</value>
+  </data>
+  <data name="TipWallpaperDir" xml:space="preserve">
+    <value>Path used to store wallpaper files.</value>
+  </data>
+  <data name="TipWallpaperFit" xml:space="preserve">
+    <value>Wallpaper scaling algorithm.</value>
+  </data>
+  <data name="TipWallpaperInput" xml:space="preserve">
+    <value>Select ways to interact with wallpaper.</value>
+  </data>
+  <data name="TipWallpaperLayout" xml:space="preserve">
+    <value>How wallpaper is applied to connected display devices.</value>
+  </data>
+  <data name="TipWallpaperPlayback" xml:space="preserve">
+    <value>Pause wallpaper playback when desktop is not focused.</value>
+  </data>
+  <data name="TipWebBrowserDiskCache" xml:space="preserve">
+    <value>Store temporary files on disk instead of memory, settings gets restored when browser is restarted.</value>
+  </data>
+  <data name="TipWebBrowserEngine" xml:space="preserve">
+    <value>CEF(Chromium Embedded Framework) is a lightweight chromium engine.
+Edge is the built in webview of windows 10.</value>
+  </data>
+  <data name="TipWindowsStartup" xml:space="preserve">
+    <value>Lively needs to run in the background for wallpaper playback.</value>
+  </data>
+  <data name="TitleAbout" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="TitleAddWallpaper" xml:space="preserve">
+    <value>Add Wallpaper</value>
+  </data>
+  <data name="TitleAppFocus" xml:space="preserve">
+    <value>Applications Focused</value>
+  </data>
+  <data name="TitleAppFullScreen" xml:space="preserve">
+    <value>Applications Fullscreen</value>
+  </data>
+  <data name="TitleAppName" xml:space="preserve">
+    <value>Lively Wallpaper</value>
+  </data>
+  <data name="TitleAppRules" xml:space="preserve">
+    <value>Application Rules</value>
+  </data>
+  <data name="TitleAppTheme" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="TitleAudio" xml:space="preserve">
+    <value>Audio</value>
+  </data>
+  <data name="TitleAudioDesktopOnly" xml:space="preserve">
+    <value>Play audio only when desktop is focused</value>
+  </data>
+  <data name="TitleAudioMaster" xml:space="preserve">
+    <value>Master Volume</value>
+  </data>
+  <data name="TitleAudioPlayOnScreen" xml:space="preserve">
+    <value>Play audio on screen</value>
+  </data>
+  <data name="TitleBatteryPower" xml:space="preserve">
+    <value>When on Battery Power</value>
+  </data>
+  <data name="TitleBrowseFile" xml:space="preserve">
+    <value>Browse for video, gif, webpage... file to set as wallpaper</value>
+  </data>
+  <data name="TitleBrowserDebuggingPort" xml:space="preserve">
+    <value>Debugging Port</value>
+  </data>
+  <data name="TitleChangelog" xml:space="preserve">
+    <value>Changelog</value>
+  </data>
+  <data name="TitleCommunity" xml:space="preserve">
+    <value>Community</value>
+  </data>
+  <data name="TitleDebug" xml:space="preserve">
+    <value>Debug</value>
+  </data>
+  <data name="TitleDeleteConfirmation" xml:space="preserve">
+    <value>Confirm Deletion</value>
+  </data>
+  <data name="TitleDesktopPicture" xml:space="preserve">
+    <value>Desktop Picture</value>
+  </data>
+  <data name="TitleDisplayPauseRule" xml:space="preserve">
+    <value>Display Pause Rule</value>
+  </data>
+  <data name="TitleDocumentation" xml:space="preserve">
+    <value>Documentation</value>
+  </data>
+  <data name="TitleEnterUrl" xml:space="preserve">
+    <value>Enter URL</value>
+  </data>
+  <data name="TitleExportLogs" xml:space="preserve">
+    <value>Log File</value>
+  </data>
+  <data name="TitleGeneral" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="TitleGifPlayer" xml:space="preserve">
+    <value>Gif Player</value>
+  </data>
+  <data name="TitleHelp" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="TitleHideSysTray" xml:space="preserve">
+    <value>System-tray Icon</value>
+  </data>
+  <data name="TitleInteraction" xml:space="preserve">
+    <value>Interaction</value>
+  </data>
+  <data name="TitleLanguage" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="TitleLibrary" xml:space="preserve">
+    <value>Library</value>
+  </data>
+  <data name="TitleLivelySetup" xml:space="preserve">
+    <value>Lively Setup</value>
+  </data>
+  <data name="TitleLocation" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="TitleLockscreenPicture" xml:space="preserve">
+    <value>Lockscreen Picture</value>
+  </data>
+  <data name="TitleMisc" xml:space="preserve">
+    <value>Misc</value>
+  </data>
+  <data name="TitleMute" xml:space="preserve">
+    <value>Mute</value>
+  </data>
+  <data name="TitlePauseAlgo" xml:space="preserve">
+    <value>Pause Algorithm</value>
+  </data>
+  <data name="TitlePerformance" xml:space="preserve">
+    <value>Performance</value>
+  </data>
+  <data name="TitlePlaylist" xml:space="preserve">
+    <value>Playlist</value>
+  </data>
+  <data name="TitlePleaseWait" xml:space="preserve">
+    <value>Please Wait</value>
+  </data>
+  <data name="TitlePowerSavingModePower" xml:space="preserve">
+    <value>When on Battery Saver</value>
+  </data>
+  <data name="TitleRemoteDesktopPower" xml:space="preserve">
+    <value>When on Remote Desktop</value>
+  </data>
+  <data name="TitleReportBug" xml:space="preserve">
+    <value>Report Bug</value>
+  </data>
+  <data name="TitleScalingFit" xml:space="preserve">
+    <value>Scaling/Fit</value>
+  </data>
+  <data name="TitleScreenLayout" xml:space="preserve">
+    <value>Control Panel</value>
+  </data>
+  <data name="TitleScreensaver" xml:space="preserve">
+    <value>Screensaver</value>
+  </data>
+  <data name="TitleScreensaverLockOnResume" xml:space="preserve">
+    <value>On resume, display logon screen</value>
+  </data>
+  <data name="TitleSelectFile" xml:space="preserve">
+    <value>Select File</value>
+  </data>
+  <data name="TitleSettings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="TitleSkipConfirm" xml:space="preserve">
+    <value>Skip Confirmation</value>
+  </data>
+  <data name="TitleSourceCode" xml:space="preserve">
+    <value>Source Code</value>
+  </data>
+  <data name="TitleStore" xml:space="preserve">
+    <value>Store</value>
+    <comment>For different version of Lively, example: Microsoft Store</comment>
+  </data>
+  <data name="TitleStreamWallpaper" xml:space="preserve">
+    <value>Stream</value>
+  </data>
+  <data name="TitleStreamWallpaperDetect" xml:space="preserve">
+    <value>Detect Streams</value>
+  </data>
+  <data name="TitleStreamWallpaperVideoQuality" xml:space="preserve">
+    <value>Video Quality</value>
+  </data>
+  <data name="TitleSystem" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="TitleTaskbarTheme" xml:space="preserve">
+    <value>Taskbar Theme</value>
+  </data>
+  <data name="TitleTileSize" xml:space="preserve">
+    <value>Tile Size</value>
+  </data>
+  <data name="TitleUIMode" xml:space="preserve">
+    <value>User Interface</value>
+  </data>
+  <data name="TitleUpdates" xml:space="preserve">
+    <value>Updates</value>
+  </data>
+  <data name="TitleVideo" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="TitleVideoHardwareDecode" xml:space="preserve">
+    <value>GPU Decode</value>
+  </data>
+  <data name="TitleWallpaper" xml:space="preserve">
+    <value>Wallpaper</value>
+  </data>
+  <data name="TitleWallpaperDir" xml:space="preserve">
+    <value>Wallpaper Directory</value>
+  </data>
+  <data name="TitleWallpaperDirMoveExisting" xml:space="preserve">
+    <value>Move existing wallpapers to new folder</value>
+  </data>
+  <data name="TitleWallpaperFit" xml:space="preserve">
+    <value>Choose a fit</value>
+  </data>
+  <data name="TitleWallpaperInput" xml:space="preserve">
+    <value>Wallpaper Input</value>
+  </data>
+  <data name="TitleWallpaperLayout" xml:space="preserve">
+    <value>Placement Method</value>
+  </data>
+  <data name="TitleWallpaperPlayback" xml:space="preserve">
+    <value>Wallpaper Playback</value>
+  </data>
+  <data name="TitleWarning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="TitleWebBrowser" xml:space="preserve">
+    <value>Web Browser</value>
+  </data>
+  <data name="TitleWebBrowserDiskCache" xml:space="preserve">
+    <value>Disk cache</value>
+  </data>
+  <data name="TitleWebBrowserEngine" xml:space="preserve">
+    <value>Engine</value>
+  </data>
+  <data name="TitleWebpageLoad" xml:space="preserve">
+    <value>Load Webpage</value>
+  </data>
+  <data name="TitleWindowsStartup" xml:space="preserve">
+    <value>Start with Windows</value>
   </data>
 </root>

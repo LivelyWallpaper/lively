@@ -117,169 +117,80 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="cmbBoxAllDisplays" xml:space="preserve">
-    <value>جميع الشاشة(ات)</value>
+  <data name="DescriptionAddWallpaper" xml:space="preserve">
+    <value>حدد ملفا أو حدد عنوان url لموقع الويب لتعيينه كخلفية.</value>
   </data>
-  <data name="cmbBoxGIFPlayer1" xml:space="preserve">
-    <value>XamlAnimatedGif</value>
+  <data name="DescriptionAppRules" xml:space="preserve">
+    <value>تعيين الخلفية(ات) سلوك التشغيل بناءً على تشغيل التطبيق:-</value>
   </data>
-  <data name="cmbBoxGIFPlayer1ToolTip" xml:space="preserve">
-    <value>إستخدام أقل للمعالج, إستخدام عالي للمعالج</value>
+  <data name="DescriptionCancelQuestion" xml:space="preserve">
+    <value>هل أنت متأكد أنك تريد الإلغاء؟</value>
   </data>
-  <data name="cmbBoxGIFPlayer2" xml:space="preserve">
-    <value>DirectShow</value>
-  </data>
-  <data name="cmbBoxGIFPlayer2ToolTip" xml:space="preserve">
-    <value>إستخدام أقل للمعالج (يعتمد على إعدادات الكوديك)</value>
-  </data>
-  <data name="cmbBoxKill" xml:space="preserve">
-    <value>إغلاق(يوفر ويحرر الذاكرة)</value>
-  </data>
-  <data name="cmbBoxNothing" xml:space="preserve">
-    <value>لا شيئ</value>
-  </data>
-  <data name="cmbBoxPaugeAlgorithmAllProcess" xml:space="preserve">
-    <value>جميع العمليات (تجريبي)</value>
-  </data>
-  <data name="cmbBoxPause" xml:space="preserve">
-    <value>إيقاف مؤقت</value>
-  </data>
-  <data name="cmbBoxPauseAlgorithmForeground" xml:space="preserve">
-    <value>معالجة المقدمة</value>
-  </data>
-  <data name="cmbBoxPerDisplay" xml:space="preserve">
-    <value>لكل شاشة</value>
-  </data>
-  <data name="cmbBoxSpan" xml:space="preserve">
-    <value>إمتداد(تجريبي)</value>
-  </data>
-  <data name="cmbBoxVideoPlayer1" xml:space="preserve">
-    <value>Media Foundation</value>
-  </data>
-  <data name="cmbBoxVideoPlayer2" xml:space="preserve">
-    <value>DirectShow(Lav, ffdshow..)</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="license" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\docs\license.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="msgAppCommandLineArgs" xml:space="preserve">
-    <value>أدخل قيم سطر الأوامر إن وجدت (إختياري, أتركه فارغاً إن لم توجد):-</value>
-  </data>
-  <data name="msgAppCommandLineArgsTitle" xml:space="preserve">
-    <value>بدء القيمة</value>
-  </data>
-  <data name="msgAppGUIFailure" xml:space="preserve">
-    <value>الخلفية المُختارة(التطبيق) ليس لها واجهة مستخدم رسومية.
-إنهاء التطبيق...</value>
-  </data>
-  <data name="msgAppTimeout" xml:space="preserve">
-    <value>فشل في التقاط نافذة التطبيق.
-الخلفية(التطبيق) يستغرق وقتاً طويلاً للبدء(أكثر من ~30ثانية), قد يكون بسبب:
-فحص الفيروسات/ التطبيق كبير جداً.
-إنتظر &amp; حاول مرة أخرى. (إختيارياً يمكنك تعديل وقت الإنتظار, يمكنك مراجعة الويكي الخاصة بالبرنامج لمزيد من المعلومات.)
-إغلاق التطبيق...</value>
-  </data>
-  <data name="msgDamangedLivelyFile" xml:space="preserve">
-    <value>ملف الخلفية تالف, حاول إعادة تنزيله.</value>
-  </data>
-  <data name="msgDeleteConfirmation" xml:space="preserve">
+  <data name="DescriptionDeleteConfirmation" xml:space="preserve">
     <value>هل أنت متأكد من حذف الخلفية بشكل دائم من القرص؟</value>
   </data>
-  <data name="msgDeleteConfirmationTitle" xml:space="preserve">
-    <value>تأكيد الحذف</value>
+  <data name="DescriptionDragDropFIle" xml:space="preserve">
+    <value>ببساطة قم بسحب وإسقاط الملفات في المكتبة.</value>
   </data>
-  <data name="msgDeletionFailure" xml:space="preserve">
-    <value>تعمل حالياً كخلفية, لا يمكن حذفها!
-أوقف/أغلق الخلفية لحذفها.</value>
-  </data>
-  <data name="msgDeletionFailureTitle" xml:space="preserve">
-    <value>فشل الحذف</value>
-  </data>
-  <data name="msgDragDropOtherFormats" xml:space="preserve">
-    <value>لا تدعم صيغة الملف السحب &amp; رمي, إفتحه في صفحة 'نوع' بدلاً من ذلك.</value>
-  </data>
-  <data name="msgDragDropOtherFormatsTitle" xml:space="preserve">
-    <value>لايفلي: غير مدعوم</value>
-  </data>
-  <data name="msgExternalAppWarning" xml:space="preserve">
+  <data name="DescriptionExternalAppWarning" xml:space="preserve">
     <value>أنت تفتح تطبيقاً خارجياً كخلفية, يمكن للتطبيقات الضارة أن تستضيف البرامج الضارة والفيروسات... والتي قد تُلحق الضرر بنظامك.
 تابع فقط إذا كان التطبيق من مصدر موثوق.</value>
   </data>
-  <data name="msgExternalAppWarningTitle" xml:space="preserve">
-    <value>تحذير</value>
+  <data name="DescriptionMinimizedTray" xml:space="preserve">
+    <value>تم تصغيري إلى علبة النظام, أنقر بالزر الأيمن لمزيد من الخيارات.</value>
   </data>
-  <data name="msgGIFfailure" xml:space="preserve">
-    <value>فشل تشغيل الصور المتحركة (جي آي إف).
-هل ملف الجي آي إف تالف؟ حاول إعادة تنزيله.</value>
+  <data name="DescriptionPleaseRestartLively" xml:space="preserve">
+    <value>يرجى إعادة تشغيل البرنامج حتى تصبح الإعدادات نافذة المفعول.</value>
   </data>
-  <data name="msgHighContrastFailure" xml:space="preserve">
+  <data name="DescriptionRecordStart" xml:space="preserve">
+    <value>اضغط لبدء التسجيل.</value>
+  </data>
+  <data name="DescriptionRestoringWallpaper" xml:space="preserve">
+    <value>إستعادة الخلفية(ات) السابقة..</value>
+  </data>
+  <data name="DescriptionScreenLayout" xml:space="preserve">
+    <value>اختيار الشاشة</value>
+  </data>
+  <data name="DescriptionUpdateAvailable" xml:space="preserve">
+    <value>نسخة جديدة متوفرة!</value>
+  </data>
+  <data name="DescriptionWebpageLoad" xml:space="preserve">
+    <value>أدخل رابط الموقع للتحميل, Shadertoy.com  روابط هذا الموقع مدعومة:-</value>
+  </data>
+  <data name="DescriptionWelcomeWizard" xml:space="preserve">
+    <value>هذا المعالج سوف يمكنك البدء في إعداد البرنامج.</value>
+  </data>
+  <data name="LivelyExceptionAppUpdateFail" xml:space="preserve">
+    <value>فشل التحديث. حاول تنزيل المثبت من الموقع</value>
+  </data>
+  <data name="LivelyExceptionDamagedZipFile" xml:space="preserve">
+    <value>ملف الخلفية تالف, حاول إعادة تنزيله.</value>
+  </data>
+  <data name="LivelyExceptionGeneral" xml:space="preserve">
+    <value>للأسف... يبدو أن شيئا ما قد احدث خطأ :(
+لفهم هذا الخطأ بشكل أفضل وإصلاح المشكلة ، شارك ملف السجل مع المطور.
+تعليمات لمشاركة ملف السجل:
+https://github.com/rocksdanister/lively/wiki</value>
+  </data>
+  <data name="LivelyExceptionHighContrastMode" xml:space="preserve">
     <value>لا يمكن للايفلي أن يعمل بصورة صحيحة في حين أن وضع التباين العالي للويندوز مُمَكّن!
 عطّل وضع التباين العالي &amp; حاول مرة أخرى.</value>
   </data>
-  <data name="msgLoadExternalLink" xml:space="preserve">
-    <value>أنت على وشك فتح صفحة موقع خارجي على متصفحك.
+  <data name="LivelyExceptionMediaPlayback" xml:space="preserve">
+    <value>تشغيل الوسائط فشل :(
+حاول تغيير مشغل الفيديو في إعدادات البرنامج.
 
-URL:-</value>
+من أجل فهم هذا الخطأ بشكل أفضل وإصلاح المشكلة ، شارك ملف السجل مع المطور.
+تعليمات لمشاركة ملف السجل:
+https://github.com/rocksdanister/lively/wiki</value>
   </data>
-  <data name="msgLoadExternalLinkTitle" xml:space="preserve">
-    <value>تحميل الصفحة؟</value>
+  <data name="LivelyExceptionNotLivelyZip" xml:space="preserve">
+    <value>لا يوجد ملف خلفية حية.</value>
   </data>
-  <data name="msgLoadingAppWallpaper" xml:space="preserve">
-    <value>بدء التطبيق الخارجي..</value>
+  <data name="LivelyExceptionSafeModeStart" xml:space="preserve">
+    <value>نسخة جديدة متوفرة!</value>
   </data>
-  <data name="msgMediaFoundationFailure" xml:space="preserve">
-    <value>فشل تشغيل الوسائط: كوديك مفقود/ ملف تالف.
-LAV ثبّت كوديك &amp; Directshow حاول التبديل إلى مشغّل.
-
-مزيد من التعليمات: 
-www.github.com/rocksdanister/lively/wiki/Video-Guide</value>
-  </data>
-  <data name="msgMediakitFailure" xml:space="preserve">
-    <value>فشل تشغيل الوسائط: كوديك مفقود/ ملف تالف.
-LAV لا تنسى تثبيت كوديك:
-www.github.com/Nevcairiel/LAVFilters/releases
-
-مزيد من التعليمات: 
-www.github.com/rocksdanister/lively/wiki/Video-Guide</value>
-  </data>
-  <data name="msgRestoringInProgress" xml:space="preserve">
-    <value>جارٍ استعادة الخلفية(ات) السابقة, يرجى الانتظار.</value>
-  </data>
-  <data name="msgRestoringPrevWallpapers" xml:space="preserve">
-    <value>إستعادة الخلفية(ات) السابقة..</value>
-  </data>
-  <data name="msgSafeModeWarning" xml:space="preserve">
-    <value>لم يتم إغلاق لايفلي بشكل صحيح, البدء في الوضع الآمن.
-هل ترغب في استعادة الخلفيات السابقة؟
-يتم حفظ معلومات الخطأ/الفشل في:-
-</value>
-  </data>
-  <data name="msgSingleInstanceOnly" xml:space="preserve">
-    <value>التطبيق قيد التشغيل بالفعل!
- "livelywpf" في حالة عدم استجابة البرنامج أغلقه من مدير المهام تحت اسم &amp; حاول مرة أخرى.</value>
-  </data>
-  <data name="msgUrlLoad" xml:space="preserve">
-    <value>أدخل رابط الموقع للتحميل, Shadertoy.com  روابط هذا الموقع مدعومة:-</value>
-  </data>
-  <data name="msgUrlLoadTitle" xml:space="preserve">
-    <value>تحميل الصفحة</value>
-  </data>
-  <data name="msgUrlWarning" xml:space="preserve">
-    <value>أنت على وشك تحميل صفحة موقع خارجية.
-يمكن لصفحات المواقع أن تكون ضارة (برامج ضارة, فيروسات ..)
-أدخل فقط روابط مواقع موثوقة.</value>
-  </data>
-  <data name="msgUrlWarningTitle" xml:space="preserve">
-    <value>تحذير</value>
-  </data>
-  <data name="msgWebBrowserMissing" xml:space="preserve">
-    <value>مكون متصفح الإنترنت مفقود, إما أن تنزل بشكل منفصل:-
-https://github.com/rocksdanister/lively-cef 
-أو
-نزّل النسخة الكاملة من لايفلي.</value>
-  </data>
-  <data name="msgWorkerWFailure" xml:space="preserve">
+  <data name="LivelyExceptionWorkerWSetupFail" xml:space="preserve">
     <value>يبدو أنه يجب ضبط بعد الإعدادات لجعل لايفلي يعمل:-  
 1. من سطح المكتب
 2. أنقر على زر البحث
@@ -291,436 +202,698 @@ https://github.com/rocksdanister/lively-cef
 إذا تم تعيين ويندوز 7 - يُعدل إلى ضبط لأفضل مظهر &amp; تطبيق.
 إذا كان لا يزال لا يعمل, أغلق &amp; شغِّل لايفلي مجدداً/ أعِد تشغيل ويندوز.</value>
   </data>
-  <data name="titleAbout" xml:space="preserve">
-    <value>حول</value>
-  </data>
-  <data name="titleLibrary" xml:space="preserve">
-    <value>المكتبة</value>
-  </data>
-  <data name="titleSettings" xml:space="preserve">
-    <value>الإعدادات</value>
-  </data>
-  <data name="titleType" xml:space="preserve">
-    <value>النوع</value>
-  </data>
-  <data name="toolTipMinimizeMsg" xml:space="preserve">
-    <value>تم تصغيري إلى علبة النظام, أنقر بالزر الأيمن لمزيد من الخيارات.</value>
-  </data>
-  <data name="toolTipUpdateMsg" xml:space="preserve">
-    <value>نسخة جديدة متوفرة!</value>
-  </data>
-  <data name="toolTipWallpaperSkip" xml:space="preserve">
-    <value>بعض الخلفيات تم تخطيها بسبب ملف(ات) تالف(ة)!</value>
-  </data>
-  <data name="txtApplicationRules" xml:space="preserve">
-    <value>قواعد التطبيق</value>
-  </data>
-  <data name="txtAudioIn" xml:space="preserve">
-    <value>مدخل الصوت:</value>
-  </data>
-  <data name="txtAudioInToolTip" xml:space="preserve">
-    <value>يمنع وصول المتصفحات إلى صوت النظام.</value>
-  </data>
-  <data name="txtAudioLabel1" xml:space="preserve">
-    <value>يتم تعطيل الصوت دائماً في أنظمة الشاشات المتعددة.</value>
-  </data>
-  <data name="txtAudioLabel2" xml:space="preserve">
-    <value>مدخل الصوت معطّل, لن يعمل مرئي صوتيات الويب .</value>
-  </data>
-  <data name="txtAudioOut" xml:space="preserve">
-    <value>مخرج الصوت:</value>
-  </data>
-  <data name="txtAudioOutToolTip" xml:space="preserve">
-    <value>كتم/إلغاء كتم صوت مشغّل الفيديو.</value>
-  </data>
-  <data name="txtBrowser" xml:space="preserve">
-    <value>متصفح الويب:</value>
-  </data>
-  <data name="txtBrowserToolTip" xml:space="preserve">
-    <value>تحديد متصفح الويب لخلفيات الويب(قريباً)</value>
-  </data>
-  <data name="txtCloseAllWallpapers" xml:space="preserve">
-    <value>إغلاق جميع الخلفيات</value>
-  </data>
-  <data name="txtComingSoon" xml:space="preserve">
-    <value>قريباً</value>
-  </data>
-  <data name="txtContextMenuCloseAll" xml:space="preserve">
-    <value>إغلاق جميع الخلفيات</value>
-  </data>
-  <data name="txtContextMenuCloseWallpaper" xml:space="preserve">
-    <value>إغلاق الخلفية</value>
-  </data>
-  <data name="txtContextMenuDeleteWallpaper" xml:space="preserve">
-    <value>حذف الخلفية</value>
-  </data>
-  <data name="txtContextMenuExit" xml:space="preserve">
-    <value>إغلاق</value>
-  </data>
-  <data name="txtContextMenuExport" xml:space="preserve">
-    <value>تصدير كـ lively .zip</value>
-  </data>
-  <data name="txtContextMenuOpenLively" xml:space="preserve">
-    <value>تشغيل لايفلي</value>
-  </data>
-  <data name="txtContextMenuShowOnDisk" xml:space="preserve">
-    <value>عرض على القرص</value>
-  </data>
-  <data name="txtContextMenuUpdate1" xml:space="preserve">
-    <value>التحقق من وجود تحديث</value>
-  </data>
-  <data name="txtContextMenuUpdate2" xml:space="preserve">
-    <value>تحديث متوفر!</value>
-  </data>
-  <data name="txtContextMenuUpdate3" xml:space="preserve">
-    <value>هل هذا برنامج تجريبي (بيتا)؟</value>
-  </data>
-  <data name="txtContextMenuUpdate4" xml:space="preserve">
-    <value>لايفلي مُحدَّث!</value>
-  </data>
-  <data name="txtContextMenuUpdate5" xml:space="preserve">
-    <value>خطأ في التحقق من التحديث</value>
-  </data>
-  <data name="txtCreateWallpaper" xml:space="preserve">
-    <value>إنشاء خلفية</value>
-  </data>
-  <data name="txtCreatingZip" xml:space="preserve">
-    <value>إنشاء ملف Lively zip.</value>
-  </data>
-  <data name="txtDisplayPauseRule" xml:space="preserve">
-    <value>عرض قاعدة الإيقاف المؤقت:</value>
-  </data>
-  <data name="txtGIFPlayer" xml:space="preserve">
-    <value>(GIF)مُشغل جي آي إف:</value>
-  </data>
-  <data name="txtGifPlayerToolTip" xml:space="preserve">
-    <value>ملحقات إضافية لتثبيته DirectShow يتطلب.</value>
-  </data>
-  <data name="txtHelp" xml:space="preserve">
-    <value>مساعدة</value>
-  </data>
-  <data name="txtIgnore" xml:space="preserve">
-    <value>تجاهل</value>
-  </data>
-  <data name="txtInstallWallpaper" xml:space="preserve">
-    <value>تثبيت الخلفية</value>
-  </data>
-  <data name="txtLabel1" xml:space="preserve">
-    <value>حدد نوع الخلفية للتحميل:-</value>
-  </data>
-  <data name="txtLabel10" xml:space="preserve">
-    <value>الإسناد:</value>
-  </data>
-  <data name="txtLabel11" xml:space="preserve">
-    <value>ماذا يجب أن أستخدم؟</value>
-  </data>
-  <data name="txtLabel12" xml:space="preserve">
-    <value>النوع:</value>
-  </data>
-  <data name="txtLabel120FPS" xml:space="preserve">
-    <value> 120FPS إجبار واجهة المستخدم</value>
-  </data>
-  <data name="txtLabel13" xml:space="preserve">
-    <value>المؤلف:</value>
-  </data>
-  <data name="txtLabel14" xml:space="preserve">
-    <value>التواصل:</value>
-  </data>
-  <data name="txtLabel15" xml:space="preserve">
-    <value>عام:</value>
-    <comment>settings tab</comment>
-  </data>
-  <data name="txtLabel16" xml:space="preserve">
-    <value>يتطلب إعادة تشغيل البرنامج:</value>
-    <comment>settings tab</comment>
-  </data>
-  <data name="txtLabel17" xml:space="preserve">
-    <value>الفيديو:</value>
-    <comment>settings tab</comment>
-  </data>
-  <data name="txtLabel18" xml:space="preserve">
-    <value>الجي آي إف:</value>
-    <comment>settings tab</comment>
-  </data>
-  <data name="txtLabel19" xml:space="preserve">
-    <value>متصفح الويب:</value>
-    <comment>settings tab</comment>
-  </data>
-  <data name="txtLabel2" xml:space="preserve">
-    <value>فقط إسحب وارمي الملفات إن كنت تفضّل بهذه الطريقة.</value>
-  </data>
-  <data name="txtLabel20" xml:space="preserve">
-    <value>الأداء:</value>
-    <comment>settings tab</comment>
-  </data>
-  <data name="txtLabel21" xml:space="preserve">
-    <value>تعيين الخلفية(ات) سلوك التشغيل بناءً على تشغيل التطبيق:-</value>
-  </data>
-  <data name="txtLabel22" xml:space="preserve">
+  <data name="TextAdd" xml:space="preserve">
     <value>إضافة</value>
   </data>
-  <data name="txtLabel23" xml:space="preserve">
-    <value>إزلة</value>
+  <data name="TextApplication" xml:space="preserve">
+    <value>التطبيق</value>
   </data>
-  <data name="txtLabel24" xml:space="preserve">
-    <value>حدد تخطيط الخلفية:-</value>
+  <data name="TextAttribution" xml:space="preserve">
+    <value>الإسناد:</value>
   </data>
-  <data name="txtLabel25" xml:space="preserve">
-    <value>إختر نوع خلفية للإنشاء:-</value>
+  <data name="TextAuthor" xml:space="preserve">
+    <value>المؤلف:</value>
   </data>
-  <data name="txtLabel26" xml:space="preserve">
-    <value>ملف المكتبة: أنشِئ ملف مضغوط سهل المشاركة لتحميل الخلفية في مكتبة لايفلي (الملفات المضغوطة كـ رار أو زيب)
-لبدء ملف كخلفية بسهولة, هذا غير مطلوب; فقط إسحب وارمي الملف داخل نافذة لايفلي.</value>
-  </data>
-  <data name="txtLabel27" xml:space="preserve">
-    <value>التواصل مع الموقع(إختياري):-</value>
-  </data>
-  <data name="txtLabel28" xml:space="preserve">
-    <value>الرخصة(إختياري):-</value>
-  </data>
-  <data name="txtLabel29" xml:space="preserve">
-    <value>العنوان/الاسم:-</value>
-  </data>
-  <data name="txtLabel3" xml:space="preserve">
-    <value>Unity Technologies هذه المواد لا ترعاها أو تتبعها, Godot, Bizhawk, Shadertoy.com</value>
-  </data>
-  <data name="txtLabel30" xml:space="preserve">
-    <value>الوصف:-</value>
-  </data>
-  <data name="txtLabel31" xml:space="preserve">
-    <value>إختر الملف</value>
-  </data>
-  <data name="txtLabel32" xml:space="preserve">
-    <value>صورة مصغرة (200x200)</value>
-  </data>
-  <data name="txtLabel33" xml:space="preserve">
-    <value>إنشاء</value>
-  </data>
-  <data name="txtLabel34" xml:space="preserve">
-    <value>GIF معاينة الصورة المتحركة</value>
-  </data>
-  <data name="txtLabel35" xml:space="preserve">
-    <value>نوع الخلفية:-</value>
-  </data>
-  <data name="txtLabel36" xml:space="preserve">
-    <value>تتم إضافة الملفات والمجلدات:-</value>
-  </data>
-  <data name="txtLabel37" xml:space="preserve">
-    <value>موافق</value>
-  </data>
-  <data name="txtLabel38" xml:space="preserve">
+  <data name="TextBack" xml:space="preserve">
     <value>رجوع</value>
   </data>
-  <data name="txtLabel39" xml:space="preserve">
-    <value>جاري تثبيت الخلفية</value>
+  <data name="TextBrowse" xml:space="preserve">
+    <value>تصفح</value>
   </data>
-  <data name="txtLabel4" xml:space="preserve">
-    <value>وسائط</value>
+  <data name="TextClose" xml:space="preserve">
+    <value>اغلاق</value>
   </data>
-  <data name="txtLabel5" xml:space="preserve">
-    <value>ألعاب</value>
+  <data name="TextCloseWallpapers" xml:space="preserve">
+    <value>إغلاق الخلفية</value>
   </data>
-  <data name="txtLabel6" xml:space="preserve">
-    <value>ريترو</value>
+  <data name="TextCompleted" xml:space="preserve">
+    <value>تم!</value>
   </data>
-  <data name="txtLabel7" xml:space="preserve">
-    <value>أخرى</value>
+  <data name="TextConvertVideo" xml:space="preserve">
+    <value>تحويل إلى فيديو</value>
   </data>
-  <data name="txtLabel8" xml:space="preserve">
-    <value>ويب</value>
+  <data name="TextCustomise" xml:space="preserve">
+    <value>تخصيص</value>
   </data>
-  <data name="txtLabel9" xml:space="preserve">
-    <value>مرئيّ الصوت</value>
+  <data name="TextCustomiseWallpaper" xml:space="preserve">
+    <value>تخصيص خلفية</value>
   </data>
-  <data name="txtLabelApplication" xml:space="preserve">
-    <value>التطبيق</value>
+  <data name="TextDeleteWallpaper" xml:space="preserve">
+    <value>حذف الخلفية</value>
   </data>
-  <data name="txtLabelAppName" xml:space="preserve">
-    <value>لايفلي</value>
+  <data name="TextDisplayPauseRuleAllScreen" xml:space="preserve">
+    <value>جميع الشاشة(ات)</value>
   </data>
-  <data name="txtLabelRule" xml:space="preserve">
-    <value>القاعدة</value>
+  <data name="TextDisplayPauseRulePerScreen" xml:space="preserve">
+    <value>لكل شاشة</value>
   </data>
-  <data name="txtLabelSoftwareUIRendering" xml:space="preserve">
-    <value>تعطيل تسريع الهاردوير</value>
+  <data name="TextDownload" xml:space="preserve">
+    <value>تنزيل</value>
   </data>
-  <data name="txtLabelStream" xml:space="preserve">
-    <value>ستريم/فيديو مباشر</value>
-  </data>
-  <data name="txtLabelVideoQuality" xml:space="preserve">
-    <value>جودة الفيديو</value>
-  </data>
-  <data name="txtLivelyAppWarning" xml:space="preserve">
-    <value>هذه الميزة قيد التطوير حالياً.
-لا تقم بتشغيل برامج مثل جوجل كروم, ستيم.. والتي تفرز عدة عمليات فرعية.
-ستكون هناك أخطاء &amp; تعطيلات/كراشات, !!!تقدم بحذر</value>
-  </data>
-  <data name="txtLivelyErrorMsgTitle" xml:space="preserve">
+  <data name="TextError" xml:space="preserve">
     <value>لايفلي: خطأ</value>
-    <comment>title for messagebox.</comment>
   </data>
-  <data name="txtLivelyWaitMsgTitle" xml:space="preserve">
-    <value>يرجى الإنتظار</value>
-    <comment>title for messagebox</comment>
+  <data name="TextExit" xml:space="preserve">
+    <value>إغلاق</value>
   </data>
-  <data name="txtLivelyWallpaperTypeApp" xml:space="preserve">
-    <value>التطبيق</value>
+  <data name="TextExportWallpaperZip" xml:space="preserve">
+    <value>تصدير كـ lively .zip</value>
   </data>
-  <data name="txtLivelyWallpaperTypeGIF" xml:space="preserve">
-    <value>صورة متحركة</value>
+  <data name="TextGIF" xml:space="preserve">
+    <value>GIF المتحركة</value>
   </data>
-  <data name="txtLivelyWallpaperTypeGodot" xml:space="preserve">
-    <value>Godot تطبيق</value>
+  <data name="TextGo" xml:space="preserve">
+    <value>اذهب</value>
   </data>
-  <data name="txtLivelyWallpaperTypeUnity" xml:space="preserve">
-    <value>Unity تطبيق</value>
+  <data name="TextHelpTranslate" xml:space="preserve">
+    <value>مساعدة في ترجمة البرنامج.</value>
   </data>
-  <data name="txtLivelyWallpaperTypeUnityAudio" xml:space="preserve">
-    <value>Unity رد فعل صوتي بـ</value>
-  </data>
-  <data name="txtLivelyWallpaperTypeUrl" xml:space="preserve">
-    <value>عبر الإنترنت</value>
-  </data>
-  <data name="txtLivelyWallpaperTypeVideo" xml:space="preserve">
-    <value>فيديو</value>
-  </data>
-  <data name="txtLivelyWallpaperTypeWeb" xml:space="preserve">
-    <value>ويب</value>
-  </data>
-  <data name="txtLivelyWallpaperTypeWebAudio" xml:space="preserve">
-    <value>رد فعل ويب صوتي</value>
-  </data>
-  <data name="txtLiveTile" xml:space="preserve">
-    <value>لوحة متحركة:</value>
-  </data>
-  <data name="txtLiveTileToolTip" xml:space="preserve">
-    <value>(تجريبي) معينة الخلفية على اللوحة.</value>
-  </data>
-  <data name="txtMsgFillAllFields" xml:space="preserve">
-    <value>إملأ جميع الحقول النصية المطلوبة.</value>
-  </data>
-  <data name="txtMsgSelectWallpaperFile" xml:space="preserve">
-    <value>لم يتم اختيار ملف الخلفية</value>
-  </data>
-  <data name="txtNotes" xml:space="preserve">
-    <value>ملاحظة:
-(1) نافذة لايفلي تتجاهل هذه القواعد.
-(2) الصوت دائماً مكتوم عندما تكون البرامج/التطبيقات في التركيز {باستثناء (1), نافذة لايفلي}.
-(3) لدى خوارزمية معالجة المقدمة بعض القيود, راجع الويكي لمزيد من المعلومات.
-(4) لدى قواعد التطبيق الأولوية القصوى.</value>
-  </data>
-  <data name="txtOff" xml:space="preserve">
-    <value>إيقاف</value>
-  </data>
-  <data name="txtOn" xml:space="preserve">
-    <value>تشغيل</value>
-  </data>
-  <data name="txtOtherAppsFocus" xml:space="preserve">
-    <value>تركيز تطبيق آخر:</value>
-  </data>
-  <data name="txtOtherAppsFullScreen" xml:space="preserve">
-    <value>تطبيقات وضع ملء الشاشة الأخرى:</value>
-  </data>
-  <data name="txtPauseAlgorith" xml:space="preserve">
-    <value>إيقاف مؤقت للخوارزمية:</value>
-  </data>
-  <data name="txtPleaseWait" xml:space="preserve">
-    <value>فشل التحميل</value>
-  </data>
-  <data name="txtPleaseWait2" xml:space="preserve">
-    <value>يرجى الإنتظار</value>
-  </data>
-  <data name="txtPreviewWallpaperNote" xml:space="preserve">
-    <value>يرجى عدم إغلاق النافذة أثناء المعالجة.</value>
-  </data>
-  <data name="txtSelectPreviewThumb" xml:space="preserve">
-    <value>إختر معاينة/صورة مصغرة للملف.</value>
-  </data>
-  <data name="txtSetWallpaper" xml:space="preserve">
-    <value>تعيين كخلفية</value>
-  </data>
-  <data name="txtSpanWallpaperWarning" xml:space="preserve">
-    <value>لن تمتد بعض الخلفيات عبر شاشات العرض بشكل صحيح.</value>
-  </data>
-  <data name="txtStartup" xml:space="preserve">
-    <value>البدء مع ويندوز:</value>
-  </data>
-  <data name="txtStartupToolTip" xml:space="preserve">
-    <value>تأكد من إلغاء تحديد هذا قبل إلغاء تثبيت لايفلي.</value>
-  </data>
-  <data name="txtSupport" xml:space="preserve">
-    <value>الدعم</value>
-  </data>
-  <data name="txtTileGIF" xml:space="preserve">
-    <value>صورة متحركة</value>
-  </data>
-  <data name="txtTileGodot" xml:space="preserve">
-    <value>Godot برنامج</value>
-  </data>
-  <data name="txtTileHTML" xml:space="preserve">
-    <value>HTML</value>
-  </data>
-  <data name="txtTileOther" xml:space="preserve">
-    <value>أخرى</value>
-  </data>
-  <data name="txtTileUnity" xml:space="preserve">
-    <value>Unity برنامج</value>
-  </data>
-  <data name="txtTileVideo" xml:space="preserve">
-    <value>فيديو</value>
-  </data>
-  <data name="txtTileWebsite" xml:space="preserve">
-    <value>موقع</value>
-  </data>
-  <data name="txtTitlebar" xml:space="preserve">
-    <value>نظام خلفية لايفلي</value>
-  </data>
-  <data name="txtTransparency" xml:space="preserve">
-    <value>واجهة مستخدم شفافة:</value>
-  </data>
-  <data name="txtTransparencyToolTip" xml:space="preserve">
-    <value>جعل نافذة لايفلي شبه شفافة.</value>
-  </data>
-  <data name="txtUpdateBanner" xml:space="preserve">
-    <value>تحديث لايفلي متوفر</value>
-  </data>
-  <data name="txtVideoPlayer" xml:space="preserve">
-    <value>مشغّل الفيديو:</value>
-  </data>
-  <data name="txtVideoPlayerToolTip" xml:space="preserve">
-    <value>ملحقات إضافية لتثبيته Directshow يتطلب.</value>
-  </data>
-  <data name="txtWallpaperPlayback" xml:space="preserve">
-    <value>تشغيل الخلفية:</value>
-  </data>
-  <data name="txtWindowTitleSelectDisplay" xml:space="preserve">
-    <value>تحديد الشاشة</value>
-  </data>
-  <data name="txtGifScaling" xml:space="preserve">
-    <value>تحجيم/مناسب الصورة المتحركة:</value>
-  </data>
-  <data name="txtInstall" xml:space="preserve">
+  <data name="TextInstall" xml:space="preserve">
     <value>تثبيت</value>
   </data>
-  <data name="txtLabelInteraction" xml:space="preserve">
-    <value>التفاعل</value>
+  <data name="TextKeyboard" xml:space="preserve">
+    <value>لوحة المفاتيح</value>
   </data>
-  <data name="txtMoreWp" xml:space="preserve">
+  <data name="TextmoreInfo" xml:space="preserve">
+    <value>المعلومات</value>
+  </data>
+  <data name="TextMoreWallpapers" xml:space="preserve">
     <value>المزيد من الخلفيات...</value>
   </data>
-  <data name="txtMouse" xml:space="preserve">
-    <value>الفأرة</value>
+  <data name="TextMouse" xml:space="preserve">
+    <value>الماوس</value>
   </data>
-  <data name="txtMsgUpdaterPortableUnsupported" xml:space="preserve">
-    <value>من لايفلي, حمّل الإصدار الحالي من الموقع Portable المحدّث لا يدعم نسخة .</value>
+  <data name="TextMouseInteractOnDesktop" xml:space="preserve">
+    <value>تفاعل الماوس عند التركيز على التطبيق</value>
   </data>
-  <data name="txtUpdateDownloadErrorMsg" xml:space="preserve">
-    <value>فشل التحديث. حاول تنزيل المثبت من الموقع</value>
+  <data name="TextNext" xml:space="preserve">
+    <value>التالي</value>
   </data>
-  <data name="txtVideoScaling" xml:space="preserve">
-    <value>تحجيم/مناسب الفيديو:</value>
+  <data name="TextNo" xml:space="preserve">
+    <value>لا</value>
   </data>
-  <data name="txtWhenBattery" xml:space="preserve">
+  <data name="TextOff" xml:space="preserve">
+    <value>ايقاف</value>
+  </data>
+  <data name="TextOn" xml:space="preserve">
+    <value>تشغيل</value>
+  </data>
+  <data name="TextOnline" xml:space="preserve">
+    <value>عبر الإنترنت</value>
+  </data>
+  <data name="TextOpenLively" xml:space="preserve">
+    <value>تشغيل لايفلي</value>
+  </data>
+  <data name="TextPauseAlgoAllProcess" xml:space="preserve">
+    <value>جميع العمليات (تجريبي)</value>
+  </data>
+  <data name="TextPauseAlgoForegroundProcess" xml:space="preserve">
+    <value>معالجة المقدمة</value>
+  </data>
+  <data name="TextPauseWallpapers" xml:space="preserve">
+    <value>ايقاف مؤقت للخلفيات</value>
+  </data>
+  <data name="TextPerformanceKill" xml:space="preserve">
+    <value>انهي</value>
+  </data>
+  <data name="TextPerformanceNone" xml:space="preserve">
+    <value>لاشئ</value>
+  </data>
+  <data name="TextPerformancePause" xml:space="preserve">
+    <value>توقف مؤقت</value>
+  </data>
+  <data name="TextRemove" xml:space="preserve">
+    <value>إزلة</value>
+  </data>
+  <data name="TextRule" xml:space="preserve">
+    <value>القاعدة</value>
+  </data>
+  <data name="TextScreen" xml:space="preserve">
+    <value>شاشة</value>
+  </data>
+  <data name="TextSearch" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="TextSetWallpaper" xml:space="preserve">
+    <value>تعيين كخلفية</value>
+  </data>
+  <data name="TextShowOnDisk" xml:space="preserve">
+    <value>عرض على القرص</value>
+  </data>
+  <data name="TextSource" xml:space="preserve">
+    <value>المصدر</value>
+  </data>
+  <data name="TextStart" xml:space="preserve">
+    <value>ابدأ</value>
+  </data>
+  <data name="TextStop" xml:space="preserve">
+    <value>توقف</value>
+  </data>
+  <data name="TextSupport" xml:space="preserve">
+    <value>الدعم</value>
+  </data>
+  <data name="TextTags" xml:space="preserve">
+    <value>العلامات</value>
+  </data>
+  <data name="TextTileSizeLarge" xml:space="preserve">
+    
+  <value>كبير</value></data>
+  <data name="TextTileSizeNormal" xml:space="preserve">
+    <value>عادي</value>
+  </data>
+  <data name="TextTileSizeSmall" xml:space="preserve">
+    <value>صفير</value>
+  </data>
+  <data name="TextUIHeadless" xml:space="preserve">
+    <value>بلا رأس</value>
+  </data>
+  <data name="TextUILite" xml:space="preserve">
+    <value>لايت</value>
+  </data>
+  <data name="TextUINormal" xml:space="preserve">
+    <value>عادي</value>
+  </data>
+  <data name="TextUpdateAvailable" xml:space="preserve">
+    <value>تحديث متوفر!</value>
+  </data>
+  <data name="TextUpdateCheck" xml:space="preserve">
+    <value>تحقق من التحديث</value>
+  </data>
+  <data name="TextupdateCheckFail" xml:space="preserve">
+    <value>خطأ في التحقق من التحديث</value>
+  </data>
+  <data name="TextUpdateChecking" xml:space="preserve">
+    <value>التحقق من وجود تحديث</value>
+  </data>
+  <data name="TextUpdateUptodate" xml:space="preserve">
+    <value>لايفلي مُحدَّث!</value>
+  </data>
+  <data name="TextVideo" xml:space="preserve">
+    <value>فيديو</value>
+  </data>
+  <data name="TextWallpaperLayoutDuplicate" xml:space="preserve">
+    <value>تكرار نفس الخلفية</value>
+  </data>
+  <data name="TextWallpaperLayoutPerScreen" xml:space="preserve">
+    <value>اختيار الشاشة فقط</value>
+  </data>
+  <data name="TextWallpaperLayoutSpan" xml:space="preserve">
+    <value>إمتداد(تجريبي)</value>
+  </data>
+  <data name="TextWallpaperType" xml:space="preserve">
+    <value>النوع</value>
+  </data>
+  <data name="TextWebsite" xml:space="preserve">
+    <value>موقع</value>
+  </data>
+  <data name="TextWebStream" xml:space="preserve">
+    <value>ستريم/فيديو مباشر</value>
+  </data>
+  <data name="TextWelcome" xml:space="preserve">
+    <value>مرحبا بكم</value>
+  </data>
+  <data name="TextYes" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+  <data name="TileVideoPlayer" xml:space="preserve">
+    <value>مشغّل الفيديو:</value>
+  </data>
+  <data name="TipAddWallpaperFileBrowse" xml:space="preserve">
+    <value>تعيين جميع أنواع الملفات المدعومة كخلفية.</value>
+  </data>
+  <data name="TipAddWallpaperURL" xml:space="preserve">
+    <value>قم بتعيين صفحة الويب لعنوان URL الذي أدخلته كخلفية.</value>
+  </data>
+  <data name="TipAppFocus" xml:space="preserve">
+    <value>تعيين ما يجب القيام به عندما يكون التطبيق في التركيز.</value>
+  </data>
+  <data name="TipAppFullScreen" xml:space="preserve">
+    <value>تعيين ما يجب القيام به عند تشغيل الألعاب / التطبيقات بوضع ملء الشاشة.</value>
+  </data>
+  <data name="TipAppRules" xml:space="preserve">
+    <value>تعيين قواعد تشغيل خلفية مختلفة على أساس تشغيل التطبيق.</value>
+  </data>
+  <data name="TipAppTheme" xml:space="preserve">
+    <value>تتكيف البرنامج مع إعدادات موضوع النظام ، لتغيير المظهر ، انتقل إلى:</value>
+  </data>
+  <data name="TipAudioMaster" xml:space="preserve">
+    <value>مستوى الصوت من جميع خلفيات.</value>
+  </data>
+  <data name="TipBatteryPower" xml:space="preserve">
+    <value>(بالنسبة للأنظمة التي تعمل بالبطارية فقط) قم بتغيير التشغيل عند فصل طاقة التيار المتردد.</value>
+  </data>
+  <data name="TipBrowserDebuggingPort" xml:space="preserve">
+    <value>أدخل المنفذ لتصحيح أخطاء خلفيات صفحة الويب ، يلزم إعادة تشغيل المتصفح حتى تصبح التغييرات نافذة المفعول.
+عندما تكون جاهزة انتقل إلى http://localhost:portnumber للوصول إلى وحدة تحكم المطور.</value>
+  </data>
+  <data name="TipDisplayPauseRule" xml:space="preserve">
+    <value>لكل: وقفة خلفية فقط على الشاشة التي تركز التطبيق/ملء الشاشة.
+الكل: وقفة الخلفية على جميع الشاشة\ات إذا كان أي تطبيق يركز/ يملأ الشاشة.</value>
+  </data>
+  <data name="TipHideSysTray" xml:space="preserve">
+    <value>رؤية رمز علبة النظام، وسوف يستمر البرنامج في التشغيل مع رمز مخفي.</value>
+  </data>
+  <data name="TipLanguage" xml:space="preserve">
+    <value>سيتم إعادة تشغيل Lively لتطبيق اللغة الجديدة.</value>
+  </data>
+  <data name="TipLivelySetupOnClose" xml:space="preserve">
+    <value>الانتهاء من الإعداد للمتابعة.</value>
+  </data>
+  <data name="TipPauseAlgorithm" xml:space="preserve">
+    <value>المقدمة: خفيفة الوزن، يتحقق فقط من العملية الفردية الموجودة في المقدمة لتحديد سلوك تشغيل ورق الجدران.
+جميع العمليات: أثقل، بمسح كل عملية لتحديد سلوك التشغيل.</value>
+  </data>
+  <data name="TipStreamWallpaperDetect" xml:space="preserve">
+    <value>إذا تم اكتشاف رابط دفق الفيديو المدعوم ، استخدم مشغل الفيديو بدلا من تحميل صفحة الويب.</value>
+  </data>
+  <data name="TipStreamWallpaperVideoQuality" xml:space="preserve">
+    <value>حدد جودة الفيديو المطلوبة للتدفقات عبر الإنترنت.</value>
+  </data>
+  <data name="TipTileSize" xml:space="preserve">
+    <value>حجم البلاط ورق الجدران في المكتبة.</value>
+  </data>
+  <data name="TipUIMode" xml:space="preserve">
+    <value>بالنسبة للأنظمة المنخفضة حدًا ، حدد الوضع البسيط.</value>
+  </data>
+  <data name="TipVideoPlayer" xml:space="preserve">
+    <value>حدد المشغل المستخدم لخلفية الفيديو.</value>
+  </data>
+  <data name="TipWallpaperDir" xml:space="preserve">
+    <value>المسار المستخدم لتخزين ملفات ورق الجدران.</value>
+  </data>
+  <data name="TipWallpaperInput" xml:space="preserve">
+    <value>حدد طرق التفاعل مع ورق الجدران.</value>
+  </data>
+  <data name="TipWallpaperLayout" xml:space="preserve">
+    
+  <value>كيفية تطبيق ورق الجدران على أجهزة العرض المتصلة.</value></data>
+  <data name="TipWallpaperPlayback" xml:space="preserve">
+    <value>إيقاف تشغيل خلفية الشاشة مؤقتا عندما لا يكون سطح المكتب مركزا.</value>
+  </data>
+  <data name="TipWebBrowserDiskCache" xml:space="preserve">
+    <value>تخزين الملفات المؤقتة على القرص بدلا من الذاكرة ، يتم استعادة الإعدادات عند إعادة تشغيل المتصفح.</value>
+  </data>
+  <data name="TipWebBrowserEngine" xml:space="preserve">
+    <value>CEF (Chromium Embedded Framework) هو محرك كروم خفيف الوزن.
+Edge هو عرض الويب المدمج في windows 10.</value>
+  </data>
+  <data name="TipWindowsStartup" xml:space="preserve">
+    <value>يحتاج Lively للتشغيل في الخلفية لتشغيل الخلفية.</value>
+  </data>
+  <data name="TitleAbout" xml:space="preserve">
+    <value>حول</value>
+  </data>
+  <data name="TitleAddWallpaper" xml:space="preserve">
+    <value>إضافة</value>
+  </data>
+  <data name="TitleAppFocus" xml:space="preserve">
+    <value>تركيز تطبيق آخر:</value>
+  </data>
+  <data name="TitleAppFullScreen" xml:space="preserve">
+    <value>تطبيقات وضع ملء الشاشة الأخرى:</value>
+  </data>
+  <data name="TitleAppName" xml:space="preserve">
+    <value>خلفيات حية</value>
+  </data>
+  <data name="TitleAppRules" xml:space="preserve">
+    <value>قواعد التطبيق</value>
+  </data>
+  <data name="TitleAppTheme" xml:space="preserve">
+    <value>سمة</value>
+  </data>
+  <data name="TitleAudio" xml:space="preserve">
+    <value>صوتي</value>
+  </data>
+  <data name="TitleAudioMaster" xml:space="preserve">
+    <value>حجم الصوت الرئيسي</value>
+  </data>
+  <data name="TitleAudioPlayOnScreen" xml:space="preserve">
+    <value>تشغيل الصوت على الشاشة</value>
+  </data>
+  <data name="TitleBatteryPower" xml:space="preserve">
     <value>عندما يكون على وضع البطارية:</value>
   </data>
+  <data name="TitleBrowseFile" xml:space="preserve">
+    <value>تصفح للفيديو ، صورة متحركة ، صفحة ويب. ملف للتعيين كخلفية</value>
+  </data>
+  <data name="TitleBrowserDebuggingPort" xml:space="preserve">
+    <value>منفذ التصحيح</value>
+  </data>
+  <data name="TitleCommunity" xml:space="preserve">
+    <value>المجتمع</value>
+  </data>
+  <data name="TitleDeleteConfirmation" xml:space="preserve">
+    <value>تأكيد الحذف</value>
+  </data>
+  <data name="TitleDisplayPauseRule" xml:space="preserve">
+    <value>عرض قاعدة الإيقاف المؤقت:</value>
+  </data>
+  <data name="TitleDocumentation" xml:space="preserve">
+    <value>الوثائق</value>
+  </data>
+  <data name="TitleEnterUrl" xml:space="preserve">
+    <value>أدخل عنوان URL</value>
+  </data>
+  <data name="TitleGeneral" xml:space="preserve">
+    <value>عام:</value>
+  </data>
+  <data name="TitleHelp" xml:space="preserve">
+    <value>مساعدة</value>
+  </data>
+  <data name="TitleHideSysTray" xml:space="preserve">
+    <value>أيقونة علبة النظام</value>
+  </data>
+  <data name="TitleInteraction" xml:space="preserve">
+    <value>التفاعل</value>
+  </data>
+  <data name="TitleLanguage" xml:space="preserve">
+    <value>يتطلب إعادة تشغيل البرنامج:</value>
+  </data>
+  <data name="TitleLibrary" xml:space="preserve">
+    <value>المكتبة</value>
+  </data>
+  <data name="TitleLivelySetup" xml:space="preserve">
+    <value>الإعداد Lively </value>
+  </data>
+  <data name="TitleMisc" xml:space="preserve">
+    <value>متنوعة</value>
+  </data>
+  <data name="TitleMute" xml:space="preserve">
+    <value>كتم الصوت</value>
+  </data>
+  <data name="TitlePauseAlgo" xml:space="preserve">
+    <value>إيقاف مؤقت للخوارزمية:</value>
+  </data>
+  <data name="TitlePerformance" xml:space="preserve">
+    <value>الأداء:</value>
+  </data>
+  <data name="TitlePlaylist" xml:space="preserve">
+    <value>قائمة التشغيل</value>
+  </data>
+  <data name="TitlePleaseWait" xml:space="preserve">
+    <value>يرجى الإنتظار</value>
+  </data>
+  <data name="TitleScalingFit" xml:space="preserve">
+    <value>التحجيم/ الاحتواء</value>
+  </data>
+  <data name="TitleScreenLayout" xml:space="preserve">
+    <value>تخطيط الشاشة</value>
+  </data>
+  <data name="TitleSelectFile" xml:space="preserve">
+    <value>تحديد ملف</value>
+  </data>
+  <data name="TitleSettings" xml:space="preserve">
+    <value>الإعدادات</value>
+  </data>
+  <data name="TitleStreamWallpaper" xml:space="preserve">
+    <value>ستريم/فيديو مباشر</value>
+  </data>
+  <data name="TitleStreamWallpaperDetect" xml:space="preserve">
+    <value>كشف تيارات</value>
+  </data>
+  <data name="TitleStreamWallpaperVideoQuality" xml:space="preserve">
+    <value>جودة الفيديو</value>
+  </data>
+  <data name="TitleTileSize" xml:space="preserve">
+    <value>حجم البلاط</value>
+  </data>
+  <data name="TitleUIMode" xml:space="preserve">
+    <value>واجهة المستخدم</value>
+  </data>
+  <data name="TitleVideo" xml:space="preserve">
+    <value>فيديو</value>
+  </data>
+  <data name="TitleWallpaper" xml:space="preserve">
+    <value>ورق الجدران</value>
+  </data>
+  <data name="TitleWallpaperDir" xml:space="preserve">
+    <value>دليل ورق الجدران</value>
+  </data>
+  <data name="TitleWallpaperDirMoveExisting" xml:space="preserve">
+    <value>نقل خلفيات موجودة إلى مجلد جديد</value>
+  </data>
+  <data name="TitleWallpaperInput" xml:space="preserve">
+    <value>إدخال ورق الحائط</value>
+  </data>
+  <data name="TitleWallpaperLayout" xml:space="preserve">
+    <value>حدد تخطيط الخلفية:-</value>
+  </data>
+  <data name="TitleWallpaperPlayback" xml:space="preserve">
+    <value>تشغيل الخلفية:</value>
+  </data>
+  <data name="TitleWarning" xml:space="preserve">
+    <value>تحذير</value>
+  </data>
+  <data name="TitleWebBrowser" xml:space="preserve">
+    <value>متصفح الويب:</value>
+  </data>
+  <data name="TitleWebBrowserDiskCache" xml:space="preserve">
+    <value>ذاكرة التخزين المؤقت على القرص</value>
+  </data>
+  <data name="TitleWebBrowserEngine" xml:space="preserve">
+    <value>محرك</value>
+  </data>
+  <data name="TitleWebpageLoad" xml:space="preserve">
+    <value>تحميل الصفحة</value>
+  </data>
+  <data name="TitleWindowsStartup" xml:space="preserve">
+    <value>البدء مع ويندوز:</value>
+  </data>
+  <data name="DescriptionDeleteConfirmationLibrary" xml:space="preserve">
+    <value>هل أنت متأكد أنك تريد حذف هذه الخلفية من المكتبة؟</value>
+  </data>
+  <data name="TextWallpaperFitFill" xml:space="preserve">
+    <value>ملء</value>
+  </data>
+  <data name="TextWallpaperFitNone" xml:space="preserve">
+    <value>بلا</value>
+  </data>
+  <data name="TextWallpaperFitUniform" xml:space="preserve">
+    <value>موحد</value>
+  </data>
+  <data name="TextWallpaperFitUniformToFill" xml:space="preserve">
+    <value>تعبئة موحدة</value>
+  </data>
+  <data name="TipWallpaperFit" xml:space="preserve">
+    <value>خوارزمية قياس ورق الجدران.</value>
+  </data>
+  <data name="TitleWallpaperFit" xml:space="preserve">
+    <value>اختيار صالح</value>
+  </data>
+  <data name="TextPreviewWallpaper" xml:space="preserve">
+    <value>معاينة الخلفية</value>
+  </data>
+  <data name="TextAllFiles" xml:space="preserve">
+    <value>جميع الملفات</value>
+  </data>
+  <data name="TitleDebug" xml:space="preserve">
+    <value>التصحيح</value>
+  </data>
+  <data name="TipDebug" xml:space="preserve">
+    <value>عرض قائمة المطور</value>
+  </data>
+  <data name="TextFileNotFound" xml:space="preserve">
+    <value>لم يتم العثور على الملف</value>
+  </data>
+  <data name="TextPicture" xml:space="preserve">
+    <value>الصورة</value>
+  </data>
+  <data name="TextUnsupportedFile" xml:space="preserve">
+    <value>تنسيق الملف غير معتمد</value>
+  </data>
+  <data name="TextProcessingWallpaper" xml:space="preserve">
+    <value>المعالجة</value>
+  </data>
+  <data name="TextTitle" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="TextDescription" xml:space="preserve">
+    <value>الوصف</value>
+  </data>
+  <data name="TextOK" xml:space="preserve">
+    <value>حسنا</value>
+  </data>
+  <data name="TextCancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+  <data name="TextCreatePreview" xml:space="preserve">
+    <value>إنشاء معاينة</value>
+  </data>
+  <data name="TitleGifPlayer" xml:space="preserve">
+    <value>مشغل Gif</value>
+  </data>
+  <data name="TipGifPlayer" xml:space="preserve">
+    <value>حدد المشغل المستخدم لخلفية gif.</value>
+  </data>
+  <data name="TextFeatureMissing" xml:space="preserve">
+    <value>بعض الميزات غير متوفرة في هذا الإصدار من البرنامج</value>
+  </data>
+  <data name="TextControlPanelOpen" xml:space="preserve">
+    <value>انقر هنا لإدارة خلفيات.</value>
+  </data>
+  <data name="TextStoreReview" xml:space="preserve">
+    <value>هل تستمتع باستخدام Lively ؟  اترك مراجعة :)</value>
+  </data>
+  <data name="TitleStore" xml:space="preserve">
+    <value>متجر</value>
+    <comment>For different version of Lively, example: Microsoft Store</comment>
+  </data>
+  <data name="DescriptionWindowsNCodecInstall" xml:space="preserve">
+    <value>سيتطلب إصدار Windows N/KN تنزيل برامج ترميز إضافية لدعم تشغيل الفيديو في خلفيات.</value>
+  </data>
+  <data name="TextLicense" xml:space="preserve">
+    <value>الترخيص</value>
+  </data>
+  <data name="TextPrivacyPolicy" xml:space="preserve">
+    <value>سياسة الخصوصية</value>
+  </data>
+  <data name="TitleAudioDesktopOnly" xml:space="preserve">
+    <value>تشغيل الصوت فقط عندما يكون سطح المكتب مركّزًا</value>
+  </data>
+  <data name="TipExportLogs" xml:space="preserve">
+    <value>إنشاء ملف تقرير السجل.</value>
+  </data>
+  <data name="TitleExportLogs" xml:space="preserve">
+    <value>ملف السجل</value>
+  </data>
+  <data name="TitleReportBug" xml:space="preserve">
+    <value>الإبلاغ عن الخطأ</value>
+  </data>
+  <data name="TitleVideoHardwareDecode" xml:space="preserve">
+    <value>وحدة فك تشفير GPU</value>
+  </data>
+  <data name="TipVideoHardwareDecode" xml:space="preserve">
+    <value>استخدام تسريع الأجهزة عندما يكون ذلك ممكنا.</value>
+  </data>
+  <data name="DescriptionPleaseStop" xml:space="preserve">
+  <value>يرجى التوقف قبل المتابعة.</value>
+</data>
+  <data name="TextEditWallpaper" xml:space="preserve">
+  <value>تحرير</value>
+</data>
+  <data name="TitleLocation" xml:space="preserve">
+  <value>الموقع</value>
+</data>
+  <data name="TitleSkipConfirm" xml:space="preserve">
+  <value>تخطي التأكيد</value>
+</data>
+  <data name="TextWallpaperCommandlineArgs" xml:space="preserve">
+  <value>إدخال وسيطات سطر الأوامر الاختيارية</value>
+</data>
+  <data name="TextGitHubStar" xml:space="preserve">
+    <value>أظهر بعض الحب بإسقاط نجمة</value>
+  </data>
+  <data name="DescIncompatibleTaskbarTheme" xml:space="preserve">
+    <value>تم العثور على برنامج غير متوافق ، تم تعطيل تطبيق سمات شريط المهام.</value>
+  </data>
+  <data name="TitleTaskbarTheme" xml:space="preserve">
+    <value>موضوع شريط المهام</value>
+  </data>
+  <data name="TitleLockscreenPicture" xml:space="preserve">
+    <value>صورة شاشة القفل</value>
+  </data>
+  <data name="TitleDesktopPicture" xml:space="preserve">
+    <value>صورة سطح المكتب</value>
+  </data>
+  <data name="TipLockscreenPicture" xml:space="preserve">
+    <value>قم بتعيين صورة خلفية متحركة كخلفية لشاشة القفل.</value>
+  </data>
+  <data name="TipDesktopPicture" xml:space="preserve">
+    <value>تعيين صورة خلفية متحركة كخلفية سطح المكتب.</value>
+  </data>
+  <data name="TipTaskbarTheme" xml:space="preserve">
+    <value>تغيير مظهر شريط مهام النظام.</value>
+  </data>
+  <data name="TextTaskbarThemeBlur" xml:space="preserve">
+    <value>ضبابي</value>
+  </data>
+  <data name="TextTaskbarThemeClear" xml:space="preserve">
+    <value>صافي</value>
+  </data>
+  <data name="TextTaskbarThemeColor" xml:space="preserve">
+    <value>اللون</value>
+  </data>
+  <data name="TextTaskbarThemeFluent" xml:space="preserve">
+    <value>طلق</value>
+  </data>
+  <data name="TextTaskbarThemeWallpaper" xml:space="preserve">
+    <value>ورق الجدران</value>
+  </data>
+  <data name="TextTaskbarThemeWallpaperFluent" xml:space="preserve">
+    <value>ورق الجدران بطلاقة</value>
+  </data>
+  <data name="TitleSystem" xml:space="preserve">
+    <value>النظام</value>
+  </data>
+  <data name="TitleSourceCode" xml:space="preserve">
+    <value>شفرة المصدر</value>
+  </data>
+  <data name="TitleScreensaver" xml:space="preserve">
+    <value>Screensaver</value>
+  </data>
+  <data name="TipScreensaver" xml:space="preserve">
+    <value>After the selected inactivity period use the current wallpaper as your screensaver.</value>
+  </data>
+    <data name="TextHours" xml:space="preserve">
+    <value>hours</value>
+  </data>
+  <data name="TextMinutes" xml:space="preserve">
+    <value>minutes</value>
+  </data>
+  <data name="TextLearnMore" xml:space="preserve">
+    <value>Learn more</value>
+  </data>
+    <data name="DescOledScreensaverNotice" xml:space="preserve">
+    <value>Most modern LCD and LED displays do not suffer from burn-in issue and therefore any wallpaper can be used as screensaver.
+
+For OLED, Plasma or CRT displays which are susceptibe to burn-in it is advised to use wallpaper with regular motion and an overall dark theme which is supposed to mitigate burn-in but this feature is untested and its effectiveness cannot be guaranteed.
+
+The main purpose of Lively's screensavers is to add another layer of customization to your pc, use screensavers as burn-in protection at your own risk!</value>
+  </data>
+  <data name="TextChangeWallpaper" xml:space="preserve">
+    <value>Change Wallpapers</value>
+  </data>
+  <data name="TextLastChecked" xml:space="preserve">
+    <value>Last checked</value>
+  </data>
+  <data name="TitleUpdates" xml:space="preserve">
+    <value>Updates</value>
+  </data>
+  <data name="DescCommunity" xml:space="preserve">
+    <value>Online discussion forum</value>
+  </data>
+  <data name="DescDocumentation" xml:space="preserve">
+    <value>API documentation and help</value>
+  </data>
+  <data name="DescOfficialWebpage" xml:space="preserve">
+    <value>Official webpage of Lively Wallpaper</value>
+  </data>
+  <data name="DescReportBug" xml:space="preserve">
+    <value>Report a problem with the software</value>
+  </data>
+  <data name="DescSupperDev" xml:space="preserve">
+    <value>Show support by buying the developer coffee</value>
+  </data>
+  <data name="DescSwitchBranchBetaWarning" xml:space="preserve">
+    <value>You are about to change to beta (developer) build of Lively.
+Updates will be frequent and may contain bugs!</value>
+  </data>
+  <data name="TextSwitchBranchDev" xml:space="preserve">
+    <value>Switch to beta (Dev channel)</value>
+  </data>
+  <data name="TextSwitchBranchOfficial" xml:space="preserve">
+    <value>Switch to stable (Default channel)</value>
+  </data>
+  <data name="TipSwitchSoftwareBranch" xml:space="preserve">
+    <value>Change software release from beta to stable or vice versa.</value>
+  </data>
+  <data name="TitleChangelog" xml:space="preserve">
+    <value>Changelog</value>
+  </data>
+  <data name="TextPauseAlgoExclusiveMode" xml:space="preserve">
+    <value>Direct3D</value>
+  </data>
+  <data name="TitleScreensaverLockOnResume" xml:space="preserve">
+    <value>On resume, display logon screen</value>
+  </data>  
 </root>

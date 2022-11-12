@@ -117,615 +117,785 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="cmbBoxAllDisplays" xml:space="preserve">
-    <value>Todas las Pantalla(s)</value>
+  <data name="DescriptionAddWallpaper" xml:space="preserve">
+    <value>Seleccione un archivo o especifique un enlace a un sitio web para usarlo como fondo de pantalla.</value>
   </data>
-  <data name="cmbBoxGIFPlayer1" xml:space="preserve">
-    <value>XamlAnimatedGif</value>
+  <data name="DescriptionAppRules" xml:space="preserve">
+    <value>Comportamiento del fondo de pantalla de acuerdo a que aplicación está en ejecución.</value>
   </data>
-  <data name="cmbBoxGIFPlayer1ToolTip" xml:space="preserve">
-    <value>Bajo uso de memoria, alto uso de la CPU</value>
+  <data name="DescriptionCancelQuestion" xml:space="preserve">
+    <value>¿Estás seguro que deseas cancelar?</value>
   </data>
-  <data name="cmbBoxGIFPlayer2" xml:space="preserve">
-    <value>DirectShow</value>
+  <data name="DescriptionDeleteConfirmation" xml:space="preserve">
+    <value>¿Estás seguro que deseas eliminar permanentemente el fondo de pantalla del disco duro?</value>
   </data>
-  <data name="cmbBoxGIFPlayer2ToolTip" xml:space="preserve">
-    <value>Uso más bajo de la CPU (dependiendo de la configuración del códec)</value>
+  <data name="DescriptionDragDropFIle" xml:space="preserve">
+    <value>Simplemente arrastra y suelta archivos en la Biblioteca.</value>
   </data>
-  <data name="cmbBoxKill" xml:space="preserve">
-    <value>Cerrar(Libera memoria)</value>
+  <data name="DescriptionExternalAppWarning" xml:space="preserve">
+    <value>Estás abriendo una aplicación externa como fondo de pantalla. Las aplicaciones maliciosas pueden contener malwares, virus.. y dañar tu sistema. Solo continua si esta aplicación proviene de una fuente confiable.</value>
   </data>
-  <data name="cmbBoxNothing" xml:space="preserve">
-    <value>Nada</value>
+  <data name="DescriptionMinimizedTray" xml:space="preserve">
+    <value>Lively se minimiza en la bandeja del sistema, haz clic derecho en el icono de lively para continuar.</value>
   </data>
-  <data name="cmbBoxPaugeAlgorithmAllProcess" xml:space="preserve">
-    <value>Todos los procesos (Experimental)</value>
+  <data name="DescriptionRecordStart" xml:space="preserve">
+    <value>Presiona para empezar a grabar.</value>
   </data>
-  <data name="cmbBoxPause" xml:space="preserve">
-    <value>Pausa</value>
+  <data name="DescriptionRestoringWallpaper" xml:space="preserve">
+    <value>Restaurando fondo(s) de pantalla anterior(es), por favor espera...</value>
   </data>
-  <data name="cmbBoxPauseAlgorithmForeground" xml:space="preserve">
-    <value>Proceso en primer plano</value>
+  <data name="DescriptionUpdateAvailable" xml:space="preserve">
+    <value>¡Una nueva versión de software está disponible!</value>
   </data>
-  <data name="cmbBoxPerDisplay" xml:space="preserve">
-    <value>Por pantalla</value>
+  <data name="DescriptionWebpageLoad" xml:space="preserve">
+    <value>Ingresa el enlace de un sitio web para cargarlo, puedes utilizar enlaces de shadertoy.com</value>
   </data>
-  <data name="cmbBoxSpan" xml:space="preserve">
-    <value>Lapso(Experimental)</value>
+  <data name="DescriptionWelcomeWizard" xml:space="preserve">
+    <value>Este asistente te ayudará a comenzar a configurar Lively.</value>
   </data>
-  <data name="cmbBoxVideoPlayer1" xml:space="preserve">
-    <value>Media Foundation</value>
+  <data name="LivelyExceptionAppUpdateFail" xml:space="preserve">
+    <value>Error al actualizar; intenta descargar el instalador desde:
+https://github.com/rocksdanister/lively/releases</value>
   </data>
-  <data name="cmbBoxVideoPlayer2" xml:space="preserve">
-    <value>DirectShow(Lav, ffdshow..)</value>
+  <data name="LivelyExceptionDamagedZipFile" xml:space="preserve">
+    <value>Archivo de fondo de pantalla dañado, intenta descargarlo nuevamente.</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="license" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\docs\license.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  <data name="LivelyExceptionGeneral" xml:space="preserve">
+    <value>Vaya... parece que algo salió mal :(
+Para enteder mejor este error y solucionar el problema, comparte el archivo de registro con el desarrollador.
+Visita el siguiente enlace con instrucciones sobre como compartir el archivo de registro:
+https://github.com/rocksdanister/lively/wiki</value>
   </data>
-  <data name="msgAppCommandLineArgs" xml:space="preserve">
-    <value>Escriba los argumentos de línea de comandos para la aplicación si los hay (opcional, dejar en blanco si no los hay):-</value>
-  </data>
-  <data name="msgAppCommandLineArgsTitle" xml:space="preserve">
-    <value>Comenzar Argumentos</value>
-  </data>
-  <data name="msgAppGUIFailure" xml:space="preserve">
-    <value>El fondo de pantalla seleccionado(aplicación) no tiene interfaz gráfica(GUI).
-Cerrando aplicación...</value>
-  </data>
-  <data name="msgAppTimeout" xml:space="preserve">
-    <value>Falla al capturar ventana de la aplicación.
-El fondo de pantalla(aplicación) está tardando mucho en arrancar(más de ~30 segundos), podría ser debido a:
-Escaneo de virus/ Aplication muy grande.
-Espere e intente de nuevo. (opcionalmente puede editar el tiempo de espera, visite la wiki para más información.)
-Cerrando aplicación...</value>
-  </data>
-  <data name="msgDamangedLivelyFile" xml:space="preserve">
-    <value>Archivo de fondo de pantalla dañado, intente descargar de nuevo.</value>
-  </data>
-  <data name="msgDeleteConfirmation" xml:space="preserve">
-    <value>¿Está seguro que desea eliminar permanentemente el fondo de pantalla del disco?</value>
-  </data>
-  <data name="msgDeleteConfirmationTitle" xml:space="preserve">
-    <value>Confirme eliminación</value>
-  </data>
-  <data name="msgDeletionFailure" xml:space="preserve">
-    <value>Se está usando actualmente como fondo de pantalla, ¡No se puede eliminar!
-Cierre este fondo de pantalla para eliminarlo.</value>
-  </data>
-  <data name="msgDeletionFailureTitle" xml:space="preserve">
-    <value>Eliminación fallida</value>
-  </data>
-  <data name="msgDragDropOtherFormats" xml:space="preserve">
-    <value>Este archivo no tiene respaldo para arrastrar y soltar, ábralo en la página 'Tipo'.</value>
-  </data>
-  <data name="msgDragDropOtherFormatsTitle" xml:space="preserve">
-    <value>Lively: No respaldado</value>
-  </data>
-  <data name="msgExternalAppWarning" xml:space="preserve">
-    <value>Está abriendo una aplicación externa como fondo de pantalla.
-Aplicaciones maliciosas pueden contener malware, virus... y hacerle daño a su sistema.
-Continue solo si esta aplicación proviene de una fuente de confianza.</value>
-  </data>
-  <data name="msgExternalAppWarningTitle" xml:space="preserve">
-    <value>Advertencia</value>
-  </data>
-  <data name="msgGIFfailure" xml:space="preserve">
-    <value>Reproducción de GIF fallida.
-¿Está el archivo GIF dañado? Intente descargar de nuevo.</value>
-  </data>
-  <data name="msgHighContrastFailure" xml:space="preserve">
+  <data name="LivelyExceptionHighContrastMode" xml:space="preserve">
     <value>¡Lively no puede funcionar correctamente con el modo de alto contraste de Windows activado!
-Desactive el modo de alto contraste e intente de nuevo.</value>
+Deshabilita el modo de alto contraste e intente nuevamente.</value>
   </data>
-  <data name="msgLoadExternalLink" xml:space="preserve">
-    <value>Está a punto de abrir una página web externa en su navegador.
-
-URL:-</value>
+  <data name="LivelyExceptionNotLivelyZip" xml:space="preserve">
+    <value>No es un archivo de fondo de Lively.</value>
   </data>
-  <data name="msgLoadExternalLinkTitle" xml:space="preserve">
-    <value>¿Cargar página web?</value>
-  </data>
-  <data name="msgLoadingAppWallpaper" xml:space="preserve">
-    <value>Iniciando aplicación externa...</value>
-  </data>
-  <data name="msgMediaFoundationFailure" xml:space="preserve">
-    <value>Reproducción fallida: Códec faltante/ Archivo dañado.
-Instale el códec LAV e intente cambiar al reproductor Directshow.
-
-Más Instrucciones: 
-www.github.com/rocksdanister/lively/wiki/Video-Guide</value>
-  </data>
-  <data name="msgMediakitFailure" xml:space="preserve">
-    <value>Reproducción fallida: Códec faltante/ Archivo dañado.
-No olvide instalar el códec LAV:
-www.github.com/Nevcairiel/LAVFilters/releases
-
-Más Instrucciones: 
-www.github.com/rocksdanister/lively/wiki/Video-Guide</value>
-  </data>
-  <data name="msgRestoringInProgress" xml:space="preserve">
-    <value>Restauración de fondos de pantalla anteriores en proceso, por favor espere.</value>
-  </data>
-  <data name="msgRestoringPrevWallpapers" xml:space="preserve">
-    <value>Restaurando fondos de pantalla anteriores..</value>
-  </data>
-  <data name="msgSafeModeWarning" xml:space="preserve">
+  <data name="LivelyExceptionSafeModeStart" xml:space="preserve">
     <value>Lively no se cerró correctamente, iniciando en modo seguro.
-¿Desea restaurar los fondos de pantalla previos?
-Información sobre el error guardada en:-
-</value>
+¿Deseas restaurar los fondos de pantalla que estaban ejecutandose anteriormente?</value>
   </data>
-  <data name="msgSingleInstanceOnly" xml:space="preserve">
-    <value>¡Lively ya se está ejecutando!
-Si no responde If not-responding termine el proceso en el Administrador de Tareas e intente de nuevo.</value>
-  </data>
-  <data name="msgUrlLoad" xml:space="preserve">
-    <value>Escriba el vínculo de la página web a cargar, vínculos al shader Shadertoy.com están respaldados:-</value>
-  </data>
-  <data name="msgUrlLoadTitle" xml:space="preserve">
-    <value>Cargar página web</value>
-  </data>
-  <data name="msgUrlWarning" xml:space="preserve">
-    <value>Está a punto de cargar una página web externa.
-Páginas web maliciosas pueden ser perjudiciales para su equipo (malware, virus ..)
-Solo ingrese vínculos a páginas web que sean de confianza.</value>
-  </data>
-  <data name="msgUrlWarningTitle" xml:space="preserve">
-    <value>Advertencia</value>
-  </data>
-  <data name="msgWebBrowserMissing" xml:space="preserve">
-    <value>Componente del navegador web faltante, o descárguelo por separado:-
-https://github.com/rocksdanister/lively-cef 
-O
-Descargue la versión completa de Lively.</value>
-  </data>
-  <data name="msgWorkerWFailure" xml:space="preserve">
-    <value>Al parecer algunos parámetros necesitan ser ingresados para hacer que Lively funcione:-  
-1. Abra Este Equipo(Mi PC)
-2. Haga click derecho en un espacio vacío
-3. Seleccione Propiedades
-4. Seleccione Configuración Avanzada del Sistema
-5. Bajo la pestaña Rendimiento seleccione Configuración
-6. Active Animar los controles y elementos dentro de las ventanas y aplique.
+  <data name="LivelyExceptionWorkerWSetupFail" xml:space="preserve">
+    <value>Debes aplicar algunas configuraciones para que Lively funcione:
+1. En el navegador de archivos da clic derecho en "Este Equipo"
+2. Selecciona Propiedades
+3. Selecciona Configuración avanzada del sistema
+4. En la pestaña Rendimiento, selecciona Configuración
+5. Habilita la opcion animar los elementos y controles de las ventanas
+6. Aplica los cambios
 
-Si está bajo Windows 7 solo seleccione - Ajustar para obtener la mejor apariencia y aplique.
-Si aún no funciona, cierre Lively e inícielo de nuevo/ reinicie Windows.</value>
+Si Windows 7 se acaba de configurar: ajusta para obtener la mejor apariencia y aplica los cambios.
+Si aún no funciona, cierra e inicia Lively nuevamente o reinicia Windows.
+(No funciona en algunas versiones insider de Windows 10)</value>
   </data>
-  <data name="titleAbout" xml:space="preserve">
-    <value>Acerca de</value>
+  <data name="TextAdd" xml:space="preserve">
+    <value>Agregar</value>
   </data>
-  <data name="titleLibrary" xml:space="preserve">
-    <value>Librería</value>
+  <data name="TextApplication" xml:space="preserve">
+    <value>Aplicación</value>
   </data>
-  <data name="titleSettings" xml:space="preserve">
-    <value>Configuración</value>
+  <data name="TextAttribution" xml:space="preserve">
+    <value>Atribución</value>
   </data>
-  <data name="titleType" xml:space="preserve">
-    <value>Tipo</value>
+  <data name="TextAuthor" xml:space="preserve">
+    <value>Autor</value>
   </data>
-  <data name="toolTipMinimizeMsg" xml:space="preserve">
-    <value>Lively está minimizado a la barra de tareas, haga click derecho en el icono para más opciones.</value>
+  <data name="TextBack" xml:space="preserve">
+    <value>Regresar</value>
   </data>
-  <data name="toolTipUpdateMsg" xml:space="preserve">
-    <value>¡Una nueva versión está disponible</value>
+  <data name="TextBrowse" xml:space="preserve">
+    <value>Navegar</value>
   </data>
-  <data name="toolTipWallpaperSkip" xml:space="preserve">
-    <value>¡Algunos fondos de pantalla fueron omitidos porque hay archivos faltantes!</value>
+  <data name="TextCloseWallpapers" xml:space="preserve">
+    <value>Cerrar fondos de pantalla</value>
   </data>
-  <data name="txtApplicationRules" xml:space="preserve">
-    <value>Reglas de la aplicación</value>
+  <data name="TextCompleted" xml:space="preserve">
+    <value>¡Completado!</value>
   </data>
-  <data name="txtAudioIn" xml:space="preserve">
-    <value>Entrada de Audio:</value>
+  <data name="TextConvertVideo" xml:space="preserve">
+    <value>Convertir a Video</value>
   </data>
-  <data name="txtAudioInToolTip" xml:space="preserve">
-    <value>Bloquea el acceso al audio del sistema a los navegadores.</value>
+  <data name="TextCustomiseWallpaper" xml:space="preserve">
+    <value>Personalizar fondo de pantalla</value>
   </data>
-  <data name="txtAudioLabel1" xml:space="preserve">
-    <value>El audio siempre está deshabilitado en sistemas multimonitor.</value>
-  </data>
-  <data name="txtAudioLabel2" xml:space="preserve">
-    <value>"Entrada de Audio" está deshabilitado, visualizadores de audio web no funcionarán.</value>
-  </data>
-  <data name="txtAudioOut" xml:space="preserve">
-    <value>Salida de Audio:</value>
-  </data>
-  <data name="txtAudioOutToolTip" xml:space="preserve">
-    <value>Activar/desactivar el sonido en el reproductor de video.</value>
-  </data>
-  <data name="txtBrowser" xml:space="preserve">
-    <value>Navegador web:</value>
-  </data>
-  <data name="txtBrowserToolTip" xml:space="preserve">
-    <value>Seleccione el navegador web para los fondos de pantalla web(Próximamente)</value>
-  </data>
-  <data name="txtCloseAllWallpapers" xml:space="preserve">
-    <value>Cerrar todos los fondos de pantalla</value>
-  </data>
-  <data name="txtComingSoon" xml:space="preserve">
-    <value>Próximamente</value>
-  </data>
-  <data name="txtContextMenuCloseAll" xml:space="preserve">
-    <value>Cerrar todos los fondos de pantalla</value>
-  </data>
-  <data name="txtContextMenuCloseWallpaper" xml:space="preserve">
-    <value>Cerrar fondo de pantalla</value>
-  </data>
-  <data name="txtContextMenuDeleteWallpaper" xml:space="preserve">
+  <data name="TextDeleteWallpaper" xml:space="preserve">
     <value>Eliminar fondo de pantalla</value>
   </data>
-  <data name="txtContextMenuExit" xml:space="preserve">
+  <data name="TextDisplayPauseRuleAllScreen" xml:space="preserve">
+    <value>Todas las pantallas</value>
+  </data>
+  <data name="TextDisplayPauseRulePerScreen" xml:space="preserve">
+    <value>Por pantalla</value>
+  </data>
+  <data name="TextDownload" xml:space="preserve">
+    <value>Descargar</value>
+  </data>
+  <data name="TextError" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="TextExit" xml:space="preserve">
     <value>Salir</value>
   </data>
-  <data name="txtContextMenuExport" xml:space="preserve">
-    <value>Exportar archivo Zip</value>
+  <data name="TextExportWallpaperZip" xml:space="preserve">
+    <value>Exportar .zip de Lively</value>
   </data>
-  <data name="txtContextMenuOpenLively" xml:space="preserve">
+  <data name="TextGIF" xml:space="preserve">
+    <value>GIF animado</value>
+  </data>
+  <data name="TextGo" xml:space="preserve">
+    <value>Iniciar</value>
+  </data>
+  <data name="TextHelpTranslate" xml:space="preserve">
+    <value>Ayuda a traducir Lively.</value>
+  </data>
+  <data name="TextInstall" xml:space="preserve">
+    <value>Instalar</value>
+  </data>
+  <data name="TextmoreInfo" xml:space="preserve">
+    <value>Información</value>
+  </data>
+  <data name="TextMoreWallpapers" xml:space="preserve">
+    <value>Más fondos de pantalla</value>
+  </data>
+  <data name="TextMouseInteractOnDesktop" xml:space="preserve">
+    <value>Interactuar con el mouse cuando una aplicación está enfocada</value>
+  </data>
+  <data name="TextNext" xml:space="preserve">
+    <value>Siguiente</value>
+  </data>
+  <data name="TextNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="TextOnline" xml:space="preserve">
+    <value>En línea</value>
+  </data>
+  <data name="TextOpenLively" xml:space="preserve">
     <value>Abrir Lively</value>
   </data>
-  <data name="txtContextMenuShowOnDisk" xml:space="preserve">
-    <value>Mostrar en disco</value>
+  <data name="TextPauseAlgoAllProcess" xml:space="preserve">
+    <value>Todos los procesos</value>
   </data>
-  <data name="txtContextMenuUpdate1" xml:space="preserve">
-    <value>Buscando actualizaciones</value>
+  <data name="TextPauseAlgoForegroundProcess" xml:space="preserve">
+    <value>Procesos en primer plano</value>
   </data>
-  <data name="txtContextMenuUpdate2" xml:space="preserve">
-    <value>¡Actualización disponible!</value>
+  <data name="TextPauseWallpapers" xml:space="preserve">
+    <value>Pausar los fondos de pantalla</value>
   </data>
-  <data name="txtContextMenuUpdate3" xml:space="preserve">
-    <value>¿Está este software en versión Beta?</value>
+  <data name="TextPerformanceKill" xml:space="preserve">
+    <value>Terminar</value>
   </data>
-  <data name="txtContextMenuUpdate4" xml:space="preserve">
-    <value>¡Lively está actualizado!</value>
+  <data name="TextPerformanceNone" xml:space="preserve">
+    <value>Nada</value>
   </data>
-  <data name="txtContextMenuUpdate5" xml:space="preserve">
-    <value>Error buscando actualizaciones</value>
+  <data name="TextPerformancePause" xml:space="preserve">
+    <value>Pausa</value>
   </data>
-  <data name="txtCreateWallpaper" xml:space="preserve">
-    <value>Crear fondo de pantalla</value>
+  <data name="TextRemove" xml:space="preserve">
+    <value>Eliminar</value>
   </data>
-  <data name="txtCreatingZip" xml:space="preserve">
-    <value>Creando archivo Zip.</value>
-  </data>
-  <data name="txtDisplayPauseRule" xml:space="preserve">
-    <value>Regla de pausa de pantalla:</value>
-  </data>
-  <data name="txtDownload" xml:space="preserve">
-    <value>descargar</value>
-  </data>
-  <data name="txtGIFPlayer" xml:space="preserve">
-    <value>Reproductor GIF:</value>
-  </data>
-  <data name="txtGifPlayerToolTip" xml:space="preserve">
-    <value>Directshow requiere plugins adicionales instalados.</value>
-  </data>
-  <data name="txtGifScaling" xml:space="preserve">
-    <value>Ajuste GIF:</value>
-  </data>
-  <data name="txtHelp" xml:space="preserve">
-    <value>Ayuda</value>
-  </data>
-  <data name="txtIgnore" xml:space="preserve">
-    <value>Ignorar</value>
-  </data>
-  <data name="txtInstall" xml:space="preserve">
-    <value>Instalar en pc</value>
-  </data>
-  <data name="txtInstallWallpaper" xml:space="preserve">
-    <value>Install fondo de pantalla</value>
-  </data>
-  <data name="txtLabel1" xml:space="preserve">
-    <value>Seleccione el tipo de fondo de pantalla a cargar:-</value>
-  </data>
-  <data name="txtLabel10" xml:space="preserve">
-    <value>Atributo:</value>
-  </data>
-  <data name="txtLabel11" xml:space="preserve">
-    <value>¿Qué debería usar?</value>
-  </data>
-  <data name="txtLabel12" xml:space="preserve">
-    <value>Tipo:</value>
-  </data>
-  <data name="txtLabel120FPS" xml:space="preserve">
-    <value>Forzar interfaz a 120FPS</value>
-  </data>
-  <data name="txtLabel13" xml:space="preserve">
-    <value>Autor:</value>
-  </data>
-  <data name="txtLabel14" xml:space="preserve">
-    <value>Contacto:</value>
-  </data>
-  <data name="txtLabel15" xml:space="preserve">
-    <value>General:</value>
-    <comment>Pestaña de configuración</comment>
-  </data>
-  <data name="txtLabel16" xml:space="preserve">
-    <value>Requiere reiniciar la aplicación:</value>
-    <comment>pestaña de configuración</comment>
-  </data>
-  <data name="txtLabel17" xml:space="preserve">
-    <value>Video:</value>
-    <comment>pestaña de configuración</comment>
-  </data>
-  <data name="txtLabel18" xml:space="preserve">
-    <value>Gif:</value>
-    <comment>pestaña de configuración</comment>
-  </data>
-  <data name="txtLabel19" xml:space="preserve">
-    <value>Navegador web:</value>
-    <comment>pestaña de configuración</comment>
-  </data>
-  <data name="txtLabel2" xml:space="preserve">
-    <value>Solo arrastre y suelte los tipos de archivos si prefiere hacerlo asi.</value>
-  </data>
-  <data name="txtLabel20" xml:space="preserve">
-    <value>Rendimiento:</value>
-    <comment>pestaña de configuración</comment>
-  </data>
-  <data name="txtLabel21" xml:space="preserve">
-    <value>Fije el comportamiento de reproducción del fondo de pantalla basado en la aplicación que se está ejecutando:-</value>
-  </data>
-  <data name="txtLabel22" xml:space="preserve">
-    <value>Añadir</value>
-  </data>
-  <data name="txtLabel23" xml:space="preserve">
-    <value>Remover</value>
-  </data>
-  <data name="txtLabel24" xml:space="preserve">
-    <value>Seleccionar la distribución del fondo de pantalla:-</value>
-  </data>
-  <data name="txtLabel25" xml:space="preserve">
-    <value>Escoger un tipo fondo de pantalla a crear:-</value>
-  </data>
-  <data name="txtLabel26" xml:space="preserve">
-    <value>Archivo de librería: Crea arhivos Zip fáciles de compartir que cargan fondos de pantalla en la librería de Lively.
-Para solo aplicar un archivo como fondo de pantalla, esto no es necesario; solo arastre y suelte el archivo a la ventana de Lively.</value>
-  </data>
-  <data name="txtLabel27" xml:space="preserve">
-    <value>Página web de contacto(Opcional):-</value>
-  </data>
-  <data name="txtLabel28" xml:space="preserve">
-    <value>Licencia(Opcional):-</value>
-  </data>
-  <data name="txtLabel29" xml:space="preserve">
-    <value>Título:-</value>
-  </data>
-  <data name="txtLabel3" xml:space="preserve">
-    <value>Estos materiales no son patrocinados o afiliados a Unity Technologies, Godot, Bizhawk, Shadertoy.com</value>
-  </data>
-  <data name="txtLabel30" xml:space="preserve">
-    <value>Descripción:-</value>
-  </data>
-  <data name="txtLabel31" xml:space="preserve">
-    <value>Seleccionar archivo</value>
-  </data>
-  <data name="txtLabel32" xml:space="preserve">
-    <value>Miniatura (200x200)</value>
-  </data>
-  <data name="txtLabel33" xml:space="preserve">
-    <value>Crear</value>
-  </data>
-  <data name="txtLabel34" xml:space="preserve">
-    <value>Previsualizar Gif</value>
-  </data>
-  <data name="txtLabel35" xml:space="preserve">
-    <value>Tipo de fondo de pantalla:-</value>
-  </data>
-  <data name="txtLabel36" xml:space="preserve">
-    <value>Archivos y carpetas siendo añadidos:-</value>
-  </data>
-  <data name="txtLabel37" xml:space="preserve">
-    <value>Ok</value>
-  </data>
-  <data name="txtLabel38" xml:space="preserve">
-    <value>Atrás</value>
-  </data>
-  <data name="txtLabel39" xml:space="preserve">
-    <value>Instalando fondo de pantalla</value>
-  </data>
-  <data name="txtLabel4" xml:space="preserve">
-    <value>Medios</value>
-  </data>
-  <data name="txtLabel5" xml:space="preserve">
-    <value>Juegos</value>
-  </data>
-  <data name="txtLabel6" xml:space="preserve">
-    <value>Retro</value>
-  </data>
-  <data name="txtLabel7" xml:space="preserve">
-    <value>Otros</value>
-  </data>
-  <data name="txtLabel8" xml:space="preserve">
-    <value>Web</value>
-  </data>
-  <data name="txtLabel9" xml:space="preserve">
-    <value>Visualizador de Audio</value>
-  </data>
-  <data name="txtLabelApplication" xml:space="preserve">
-    <value>Aplicación</value>
-  </data>
-  <data name="txtLabelAppName" xml:space="preserve">
-    <value>Lively</value>
-  </data>
-  <data name="txtLabelInteraction" xml:space="preserve">
-    <value>Interacción</value>
-  </data>
-  <data name="txtLabelRule" xml:space="preserve">
+  <data name="TextRule" xml:space="preserve">
     <value>Regla</value>
   </data>
-  <data name="txtLabelSoftwareUIRendering" xml:space="preserve">
-    <value>Desactivar aceleración por hardware</value>
+  <data name="TextScreen" xml:space="preserve">
+    <value>Pantalla</value>
   </data>
-  <data name="txtLabelStream" xml:space="preserve">
-    <value>corriente</value>
+  <data name="TextSearch" xml:space="preserve">
+    <value>Buscar</value>
   </data>
-  <data name="txtLabelVideoQuality" xml:space="preserve">
-    <value>calidad de video</value>
+  <data name="TextSetWallpaper" xml:space="preserve">
+    <value>Establecer como fondo de pantalla</value>
   </data>
-  <data name="txtLivelyAppWarning" xml:space="preserve">
-    <value>Esta característica está actualmente en desarrollo.
-NO inicie programas como CHROME o STEAM.. que crean múltiples subprocesos.
-¡¡¡HABRÁN ERRORES Y CIERRES INESPERADOS, PROCEDA CON PRECAUCIÓN!!!</value>
+  <data name="TextShowOnDisk" xml:space="preserve">
+    <value>Mostrar en el disco</value>
   </data>
-  <data name="txtLivelyErrorMsgTitle" xml:space="preserve">
-    <value>Lively: Error</value>
-    <comment>título para el cuadro de mensaje.</comment>
+  <data name="TextSource" xml:space="preserve">
+    <value>Fuente</value>
   </data>
-  <data name="txtLivelyWaitMsgTitle" xml:space="preserve">
-    <value>Por favor espere</value>
-    <comment>título para el cuadro de mensaje</comment>
+  <data name="TextStart" xml:space="preserve">
+    <value>Comenzar</value>
   </data>
-  <data name="txtLivelyWallpaperTypeApp" xml:space="preserve">
-    <value>Aplicación</value>
+  <data name="TextStop" xml:space="preserve">
+    <value>Parar</value>
   </data>
-  <data name="txtLivelyWallpaperTypeGIF" xml:space="preserve">
-    <value>GIF animado</value>
+  <data name="TextTags" xml:space="preserve">
+    <value>Etiquetas</value>
   </data>
-  <data name="txtLivelyWallpaperTypeGodot" xml:space="preserve">
-    <value>Aplicación Godot</value>
+  <data name="TextTileSizeLarge" xml:space="preserve">
+    <value>Grande</value>
   </data>
-  <data name="txtLivelyWallpaperTypeUnity" xml:space="preserve">
-    <value>Aplicación Unity</value>
+  <data name="TextTileSizeNormal" xml:space="preserve">
+    <value>Normal</value>
   </data>
-  <data name="txtLivelyWallpaperTypeUnityAudio" xml:space="preserve">
-    <value>Unity Audio Reactive</value>
+  <data name="TextTileSizeSmall" xml:space="preserve">
+    <value>Pequeño</value>
   </data>
-  <data name="txtLivelyWallpaperTypeUrl" xml:space="preserve">
-    <value>en línea</value>
+  <data name="TextUIHeadless" xml:space="preserve">
+    <value>Pesada (Para PC de Altos recursos</value>
   </data>
-  <data name="txtLivelyWallpaperTypeVideo" xml:space="preserve">
+  <data name="TextUILite" xml:space="preserve">
+    <value>Lite (Para Pc de Bajos recursos</value>
+  </data>
+  <data name="TextUINormal" xml:space="preserve">
+    <value>Normal (Para pc que tienen recursos decentes)</value>
+  </data>
+  <data name="TextUpdateAvailable" xml:space="preserve">
+    <value>¡Actualización disponible!</value>
+  </data>
+  <data name="TextUpdateCheck" xml:space="preserve">
+    <value>Buscar actualizaciones</value>
+  </data>
+  <data name="TextupdateCheckFail" xml:space="preserve">
+    <value>Error al verificar la actualización de software</value>
+  </data>
+  <data name="TextUpdateChecking" xml:space="preserve">
+    <value>Comprobación de actualización</value>
+  </data>
+  <data name="TextUpdateUptodate" xml:space="preserve">
+    <value>¡El software ha sido actualizado con exito!</value>
+  </data>
+  <data name="TextVideo" xml:space="preserve">
     <value>Video</value>
   </data>
-  <data name="txtLivelyWallpaperTypeWeb" xml:space="preserve">
-    <value>Web</value>
+  <data name="TextWallpaperLayoutDuplicate" xml:space="preserve">
+    <value>Duplicar el mismo fondo de pantalla</value>
   </data>
-  <data name="txtLivelyWallpaperTypeWebAudio" xml:space="preserve">
-    <value>Web Audio Reactive</value>
+  <data name="TextWallpaperLayoutSpan" xml:space="preserve">
+    <value>Estirar</value>
   </data>
-  <data name="txtLiveTile" xml:space="preserve">
-    <value>Mosaico animado:</value>
+  <data name="TextWallpaperType" xml:space="preserve">
+    <value>Tipo</value>
   </data>
-  <data name="txtLiveTileToolTip" xml:space="preserve">
-    <value>(Experimental, Alto uso de la CPU)Reproduzca la vista previa del fondo de pantalla en el mosaico de la librería.</value>
+  <data name="TextWebsite" xml:space="preserve">
+    <value>Sitio web</value>
   </data>
-  <data name="txtMoreWp" xml:space="preserve">
-    <value>Más fondos de pantalla ...</value>
+  <data name="TextWebStream" xml:space="preserve">
+    <value>Web Stream</value>
   </data>
-  <data name="txtMouse" xml:space="preserve">
-    <value>Ratón</value>
+  <data name="TextWelcome" xml:space="preserve">
+    <value>Bienvenido</value>
   </data>
-  <data name="txtMsgFillAllFields" xml:space="preserve">
-    <value>Rellene todos los espacios requeridos.</value>
+  <data name="TextYes" xml:space="preserve">
+    <value>Si</value>
   </data>
-  <data name="txtMsgSelectWallpaperFile" xml:space="preserve">
-    <value>Archivo no seleccionado</value>
+  <data name="TileVideoPlayer" xml:space="preserve">
+    <value>Reproductor de video</value>
   </data>
-  <data name="txtMsgUpdaterPortableUnsupported" xml:space="preserve">
-    <value>Updater no es compatible con la versión portátil de Lively, descargue la última versión portátil del sitio web.</value>
+  <data name="TipAddWallpaperFileBrowse" xml:space="preserve">
+    <value>Configura todos los tipos de archivos compatibles como fondo de pantalla.</value>
   </data>
-  <data name="txtNotes" xml:space="preserve">
-    <value>Nota:
-(1) La ventana de Lively ignora estas reglas.
-(2) El audio siempre está desactivado cuando otras aplicaciones están primer plano, {excepto (1), la ventana de Lively}.
-(3) El algoritmo de procesos en primer plano tiene algunas limitaciones, visite la wiki para más información.
-(4) Reglas de la aplicación tiene la prioridad más alta.
-(5) El navegador web está siendo minimizado para pausar, asi que verá el fondo de pantalla siendo temporalmente revertido por defecto en algunos casos; una solución está por llegar.</value>
+  <data name="TipAddWallpaperURL" xml:space="preserve">
+    <value>Configura la página web de la URL que ingresó como fondo de pantalla.</value>
   </data>
-  <data name="txtOff" xml:space="preserve">
+  <data name="TipAppFocus" xml:space="preserve">
+    <value>Establecer qué hacer cuando una aplicación esté enfocada.</value>
+  </data>
+  <data name="TipAppFullScreen" xml:space="preserve">
+    <value>Establecer qué hacer cuando se ejecutan juegos/aplicaciones en pantalla completa.</value>
+  </data>
+  <data name="TipAppRules" xml:space="preserve">
+    <value>Establecer diferentes reglas de reproducción de fondo de pantalla en función a qué aplicación está ejecutandose.</value>
+  </data>
+  <data name="TipAppTheme" xml:space="preserve">
+    <value>Lively se adapta a la configuración del tema del sistema, para cambiar la apariencia, ve a</value>
+  </data>
+  <data name="TipBatteryPower" xml:space="preserve">
+    <value>(Solo para sistemas que funcionan con batería) Cambiar la reproducción cuando se desconecte la fuente de alimentación.</value>
+  </data>
+  <data name="TipBrowserDebuggingPort" xml:space="preserve">
+    <value>Ingresa el puerto para depurar los fondos de pantalla web, se requiere reiniciar el navegador para que los cambios surtan efecto.
+Cuando esté listo, navega a http://localhost: número de puerto para acceder a la consola del desarrollador.</value>
+  </data>
+  <data name="TipDisplayPauseRule" xml:space="preserve">
+    <value>Por: Pausa el fondo solo en la pantalla donde la aplicación está enfocada / pantalla completa.
+Todas: pausa el fondo en la(s) pantalla(s) si alguna aplicación está enfocada / pantalla completa.</value>
+  </data>
+  <data name="TipHideSysTray" xml:space="preserve">
+    <value>Visibilidad del icono de la bandeja del sistema, Lively continuará ejecutándose aún con el icono oculto.</value>
+  </data>
+  <data name="TipLanguage" xml:space="preserve">
+    <value>Lively se reiniciará para aplicar el nuevo idioma.</value>
+  </data>
+  <data name="TipLivelySetupOnClose" xml:space="preserve">
+    <value>Finalice la configuración para continuar.</value>
+  </data>
+  <data name="TipPauseAlgorithm" xml:space="preserve">
+    <value>Primer plano: Ligero, solo comprueba el único proceso que esté en primer plano para determinar el comportamiento de reproducción del fondo.
+Todos los procesos: Pesado, analiza todos los procesos abiertos para determinar el comportamiento de reproducción del fondo.</value>
+  </data>
+  <data name="TipStreamWallpaperDetect" xml:space="preserve">
+    <value>Si se detecta un enlace a un stream compatible, usar el reproductor de video en lugar de cargar el sitio web.</value>
+  </data>
+  <data name="TipStreamWallpaperVideoQuality" xml:space="preserve">
+    <value>Selecciona la calidad de video deseada para los streams</value>
+  </data>
+  <data name="TipTileSize" xml:space="preserve">
+    <value>Tamaño de los mosaicos de la Biblioteca.</value>
+  </data>
+  <data name="TipUIMode" xml:space="preserve">
+    <value>Para Sistemas o Pc de bajos recursos por favor elija la version lite (le ayudara mucho)</value>
+  </data>
+  <data name="TipVideoPlayer" xml:space="preserve">
+    <value>Selecciona el reproductor de video para usarlo en los fondos de video o fondos animados</value>
+  </data>
+  <data name="TipWallpaperDir" xml:space="preserve">
+    <value>Ruta utilizada para almacenar archivos de fondo de pantalla.</value>
+  </data>
+  <data name="TipWallpaperInput" xml:space="preserve">
+    <value>Selecciona formas de interactuar con el fondo de pantalla.</value>
+  </data>
+  <data name="TipWallpaperPlayback" xml:space="preserve">
+    <value>Pausa la reproducción del fondo de pantalla cuando el escritorio no está enfocado.</value>
+  </data>
+  <data name="TipWebBrowserDiskCache" xml:space="preserve">
+    <value>Almacenar archivos temporales en el disco en lugar de la memoria, la configuración se restaurará cuando se reinicie el navegador.</value>
+  </data>
+  <data name="TipWebBrowserEngine" xml:space="preserve">
+    <value>CEF (Chromium Embedded Framework) es un motor de chromium liviano.
+Edge es la vista web integrada en Windows 10.</value>
+  </data>
+  <data name="TipWindowsStartup" xml:space="preserve">
+    <value>Lively necesita ejecutarse en segundo plano para reproducir el fondo de pantalla.</value>
+  </data>
+  <data name="TitleAbout" xml:space="preserve">
+    <value>Acerca de</value>
+  </data>
+  <data name="TitleAddWallpaper" xml:space="preserve">
+    <value>Agregar fondo de pantalla</value>
+  </data>
+  <data name="TitleAppFocus" xml:space="preserve">
+    <value>Aplicaciones enfocadas</value>
+  </data>
+  <data name="TitleAppFullScreen" xml:space="preserve">
+    <value>Aplicaciones de pantalla completa</value>
+  </data>
+  <data name="TitleAppName" xml:space="preserve">
+    <value>Lively Wallpaper</value>
+  </data>
+  <data name="TitleAppRules" xml:space="preserve">
+    <value>Reglas por aplicación</value>
+  </data>
+  <data name="TitleAppTheme" xml:space="preserve">
+    <value>Tema</value>
+  </data>
+  <data name="TitleAudio" xml:space="preserve">
+    <value>Audio</value>
+  </data>
+  <data name="TitleAudioPlayOnScreen" xml:space="preserve">
+    <value>Reproducir audio en pantalla</value>
+  </data>
+  <data name="TitleBatteryPower" xml:space="preserve">
+    <value>Al usar la batería</value>
+  </data>
+  <data name="TitleBrowseFile" xml:space="preserve">
+    <value>Explorar archivos de video, gifs, páginas web... para establecer como fondo</value>
+  </data>
+  <data name="TitleBrowserDebuggingPort" xml:space="preserve">
+    <value>Puerto de depuración</value>
+  </data>
+  <data name="TitleDeleteConfirmation" xml:space="preserve">
+    <value>Confirmar la eliminación</value>
+  </data>
+  <data name="TitleDisplayPauseRule" xml:space="preserve">
+    <value>Regla de Pausa de Pantalla</value>
+  </data>
+  <data name="TitleEnterUrl" xml:space="preserve">
+    <value>Insertar enlace</value>
+  </data>
+  <data name="TitleGeneral" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="TitleHelp" xml:space="preserve">
+    <value>Ayuda</value>
+  </data>
+  <data name="TitleHideSysTray" xml:space="preserve">
+    <value>Icono de la bandeja del sistema</value>
+  </data>
+  <data name="TitleInteraction" xml:space="preserve">
+    <value>Interacción</value>
+  </data>
+  <data name="TitleLanguage" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="TitleLibrary" xml:space="preserve">
+    <value>Bilbioteca</value>
+  </data>
+  <data name="TitleLivelySetup" xml:space="preserve">
+    <value>Configuración de Lively</value>
+  </data>
+  <data name="TitleMisc" xml:space="preserve">
+    <value>Misceláneo</value>
+  </data>
+  <data name="TitleMute" xml:space="preserve">
+    <value>Silenciar</value>
+  </data>
+  <data name="TitlePauseAlgo" xml:space="preserve">
+    <value>Algoritmo de Pausa</value>
+  </data>
+  <data name="TitlePerformance" xml:space="preserve">
+    <value>Rendimiento</value>
+  </data>
+  <data name="TitlePlaylist" xml:space="preserve">
+    <value>Lista de reproducción</value>
+  </data>
+  <data name="TitlePleaseWait" xml:space="preserve">
+    <value>Por favor Espere...</value>
+  </data>
+  <data name="TitleScalingFit" xml:space="preserve">
+    <value>Escalar/Ajustar</value>
+  </data>
+  <data name="TitleScreenLayout" xml:space="preserve">
+    <value>Diseño de pantalla</value>
+  </data>
+  <data name="TitleSelectFile" xml:space="preserve">
+    <value>Seleccionar Archivo</value>
+  </data>
+  <data name="TitleSettings" xml:space="preserve">
+    <value>Configuraciones</value>
+  </data>
+  <data name="TitleStreamWallpaper" xml:space="preserve">
+    <value>Stream</value>
+  </data>
+  <data name="TitleStreamWallpaperDetect" xml:space="preserve">
+    <value>Detectar Streams</value>
+  </data>
+  <data name="TitleStreamWallpaperVideoQuality" xml:space="preserve">
+    <value>Calidad de Streams</value>
+  </data>
+  <data name="TitleTileSize" xml:space="preserve">
+    <value>Tamaño de los Mosaicos</value>
+  </data>
+  <data name="TitleUIMode" xml:space="preserve">
+    <value>Interfaz de usuario</value>
+  </data>
+  <data name="TitleVideo" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="TitleWallpaper" xml:space="preserve">
+    <value>Fondos de pantalla</value>
+  </data>
+  <data name="TitleWallpaperDir" xml:space="preserve">
+    <value>Directorio de fondos de pantalla</value>
+  </data>
+  <data name="TitleWallpaperInput" xml:space="preserve">
+    <value>Entrada</value>
+  </data>
+  <data name="TitleWallpaperLayout" xml:space="preserve">
+    <value>Disposición de/los fondo(s)</value>
+  </data>
+  <data name="TitleWallpaperPlayback" xml:space="preserve">
+    <value>Reproducción del Fondo </value>
+  </data>
+  <data name="TitleWarning" xml:space="preserve">
+    <value>Advertencia</value>
+  </data>
+  <data name="TitleWebBrowser" xml:space="preserve">
+    <value>Navegador web</value>
+  </data>
+  <data name="TitleWebBrowserDiskCache" xml:space="preserve">
+    <value>Caché de disco duro</value>
+  </data>
+  <data name="TitleWebBrowserEngine" xml:space="preserve">
+    <value>Motor</value>
+  </data>
+  <data name="TitleWebpageLoad" xml:space="preserve">
+    <value>Cargar página web</value>
+  </data>
+  <data name="TitleWindowsStartup" xml:space="preserve">
+    <value>Iniciar con Windows</value>
+  </data>
+  <data name="DescriptionPleaseRestartLively" xml:space="preserve">
+    <value>Por favor reinicie Lively para que las configuraciones tengan efecto Haga clic derecho en el icono de notificacion seleccione salir y abralo otra ves</value>
+  </data>
+  <data name="TextSupport" xml:space="preserve">
+    <value>Soporte</value>
+  </data>
+  <data name="TextClose" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
+  <data name="TextCustomise" xml:space="preserve">
+    <value>Personalizar</value>
+  </data>
+  <data name="DescriptionScreenLayout" xml:space="preserve">
+    <value>Elegir Pantalla</value>
+  </data>
+  <data name="TextWallpaperLayoutPerScreen" xml:space="preserve">
+    <value>Solo la pantalla seleccionada</value>
+  </data>
+  <data name="TipWallpaperLayout" xml:space="preserve">
+    <value>Cómo se aplica el fondo a las pantallas conectadas.</value>
+  </data>
+  <data name="TitleWallpaperDirMoveExisting" xml:space="preserve">
+    <value>Mover los fondos de pantalla existentes a un nuevo directorio</value>
+  </data>
+  <data name="LivelyExceptionMediaPlayback" xml:space="preserve">
+    <value>El reproducto de contenido ha fallado :(
+ Intenta cambiar el reproductor de video desde la configuración de Lively.
+
+Para enteder mejor este error y solucionar el problema, comparte el archivo de registro con el desarrollador.
+Visita el siguiente enlace con instrucciones sobre como compartir el archivo de registro:
+https://github.com/rocksdanister/lively/wiki</value>
+  </data>
+  <data name="TextOff" xml:space="preserve">
     <value>Apagado</value>
   </data>
-  <data name="txtOn" xml:space="preserve">
+  <data name="TextOn" xml:space="preserve">
     <value>Encendido</value>
   </data>
-  <data name="txtOtherAppsFocus" xml:space="preserve">
-    <value>Otra aplicación en primer plano:</value>
+  <data name="TextMouse" xml:space="preserve">
+    <value>Mouse</value>
   </data>
-  <data name="txtOtherAppsFullScreen" xml:space="preserve">
-    <value>Otra aplicación en pantalla completa:</value>
+  <data name="TextKeyboard" xml:space="preserve">
+    <value>Teclado</value>
   </data>
-  <data name="txtPauseAlgorith" xml:space="preserve">
-    <value>Pausar algoritmo:</value>
+  <data name="TitleDocumentation" xml:space="preserve">
+    <value>Documentación</value>
   </data>
-  <data name="txtPleaseWait" xml:space="preserve">
-    <value>Carga fallida</value>
+  <data name="TitleCommunity" xml:space="preserve">
+    <value>Comunidad</value>
   </data>
-  <data name="txtPleaseWait2" xml:space="preserve">
-    <value>Por favor espere</value>
+  <data name="DescriptionDeleteConfirmationLibrary" xml:space="preserve">
+    <value>Estás seguro de que quieres eliminar este fondo de pantalla de la biblioteca?</value>
   </data>
-  <data name="txtPreviewWallpaperNote" xml:space="preserve">
-    <value>Mantenga esta ventana enfocada mientras procesa.</value>
+  <data name="TipAudioMaster" xml:space="preserve">
+    <value>Nivel de volumen de todos los fondos.</value>
   </data>
-  <data name="txtSelectPreviewThumb" xml:space="preserve">
-    <value>Seleccionar archivo de vista previa/miniatura.</value>
+  <data name="TitleAudioMaster" xml:space="preserve">
+    <value>Volumen General</value>
   </data>
-  <data name="txtSetWallpaper" xml:space="preserve">
-    <value>Seleccionar como fondo de pantalla</value>
+  <data name="TextWallpaperFitFill" xml:space="preserve">
+    <value>Rellenar</value>
   </data>
-  <data name="txtSpanWallpaperWarning" xml:space="preserve">
-    <value>Algunos fondos de pantalla no se extenderán correctamente en las pantallas.</value>
+  <data name="TextWallpaperFitNone" xml:space="preserve">
+    <value>Ninguno</value>
   </data>
-  <data name="txtStartup" xml:space="preserve">
-    <value>Iniciar Windows:</value>
+  <data name="TextWallpaperFitUniform" xml:space="preserve">
+    <value>Uniforme</value>
   </data>
-  <data name="txtStartupToolTip" xml:space="preserve">
-    <value>Asegúrese de desmarcar esto antes de desinstalar Lively.</value>
+  <data name="TextWallpaperFitUniformToFill" xml:space="preserve">
+    <value>Relleno Uniforme</value>
   </data>
-  <data name="txtSupport" xml:space="preserve">
-    <value>Respaldo</value>
+  <data name="TipWallpaperFit" xml:space="preserve">
+    <value>Algoritmo de redimensionamiento de fondos de pantalla.</value>
   </data>
-  <data name="txtTileGIF" xml:space="preserve">
-    <value>GIF animado</value>
+  <data name="TitleWallpaperFit" xml:space="preserve">
+    <value>Elige una opción</value>
   </data>
-  <data name="txtTileGodot" xml:space="preserve">
-    <value>Godot Software</value>
+  <data name="TextPreviewWallpaper" xml:space="preserve">
+    <value>Previsualizar fondo</value>
   </data>
-  <data name="txtTileHTML" xml:space="preserve">
-    <value>HTML</value>
+  <data name="TextAllFiles" xml:space="preserve">
+    <value>Todos los archivos</value>
   </data>
-  <data name="txtTileOther" xml:space="preserve">
-    <value>Otros</value>
+  <data name="TitleDebug" xml:space="preserve">
+    <value>Depurar</value>
   </data>
-  <data name="txtTileUnity" xml:space="preserve">
-    <value>Unity Software</value>
+  <data name="TipDebug" xml:space="preserve">
+    <value>Mostrar el menú de desarrollador</value>
   </data>
-  <data name="txtTileVideo" xml:space="preserve">
-    <value>Video</value>
+  <data name="TextFileNotFound" xml:space="preserve">
+    <value>El Archivo no ha podido ser encontrado (puede ser que se ha movido o se ha borrado)</value>
   </data>
-  <data name="txtTileWebsite" xml:space="preserve">
-    <value>página web</value>
+  <data name="TextPicture" xml:space="preserve">
+    <value>Imagen</value>
   </data>
-  <data name="txtTitlebar" xml:space="preserve">
-    <value>Fondo de pantalla de sistema Lively</value>
+  <data name="TextUnsupportedFile" xml:space="preserve">
+    <value>El tipo de archivo no es soportado o esta corrupto</value>
   </data>
-  <data name="txtTransparency" xml:space="preserve">
-    <value>Interfaz de usuario transparente:</value>
+  <data name="TextProcessingWallpaper" xml:space="preserve">
+    <value>Procesando</value>
   </data>
-  <data name="txtTransparencyToolTip" xml:space="preserve">
-    <value>Hacer que la ventana de Lively sea semi-transparente.</value>
+  <data name="TextTitle" xml:space="preserve">
+    <value>Título</value>
   </data>
-  <data name="txtUpdateBanner" xml:space="preserve">
-    <value>Actualización de Lively disponible</value>
+  <data name="TextDescription" xml:space="preserve">
+    <value>Descripción</value>
   </data>
-  <data name="txtUpdateDownloadErrorMsg" xml:space="preserve">
-    <value>Error al actualizar Intente descargar el instalador desde</value>
+  <data name="TextOK" xml:space="preserve">
+    <value>Ok</value>
   </data>
-  <data name="txtVideoPlayer" xml:space="preserve">
-    <value>Reproductor de Video:</value>
+  <data name="TextCancel" xml:space="preserve">
+    <value>Cancelar</value>
   </data>
-  <data name="txtVideoPlayerToolTip" xml:space="preserve">
-    <value>Directshow requiere plugins adicionales instalados.</value>
+  <data name="TextCreatePreview" xml:space="preserve">
+    <value>Crear vista previa</value>
   </data>
-  <data name="txtVideoScaling" xml:space="preserve">
-    <value>Ajuste de video:</value>
+  <data name="TitleGifPlayer" xml:space="preserve">
+    <value>Reproductor de GIFs</value>
   </data>
-  <data name="txtWallpaperPlayback" xml:space="preserve">
-    <value>Reproducción de fondo de pantalla:</value>
+  <data name="TipGifPlayer" xml:space="preserve">
+    <value>Selecciona el reproductor que quieras usar para convertir los GIFs en fondos de pantalla.</value>
   </data>
-  <data name="txtWhenBattery" xml:space="preserve">
-    <value>Cuando funciona con batería:</value>
+  <data name="TextFeatureMissing" xml:space="preserve">
+    <value>Algunas funciones no están disponibles en esta versión de Lively. Por favor use la version de Internet ya que la de la tienda es para pc de Altos recursos</value>
   </data>
-  <data name="txtWindowTitleSelectDisplay" xml:space="preserve">
-    <value>Seleccionar pantalla</value>
+  <data name="TextControlPanelOpen" xml:space="preserve">
+    <value>Haz click aquí para administrar tus fondos de pantalla.</value>
+  </data>
+  <data name="TextStoreReview" xml:space="preserve">
+    <value>Te está gustando Lively? Deja un comentario 😁</value>
+  </data>
+  <data name="TitleStore" xml:space="preserve">
+    <value>Tienda</value>
+    <comment>Para diferentes versiones de Lively, ejemplo: Microsoft Store</comment>
+  </data>
+  <data name="DescriptionWindowsNCodecInstall" xml:space="preserve">
+    <value>Tu versión de Windows N/KN requiere la descarga de códecs adicionales para soportar la reproducción de vídeos como fondos de pantalla</value>
+  </data>
+  <data name="TextLicense" xml:space="preserve">
+    <value>Licencia</value>
+  </data>
+  <data name="TextPrivacyPolicy" xml:space="preserve">
+    <value>Políticas de Privacidad</value>
+  </data>
+  <data name="TitleAudioDesktopOnly" xml:space="preserve">
+    <value>Reproducir audio solo cuando el escritorio esté enfocado</value>
+  </data>
+  <data name="TipExportLogs" xml:space="preserve">
+    <value>Crear un archivo log de soporte</value>
+  </data>
+  <data name="TitleExportLogs" xml:space="preserve">
+    <value>Log File</value>
+  </data>
+  <data name="TitleReportBug" xml:space="preserve">
+    <value>Reportar Bug</value>
+  </data>
+  <data name="TitleVideoHardwareDecode" xml:space="preserve">
+    <value>Decodificacion de GPU</value>
+  </data>
+  <data name="TipVideoHardwareDecode" xml:space="preserve">
+    <value>Usar Aceleracion de Hardware cuando sea posible</value>
+  </data>
+  <data name="DescriptionPleaseStop" xml:space="preserve">
+  <value>Por Favor pare antes de proceder</value>
+</data>
+  <data name="TextEditWallpaper" xml:space="preserve">
+  <value>Editar</value>
+</data>
+  <data name="TitleLocation" xml:space="preserve">
+  <value>Ubicacion</value>
+</data>
+  <data name="TitleSkipConfirm" xml:space="preserve">
+  <value>Saltar Confirmacion</value>
+</data>
+  <data name="TextWallpaperCommandlineArgs" xml:space="preserve">
+  <value>Poner algunos argumentos de comandos opcionales</value>
+</data>
+  <data name="TextGitHubStar" xml:space="preserve">
+    <value>Muestra algo de amor dejando caer una estrella</value>
+  </data>
+  <data name="DescIncompatibleTaskbarTheme" xml:space="preserve">
+    <value>No se ha encontrado un programa compatible se desabilitara el tema de la barra de tareas</value>
+  </data>
+  <data name="TitleTaskbarTheme" xml:space="preserve">
+    
+  <value>Tema de Barra de Tares</value></data>
+  <data name="TitleLockscreenPicture" xml:space="preserve">
+    <value>Imagen de pantalla de bloqueo</value>
+  </data>
+  <data name="TitleDesktopPicture" xml:space="preserve">
+    <value>Imagen de Escritorio</value>
+  </data>
+  <data name="TipLockscreenPicture" xml:space="preserve">
+    <value>Poner un fondo animado en la pantalla de bloqueo</value>
+  </data>
+  <data name="TipDesktopPicture" xml:space="preserve">
+    <value>Poner un fondo animado en el escritorio</value>
+  </data>
+  <data name="TipTaskbarTheme" xml:space="preserve">
+    <value>Cambiar la aparienciea de la barra de tareas del sistema </value>
+  </data>
+  <data name="TextTaskbarThemeBlur" xml:space="preserve">
+    <value>Blur</value>
+  </data>
+  <data name="TextTaskbarThemeClear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="TextTaskbarThemeColor" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="TextTaskbarThemeFluent" xml:space="preserve">
+    <value>Fluent</value>
+  </data>
+  <data name="TextTaskbarThemeWallpaper" xml:space="preserve">
+    <value>Wallpaper</value>
+  </data>
+  <data name="TextTaskbarThemeWallpaperFluent" xml:space="preserve">
+    <value>Wallpaper Fluent</value>
+  </data>
+  <data name="TitleSystem" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="TitleSourceCode" xml:space="preserve">
+    <value>Source Code</value>
+  </data>
+  <data name="TitleScreensaver" xml:space="preserve">
+    <value>Screensaver</value>
+  </data>
+  <data name="TipScreensaver" xml:space="preserve">
+    <value>After the selected inactivity period use the current wallpaper as your screensaver.</value>
+  </data>
+  <data name="TextHours" xml:space="preserve">
+    <value>Horas</value>
+  </data>
+  <data name="TextMinutes" xml:space="preserve">
+    <value>Minutos</value>
+  </data>
+  <data name="TextLearnMore" xml:space="preserve">
+    <value>Aprender más</value>
+  </data>
+  <data name="DescOledScreensaverNotice" xml:space="preserve">
+    <value>La mayoría de pantallas modernas LCD y LED no sufren de quemado de pantalla, y por esa razón cualquier fondo de pantallas puede ser usado como salva pantallas.
+
+Para pantallas OLED, Plasma o CRT que son susceptibles ha quemado y retención de imagen es recomendado el uso de salva pantallas con movimiento continuo, y que tenga un tema relativamente oscuro que ayuden a mitigar el quemado de la pantalla, pero la eficacia de este método no ah sido comprobado y no puede ser garantizado.
+
+El objetivo principal del salva pantallas en Lively es ofrecer más posibilidades para personalizar tu PC. Usa el salva pantallas para proteger contra el quemado de pantalla bajo tu propio riesgo.</value>
+  </data>
+  <data name="TextChangeWallpaper" xml:space="preserve">
+    <value>Change Wallpapers</value>
+  </data>
+  <data name="TextLastChecked" xml:space="preserve">
+    <value>Last checked</value>
+  </data>
+  <data name="TitleUpdates" xml:space="preserve">
+    <value>Updates</value>
+  </data>
+  <data name="DescCommunity" xml:space="preserve">
+    <value>Online discussion forum</value>
+  </data>
+  <data name="DescDocumentation" xml:space="preserve">
+    <value>API documentation and help</value>
+  </data>
+  <data name="DescOfficialWebpage" xml:space="preserve">
+    <value>Official webpage of Lively Wallpaper</value>
+  </data>
+  <data name="DescReportBug" xml:space="preserve">
+    <value>Report a problem with the software</value>
+  </data>
+  <data name="DescSupperDev" xml:space="preserve">
+    <value>Show support by buying the developer coffee</value>
+  </data>
+  <data name="DescSwitchBranchBetaWarning" xml:space="preserve">
+    <value>You are about to change to beta (developer) build of Lively.
+Updates will be frequent and may contain bugs!</value>
+  </data>
+  <data name="TextSwitchBranchDev" xml:space="preserve">
+    <value>Switch to beta (Dev channel)</value>
+  </data>
+  <data name="TextSwitchBranchOfficial" xml:space="preserve">
+    <value>Switch to stable (Default channel)</value>
+  </data>
+  <data name="TipSwitchSoftwareBranch" xml:space="preserve">
+    <value>Change software release from beta to stable or vice versa.</value>
+  </data>
+  <data name="TitleChangelog" xml:space="preserve">
+    <value>Changelog</value>
+  </data>
+  <data name="TextPauseAlgoExclusiveMode" xml:space="preserve">
+    <value>Direct3D</value>
+  </data>
+  <data name="TitleScreensaverLockOnResume" xml:space="preserve">
+    <value>On resume, display logon screen</value>
   </data>
 </root>

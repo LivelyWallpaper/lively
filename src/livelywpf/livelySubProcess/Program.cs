@@ -1,54 +1,28 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace livelySubProcess
 {
     /// <summary>
-    /// Runs in the background, cleans up external wp pgms in the event lively crash.
+    /// Kills external application type wallpapers in the event lively main pgm is killed by taskmanager/other pgms like av software.
+    /// This is just incase safety, when shutdown properly the "wpItems" list is cleared by lively before exit.
+    /// The external lively pgms such as livelycefsharp and libmpvplayer etc will close themselves if lively exits without subprocess.
     /// </summary>
     class Program
     {
-        [DllImport("user32.dll", SetLastError = true)]
-        public static extern uint GetWindowThreadProcessId(IntPtr hWnd, out int lpdwProcessId);
-
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
         public static extern Int32 SystemParametersInfo(UInt32 uiAction, UInt32 uiParam, String pvParam, UInt32 fWinIni);
         public static UInt32 SPI_SETDESKWALLPAPER = 20;
         public static UInt32 SPIF_UPDATEINIFILE = 0x1;
-        /// <summary>
-        /// portable lively build, no installer.
-        /// </summary>
-        public static readonly bool isPortableBuild = false;
-        public static string PathData { get; private set; }
 
+        readonly static List<int> wpItems = new List<int>();
         static void Main(string[] args)
         {
-
-            if (isPortableBuild)
-            {
-                PathData = AppDomain.CurrentDomain.BaseDirectory;
-            }
-            else
-            {
-                PathData = Path.Combine(System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Lively Wallpaper");
-            }
-
             int livelyId;
             Process lively;
-            if (args.Length == 0)
-            {
-                Console.WriteLine("NO arguments sent.");
-                //Console.Read();
-                return;
-            }
-
             if (args.Length == 1)
             {
                 try
@@ -57,15 +31,13 @@ namespace livelySubProcess
                 }
                 catch
                 {
-                    Console.WriteLine("ERROR: converting toint");
-                    //Console.Read();
+                    //ERROR: converting toint
                     return;
                 }
             }
             else
             {
-                Console.WriteLine("Incorrent no of arguments.");
-                //Console.Read();
+                //"Incorrent no of arguments."
                 return;
             }
 
@@ -75,121 +47,61 @@ namespace livelySubProcess
             }
             catch
             {
-                Console.WriteLine("getting processname failure, ignoring");
-                //Console.Read();
+                //"getting processname failure, ignoring"
                 return;
             }
-
-            if (!lively.ProcessName.Equals("livelywpf", StringComparison.InvariantCultureIgnoreCase))
-            {
-                Console.WriteLine("Error: Not livelywpf :- " + lively.ProcessName);
-                //Console.Read();
-                return;
-            }
-
+            ListenToParent();
             lively.WaitForExit();
 
-            Console.WriteLine("done waiting, ready to kill..");
-            //Console.Read();
-
-            FileHandle.LoadRunningPrograms();
-
-            foreach (var proc in Process.GetProcesses())
+            foreach (var item in wpItems)
             {
-                Console.WriteLine("pgm list:- " + proc.ProcessName + " " + proc.MainWindowHandle);
-                foreach (var wproc in FileHandle.runningPrograms)
+                try
                 {
-                    //Pid + Process-name is unique enough to make sure its the correct pgm.
-                    if (proc.ProcessName.Equals(wproc.ProcessName, StringComparison.OrdinalIgnoreCase) && proc.Id == wproc.Pid)//&& IntPtr.Equals(proc.MainWindowHandle,wproc.handle))//proc.Handle == wproc.handle)
-                    {   
-                        Console.WriteLine("Unclosed pgm, kill:- " + proc.ProcessName);
-                        try
-                        {
-                            proc.Kill();
-                        }
-                        catch { }
-
-                    }
+                    Process.GetProcessById(item).Kill();
                 }
+                catch { }
             }
 
             //force refresh desktop.
             SystemParametersInfo(SPI_SETDESKWALLPAPER, 0, null, SPIF_UPDATEINIFILE);
-
-            FileHandle.runningPrograms.Clear();
-            FileHandle.SaveRunningPrograms();
-        }
-    }
-
-    class FileHandle
-    {
-        [Serializable]
-        public class RunningProgram
-        {
-            public string ProcessName { get; set; }
-            public int Pid { get; set; }
-            public RunningProgram()
-            {
-                Pid = 0;
-                ProcessName = null;
-            }
         }
 
-        public static List<RunningProgram> runningPrograms = new List<RunningProgram>();
-        //private static string pathData = Path.Combine(System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Lively Wallpaper");
-
-        public class RunningProgramsList
-        {
-            public List<RunningProgram> Item { get; set; }
-        }
-
-        public static void LoadRunningPrograms()
+        /// <summary>
+        /// std I/O redirect, used to communicate with lively. 
+        /// </summary>
+        public static async void ListenToParent()
         {
             try
             {
-                // deserialize JSON directly from a file
-                using (StreamReader file = File.OpenText( Path.Combine(Program.PathData, "lively_running_pgms.json")))
+                await Task.Run(async () =>
                 {
-                    JsonSerializer serializer = new JsonSerializer();
-                    RunningProgramsList tmp = (RunningProgramsList)serializer.Deserialize(file, typeof(RunningProgramsList));
-                    runningPrograms = tmp.Item;
-                }
+                    while (true) // Loop runs only once per line received
+                    {
+                        string text = await Console.In.ReadLineAsync();
+                        if (text.Equals("lively:clear", StringComparison.OrdinalIgnoreCase))
+                        {
+                            wpItems.Clear();
+                        }
+                        else if (text.Contains("lively:add-pgm", StringComparison.OrdinalIgnoreCase))
+                        {
+                            var msg = text.Split(' ');
+                            if (int.TryParse(msg[1], out int value))
+                            {
+                                wpItems.Add(value);
+                            }
+                        }  
+                        else if(text.Contains("lively:rmv-pgm", StringComparison.OrdinalIgnoreCase))
+                        {
+                            var msg = text.Split(' ');
+                            if (int.TryParse(msg[1], out int value))
+                            {
+                                wpItems.Remove(value);
+                            }
+                        }
+                    }
+                });
             }
-            catch 
-            {
-                Debug.WriteLine("failed to read json");
-            }
+            catch { }
         }
-
-
-        public static void SaveRunningPrograms()
-        {
-            RunningProgramsList tmp = new RunningProgramsList
-            {
-                Item = runningPrograms
-            };
-
-            JsonSerializer serializer = new JsonSerializer
-            {
-                Formatting = Formatting.Indented,
-
-                //serializer.Converters.Add(new JavaScriptDateTimeConverter());
-                NullValueHandling = NullValueHandling.Include
-            };
-
-            try
-            {
-                using (StreamWriter sw = new StreamWriter(Path.Combine(Program.PathData, "lively_running_pgms.json")))
-                using (JsonWriter writer = new JsonTextWriter(sw))
-                {
-                    serializer.Serialize(writer, tmp);
-                }
-            }
-            catch
-            {
-                Debug.WriteLine("failed to write json");
-            }
-        }
-
     }
 }

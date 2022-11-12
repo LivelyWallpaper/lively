@@ -1,20 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
 using System.Data;
+using System.IO;
 using System.Linq;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
-using System.IO;
-using System.Windows.Media;
-using System.Windows.Interop;
-using System.Globalization;
-
-using Props = livelywpf.Properties;
-using MahApps.Metro;
-using livelywpf.Lively.Helpers;
-using NLog;
+using System.Reflection;
+using livelywpf.Helpers.Files;
+using livelywpf.Helpers.Archive;
+using livelywpf.Helpers;
+using livelywpf.Core;
+using livelywpf.Views;
+using livelywpf.ViewModels;
+using Microsoft.Extensions.DependencyInjection;
+using livelywpf.Services;
+using livelywpf.Factories;
+using livelywpf.Models;
+using livelywpf.Views.SetupWizard;
+using livelywpf.Helpers.ScreenRecord;
+using livelywpf.Cmd;
+using livelywpf.Core.InputForwarding;
+using livelywpf.Core.Suspend;
+using livelywpf.Core.Watchdog;
+using livelywpf.Helpers.NetWork;
+using livelywpf.Services.Weather;
 
 namespace livelywpf
 {
@@ -24,186 +32,198 @@ namespace livelywpf
     public partial class App : Application
     {
         private static readonly NLog.Logger Logger = NLog.LogManager.GetCurrentClassLogger();
-        static readonly Mutex mutex = new Mutex(false, "LIVELY:DESKTOPWALLPAPERSYSTEM");
-        public static MainWindow W { get; private set; }
 
+        private readonly IServiceProvider _serviceProvider;
         /// <summary>
-        /// portable lively build, no installer.
-        /// Do not forget to also update livelysubprocess project.
+        /// Gets the <see cref="IServiceProvider"/> instance for the current application instance.
         /// </summary>
-        public static readonly bool isPortableBuild = true;
-        //folder paths
-        public static string PathData { get; private set; }
-        /*
-        public static string pathSaveData = Path.Combine(pathData, "SaveData");
-        public static string pathWpTmp = Path.Combine(pathData, "SaveData", "wptmp");
-        public static string pathWallpapers = Path.Combine(pathData, "wallpapers");
-        public static string pathTmpData = Path.Combine(pathData, "tmpdata");
-        public static string pathWpData = Path.Combine(pathData, "tmpdata", "wpdata");
-        */
+        public static IServiceProvider Services
+        {
+            get
+            {
+                IServiceProvider serviceProvider = ((App)Current)._serviceProvider;
+                return serviceProvider ?? throw new InvalidOperationException("The service provider is not initialized");
+            }
+        }
+
+        public App()
+        {
+            //App() -> OnStartup() -> App.Startup event.
+            _serviceProvider = ConfigureServices();
+        }
+
+        private IServiceProvider ConfigureServices()
+        {
+            //TODO: Logger abstraction.
+            //TODO: Simplify startup order: App() -> OnStartup() -> App.Startup event.
+            var provider = new ServiceCollection()
+                //singleton
+                .AddSingleton<MainWindow>()
+                .AddSingleton<IUserSettingsService, JsonUserSettingsService>()
+                .AddSingleton<IDesktopCore, WinDesktopCore>()
+                .AddSingleton<IWatchdogService, WatchdogProcess>()
+                .AddSingleton<IScreensaverService, ScreensaverService>()
+                .AddSingleton<IPlayback, Playback>()
+                .AddSingleton<IAppUpdaterService, GithubUpdaterService>()
+                .AddSingleton<ISystray, Systray>()
+                .AddSingleton<ITransparentTbService, TransparentTbService>()
+                .AddSingleton<IHardwareUsageService, PerfCounterUsageService>() //single service for all wallpapers/widgets.
+                .AddSingleton<IWeatherService, OpenWeatherMapService>() //single service for all wallpapers/widgets.
+                .AddSingleton<SettingsViewModel>() //some init stuff like locale, startup etc happening.. TODO: remove!
+                .AddSingleton<LibraryViewModel>() //loaded wallpapers etc..
+                .AddSingleton<RawInputMsgWindow>()
+                .AddSingleton<WndProcMsgWindow>()
+                //transient
+                .AddTransient<IApplicationsRulesFactory, ApplicationsRulesFactory>()
+                .AddTransient<IWallpaperFactory, WallpaperFactory>()
+                .AddTransient<ILivelyPropertyFactory, LivelyPropertyFactory>()
+                .AddTransient<IScreenRecorder, ScreenRecorderlibScreen>()
+                .AddTransient<ICommandHandler, CommandHandler>()
+                .AddTransient<IDownloadHelper, MultiDownloadHelper>()
+                .AddTransient<SetupView>()
+                .AddTransient<ApplicationRulesViewModel>()
+                .AddTransient<AddWallpaperViewModel>()
+                .AddTransient<AboutViewModel>()
+                .AddTransient<HelpViewModel>()
+                .AddTransient<ScreenLayoutViewModel>()
+                /*
+                .AddLogging(loggingBuilder =>
+                {
+                    // configure Logging with NLog
+                    loggingBuilder.ClearProviders();
+                    loggingBuilder.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
+                    loggingBuilder.AddNLog("Nlog.config");
+                })
+                */
+                .BuildServiceProvider();
+
+            return provider;
+        }
 
         protected override void OnStartup(StartupEventArgs e)
         {
-            if (isPortableBuild)
-            {
-                PathData = AppDomain.CurrentDomain.BaseDirectory;
-            }
-            else
-            {
-                PathData = Path.Combine(System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Lively Wallpaper");
-            }
-            //delete residue tempfiles if any!
-            FileOperations.EmptyDirectory(Path.Combine(PathData, "tmpdata"));
             try
             {
-                //create directories if not exist
-                Directory.CreateDirectory(Path.Combine(PathData, "SaveData"));
-                Directory.CreateDirectory(Path.Combine(PathData, "SaveData", "wptmp"));
-                Directory.CreateDirectory(Path.Combine(PathData, "SaveData", "wpdata"));
-                Directory.CreateDirectory(Path.Combine(PathData, "wallpapers"));
-                Directory.CreateDirectory(Path.Combine(PathData, "tmpdata"));
-                Directory.CreateDirectory(Path.Combine(PathData, "tmpdata", "wpdata"));
+                //create directories if not exist, eg: C:\Users\<User>\AppData\Local
+                Directory.CreateDirectory(Constants.CommonPaths.AppDataDir);
+                Directory.CreateDirectory(Constants.CommonPaths.LogDir);
+                Directory.CreateDirectory(Constants.CommonPaths.TempDir);
+                Directory.CreateDirectory(Constants.CommonPaths.TempCefDir);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                //not logging here, something must be seriously wrong.. just display & terminate.
-                MessageBox.Show(ex.Message, Props.Resources.txtLivelyErrorMsgTitle, MessageBoxButton.OK, MessageBoxImage.Error);
-                Environment.Exit(1);
+                MessageBox.Show(ex.Message, "AppData Directory Initialize Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                Program.ExitApplication();
             }
 
-            SaveData.LoadConfig();
+            //Initial logging.
+            SetupUnhandledExceptionLogging();
+            LogUtil.LogHardwareInfo();
 
-            #region language
-            //CultureInfo.CurrentCulture = new CultureInfo("ru-RU", false); //not working?
+            //clear temp files if any.
+            FileOperations.EmptyDirectory(Constants.CommonPaths.TempDir);
+
+            //Initialize before viewmodel and main window.
+            ScreenHelper.Initialize();
+
+            #region vm init
+
+            var userSettings = App.Services.GetRequiredService<IUserSettingsService>();
+            Program.WallpaperDir = userSettings.Settings.WallpaperDir;
             try
             {
-                System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(SaveData.config.Language);
+                CreateWallpaperDir();
             }
-            catch(CultureNotFoundException)
+            catch (Exception ex)
             {
-                System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US");
-            }
-            //System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("zh-CN"); //zh-CN
-            #endregion language
-
-            if (!SaveData.config.SafeShutdown)
-            {
-                //clearing previous wp persisting image if any (not required, subProcess clears it).
-                SetupDesktop.RefreshDesktop();
-
-                Directory.CreateDirectory( Path.Combine(PathData, "ErrorLogs"));
-                string fileName = DateTime.Now.ToString("yyyyMMdd_HHmmss", CultureInfo.InvariantCulture) + ".txt";
-                if (File.Exists( Path.Combine(PathData, "ErrorLogs", fileName) ))
-                    fileName = Path.GetRandomFileName() + ".txt";
-
+                Logger.Error("Wallpaper Directory creation fail, falling back to default directory:" + ex.ToString());
+                userSettings.Settings.WallpaperDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Lively Wallpaper", "Library");
+                userSettings.Save<ISettingsModel>();
                 try
-                {                    
-                    File.Copy( Path.Combine(PathData, "logfile.txt"),
-                            Path.Combine(PathData, "ErrorLogs", fileName));
-                }
-                catch(IOException e1)
                 {
-                    System.Diagnostics.Debug.WriteLine(e1.ToString());    
+                    CreateWallpaperDir();
                 }
-                
-                var result = MessageBox.Show(Props.Resources.msgSafeModeWarning +
-                    Path.Combine(PathData, "ErrorLogs", fileName)
-                    , Props.Resources.txtLivelyErrorMsgTitle, MessageBoxButton.YesNo);
-
-                if (result == MessageBoxResult.No)
+                catch (Exception ie)
                 {
-                    SetupDesktop.wallpapers.Clear();
-                    SaveData.SaveWallpaperLayout(); //deleting saved wallpaper arrangements.
+                    Logger.Error("Wallpaper Directory creation failed, Exiting:" + ie.ToString());
+                    MessageBox.Show(ie.Message, "Error: Failed to create wallpaper folder", MessageBoxButton.OK, MessageBoxImage.Error);
+                    Program.ExitApplication();
                 }
-
             }
-            SaveData.config.SafeShutdown = false;
-            SaveData.SaveConfig();
 
-            #region theme
-            // add custom accent and theme resource dictionaries to the ThemeManager
-            // you should replace MahAppsMetroThemesSample with your application name
-            // and correct place where your custom accent lives
-            //ThemeManager.AddAccent("CustomAccent1", new Uri("pack://application:,,,/CustomAccent1.xaml"));
-
-            // get the current app style (theme and accent) from the application
-            // you can then use the current theme and custom accent instead set a new theme
-            Tuple<AppTheme, Accent> appStyle = ThemeManager.DetectAppStyle(Application.Current);
-
-            //white theme disabled temp: for v0.8
-            if (SaveData.config.Theme == 9 || SaveData.config.Theme == 10)
+            //previous installed appversion is different from current instance..    
+            if (!userSettings.Settings.AppVersion.Equals(Assembly.GetExecutingAssembly().GetName().Version.ToString(), StringComparison.OrdinalIgnoreCase))
             {
-                SaveData.config.Theme = 0;
-                SaveData.SaveConfig();
-                ThemeManager.ChangeAppStyle(Application.Current,
-                                        ThemeManager.GetAccent(SaveData.livelyThemes[SaveData.config.Theme].Accent),
-                                        ThemeManager.GetAppTheme(SaveData.livelyThemes[SaveData.config.Theme].Base)); // or appStyle.Item1
+                //todo: show changelog window here..
+                userSettings.Settings.WallpaperBundleVersion = ExtractWallpaperBundle(userSettings.Settings.WallpaperBundleVersion);
+                userSettings.Settings.AppVersion = Assembly.GetExecutingAssembly().GetName().Version.ToString();
+                userSettings.Save<ISettingsModel>();
             }
-            else
+
+            #endregion //vm init
+
+            var appWindow = App.Services.GetRequiredService<MainWindow>();
+            Application.Current.MainWindow = appWindow;
+            if (userSettings.Settings.IsRestart)
             {
-                // setting accent & theme
-                ThemeManager.ChangeAppStyle(Application.Current,
-                                            ThemeManager.GetAccent(SaveData.livelyThemes[SaveData.config.Theme].Accent),
-                                            ThemeManager.GetAppTheme(SaveData.livelyThemes[SaveData.config.Theme].Base)); // or appStyle.Item1
+                userSettings.Settings.IsRestart = false;
+                userSettings.Save<ISettingsModel>();
+                appWindow?.Show();
             }
-
-            // now change app style to the custom accent and current theme
-            //ThemeManager.ChangeAppStyle(Application.Current, ThemeManager.GetAccent("CustomAccent1"), ThemeManager.GetAppTheme(SaveData.livelyThemes[SaveData.config.Theme].Base));
-            #endregion theme
-
-            #region nlog
-            var config = new NLog.Config.LoggingConfiguration();
-
-            // Targets where to log to: File and Console
-            var logfile = new NLog.Targets.FileTarget("logfile") { FileName = Path.Combine(PathData, "logfile.txt"), DeleteOldFileOnStartup = true};
-            var logconsole = new NLog.Targets.ConsoleTarget("logconsole");
-
-            // Rules for mapping loggers to targets            
-            config.AddRule(LogLevel.Info, LogLevel.Fatal, logconsole);
-            config.AddRule(LogLevel.Debug, LogLevel.Fatal, logfile);
-
-            // Apply config           
-            NLog.LogManager.Configuration = config;
-            #endregion nlog
+            //Creates an empty xaml island control as a temp fix for closing issue; also receives window msg..
+            //Issue: https://github.com/microsoft/microsoft-ui-xaml/issues/3482
+            //Steps to reproduce: Start gif wallpaper using uwp control -> restart lively -> close restored gif wallpaper -> library gridview stops.
+            App.Services.GetRequiredService<WndProcMsgWindow>().Show();
+            //Package app otherwise bugging out when initialized in settings vm.
+            App.Services.GetRequiredService<RawInputMsgWindow>().Show();
+            App.Services.GetRequiredService<IDesktopCore>().RestoreWallpaper();
+            App.Services.GetRequiredService<IPlayback>().Start();
 
             base.OnStartup(e);
-
-            SetupExceptionHandling();
-            W = new MainWindow(); 
-        
-            if (SaveData.config.IsFirstRun)
-            {
-                //SaveData.config.isFirstRun = false; //only after minimizing to tray isFirstRun is set to false.
-                SaveData.SaveConfig(); //creating disk file temp, not needed!
-
-                W.Show();
-                W.UpdateWallpaperLibrary(); 
-
-                Dialogues.HelpWindow hw = new Dialogues.HelpWindow(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "docs","help_vid_1.mp4"))
-                {
-                    Owner = W,
-                    WindowStartupLocation = WindowStartupLocation.CenterOwner
-                };
-                hw.ShowDialog();              
-            }
-
-            if(SaveData.config.IsRestart)
-            {
-                SaveData.config.IsRestart = false;
-                SaveData.SaveConfig();
-
-                W.Show();
-                W.UpdateWallpaperLibrary();
-                //w.ShowMainWindow();
-
-                W.tabControl1.SelectedIndex = 2; //settings tab
-                //SetupDesktop.SetFocus();
-                //w.Activate();
-            }
-            
         }
 
-        private void SetupExceptionHandling()
+        /// <summary>
+        /// Extract default wallpapers and incremental if any.
+        /// </summary>
+        public static int ExtractWallpaperBundle(int currentBundleVer)
+        {
+            //Lively stores the last extracted bundle filename, extraction proceeds from next file onwards.
+            int maxExtracted = currentBundleVer;
+            try
+            {
+                //wallpaper bundles filenames are 0.zip, 1.zip ...
+                var sortedBundles = Directory.GetFiles(
+                    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bundle"))
+                    .OrderBy(x => x);
+
+                foreach (var item in sortedBundles)
+                {
+                    if(int.TryParse(Path.GetFileNameWithoutExtension(item), out int val))
+                    {
+                        if (val > maxExtracted)
+                        {
+                            //Sharpzip library will overwrite files if exists during extraction.
+                            ZipExtract.ZipExtractFile(item, Path.Combine(Program.WallpaperDir, "wallpapers"), false);
+                            maxExtracted = val;
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Logger.Error("Base Wallpaper Extract Fail:" + e.ToString());
+            }
+            return maxExtracted;
+        }
+
+        private void CreateWallpaperDir()
+        {
+            Directory.CreateDirectory(Path.Combine(Program.WallpaperDir, "wallpapers"));
+            Directory.CreateDirectory(Path.Combine(Program.WallpaperDir, "SaveData", "wptmp"));
+            Directory.CreateDirectory(Path.Combine(Program.WallpaperDir, "SaveData", "wpdata"));
+        }
+
+        private void SetupUnhandledExceptionLogging()
         {
             AppDomain.CurrentDomain.UnhandledException += (s, e) =>
                 LogUnhandledException((Exception)e.ExceptionObject, "AppDomain.CurrentDomain.UnhandledException");
@@ -229,83 +249,8 @@ namespace livelywpf
             }
             finally
             {
-                LogSavedData();
-                Logger.Error(message + "\n" + exception.ToString());                
-            }
-
-            //making the external process livelymonitor.exe close running wp's instead.
-            //SetupDesktop.CloseAllWallpapers();
-        }
-
-        private bool _savedDataLogged = false;
-
-        private void LogSavedData()
-        {
-            if (!_savedDataLogged)
-            {
-                Logger.Info("Saved config file:-\n" + SaveData.PropertyList(SaveData.config));
-                _savedDataLogged = true;
+                Logger.Error("{0}\n{1}", message, exception.ToString());
             }
         }
-
-        void App_SessionEnding(object sender, SessionEndingCancelEventArgs e)
-        {
-            /*
-            // Ask the user if they want to allow the session to end
-            //string msg = string.Format("{0}. End session?", e.ReasonSessionEnding);
-            //MessageBoxResult result = MessageBox.Show(msg, "Session Ending", MessageBoxButton.YesNo);
-
-            // End session, if specified
-            if (result == MessageBoxResult.No)
-            {
-                e.Cancel = true;
-            }
-            */
-
-            if(e.ReasonSessionEnding == ReasonSessionEnding.Shutdown || e.ReasonSessionEnding == ReasonSessionEnding.Logoff)
-            {
-                e.Cancel = true; //delay shutdown till lively close properly.
-                if (W != null)
-                    W.ExitApplication();
-            }
-            
-        }
-
-        [STAThread]
-        public static void Main()
-        {
-            //NotifyIcon Fix: https://stackoverflow.com/questions/28833702/wpf-notifyicon-crash-on-first-run-the-root-visual-of-a-visualtarget-cannot-hav/29116917
-            //Rarely I get this error "The root Visual of a VisualTarget cannot have a parent..", hard to pinpoint not knowing how to recreate the error.
-            System.Windows.Controls.ToolTip tt = new System.Windows.Controls.ToolTip();
-            tt.IsOpen = true;
-            tt.IsOpen = false;
-
-            try
-            {
-                //if (!mutex.WaitOne()) //indefinite wait.
-                // wait a few seconds in case livelywpf instance is just shutting down..
-                if (!mutex.WaitOne(TimeSpan.FromSeconds(5), false))
-                {
-                    //this is ignoring the config-file saved language, only checking system language.
-                    System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(CultureInfo.CurrentCulture.Name); 
-                    MessageBox.Show(Props.Resources.msgSingleInstanceOnly, Props.Resources.txtLivelyWaitMsgTitle, MessageBoxButton.OK, MessageBoxImage.Exclamation);
-                    return;
-                }
-            }
-            catch(AbandonedMutexException e)
-            {
-                //Note to self:- logger backup(in the even of previous lively crash) is at App() contructor func, DO NOT start writing loghere to avoid overwriting crashlog.
-                System.Diagnostics.Debug.WriteLine(e.Message);
-            }
-
-            try
-            {
-                var application = new App();
-                application.InitializeComponent();
-                application.Run();
-            }
-            finally { mutex.ReleaseMutex(); }
-        }
-
     }
 }
