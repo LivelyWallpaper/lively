@@ -2,6 +2,11 @@
   <a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/LivelyWallpaper/lively/core-separation/resources/figma_promo_16x9.jpg"><img alt="Files Logo" src="https://raw.githubusercontent.com/LivelyWallpaper/lively/core-separation/resources/figma_promo_16x9.jpg" width="450" style="max-width: 100%;"></a>
   </p>
   
+# Download Latest Release
+<ul dir="auto">
+<li><a href="https://github.com/LivelyWallpaper/lively/releases/download/v1.7.4.2/lively_setup_x86_full_v1742.exe"><code>Installer</code></a></li>
+</ul>
+  
 # Lively Wallpaper
 [![GitHub release](https://img.shields.io/github/release/rocksdanister/lively/all.svg)](https://github.com/LivelyWallpaper/lively/releases)
 [![Github all releases](https://img.shields.io/github/downloads/rocksdanister/lively/total.svg)](https://github.com/LivelyWallpaper/lively/releases)
