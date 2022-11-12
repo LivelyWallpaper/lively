@@ -119,11 +119,10 @@ Its super easy.. barely an inconvenience, just drag & drop the files or webpages
 
 SHA256: 0683fe78bede802eece570da143e8c26c75753374f57c964907c672b66d12b6e
      
-[direct-full-win32]: https://github.com/LivelyWallpaper/lively/releases/download/v1.7.4.2/lively_setup_x86_full_v1742.exe
+[direct-full-win32]: https://github.com/LivelyWallpaper/lively/releases/download/v2.0.4.0/lively_setup_x86_full_v2040.zip
 
 Installer will give Smartscreen warning, [discussion.](https://github.com/LivelyWallpaper/lively/issues/9)
 
-<a href='//www.microsoft.com/store/apps/9ntm2qc6qws7?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' width="142px" height="52px"/></a>
 
 [Which version do I download?](https://github.com/LivelyWallpaper/lively/wiki/Differences-Between-Distributions)
 ## Problems
