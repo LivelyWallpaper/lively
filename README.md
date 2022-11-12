@@ -4,7 +4,7 @@
   
 # Download Latest Release
 <ul dir="auto">
-<li><a href="https://github.com/LivelyWallpaper/lively/releases/download/v1.7.4.2/lively_setup_x86_full_v1742.exe"><code>Installer</code></a></li>
+<li><a href="https://github.com/LivelyWallpaper/lively/releases/download/v2.0.4.0/lively_setup_x86_full_v2040.zip"><code>Installer</code></a></li>
 </ul>
   
 # Lively Wallpaper
