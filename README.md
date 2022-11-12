@@ -1,13 +1,13 @@
 <p align="center" dir="auto">
-  <a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/rocksdanister/lively/core-separation/resources/figma_promo_16x9.jpg"><img alt="Files Logo" src="https://raw.githubusercontent.com/rocksdanister/lively/core-separation/resources/figma_promo_16x9.jpg" width="450" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/LivelyWallpaper/lively/core-separation/resources/figma_promo_16x9.jpg"><img alt="Files Logo" src="https://raw.githubusercontent.com/LivelyWallpaper/lively/core-separation/resources/figma_promo_16x9.jpg" width="450" style="max-width: 100%;"></a>
   </p>
   
 # Lively Wallpaper
-[![GitHub release](https://img.shields.io/github/release/rocksdanister/lively/all.svg)](https://github.com/rocksdanister/lively/releases)
-[![Github all releases](https://img.shields.io/github/downloads/rocksdanister/lively/total.svg)](https://github.com/rocksdanister/lively/releases)
-[![GitHub stars](https://img.shields.io/github/stars/rocksdanister/lively.svg)](https://github.com/rocksdanister/lively/stargazers)
-[![Documentation](https://img.shields.io/badge/Docs-WIP-red.svg)](https://github.com/rocksdanister/lively/wiki)
-[![Issues](https://img.shields.io/github/issues/rocksdanister/lively.svg)](https://github.com/rocksdanister/lively/issues)
+[![GitHub release](https://img.shields.io/github/release/LivelyWallpaper/lively/all.svg)](https://github.com/LivelyWallpaper/lively/releases)
+[![Github all releases](https://img.shields.io/github/downloads/LivelyWallpaper/lively/total.svg)](https://github.com/LivelyWallpaper/lively/releases)
+[![GitHub stars](https://img.shields.io/github/stars/rocksdanister/lively.svg)](https://github.com/LivelyWallpaper/lively/stargazers)
+[![Documentation](https://img.shields.io/badge/Docs-WIP-red.svg)](https://github.com/LivelyWallpaper/lively/wiki)
+[![Issues](https://img.shields.io/github/issues/rocksdanister/lively.svg)](https://github.com/LivelyWallpaper/lively/issues)
 
 ## Contents
 - [About](#about)
@@ -29,7 +29,7 @@ Its super easy.. barely an inconvenience, just drag & drop the files or webpages
 
 #### Join Discussions:
 * <a href="https://www.reddit.com/r/LivelyWallpaper/">Reddit</a>
-* <a href="https://github.com/rocksdanister/lively/discussions/">Github</a>
+* <a href="https://github.com/LivelyWallpaper/lively/discussions/">Github</a>
 
 ## Features
 *Wait a sec, preview gif clips take some time to load.*
@@ -66,32 +66,32 @@ Its super easy.. barely an inconvenience, just drag & drop the files or webpages
 
 * Support Unity, Godot games as wallpaper.
 * Limited support for gui applications as wallpaper.
-* [Learn more..](https://github.com/rocksdanister/lively/wiki/Application-Wallpaper)
+* [Learn more..](https://github.com/LivelyWallpaper/lively/wiki/Application-Wallpaper)
 #### Screensavers
 <img src="/resources/screen_saver.gif" width="600" height="338"/>
 
 * Lively supports Windows screensaver.
 * Any wallpaper can be used as screensaver.
 * Multiple monitor supported.
-* [Learn more..](https://github.com/rocksdanister/lively/wiki/Screen-Saver)
+* [Learn more..](https://github.com/LivelyWallpaper/lively/wiki/Screen-Saver)
 #### Automation
 <img src="/resources/cmd_rm.gif" width="600" height="338"/>
 
 * Lively can be controlled with command line arguments from terminal.
 * Can be paired with third party scripting software like AutoHotkey.
-* [Learn more..](https://github.com/rocksdanister/lively/wiki/Command-Line-Controls)
+* [Learn more..](https://github.com/LivelyWallpaper/lively/wiki/Command-Line-Controls)
 #### Lively API
 <img src="/resources/hw_api.gif" width="600" height="338"/>
 
 * Powerful set of API for developers to create interactive wallpapers.
 * Get system information, audio graph, music information..
-* [Learn more..](https://github.com/rocksdanister/lively/wiki/API)
+* [Learn more..](https://github.com/LivelyWallpaper/lively/wiki/API)
 #### Taskbar Customization
 <img src="/resources/taskbar_theme.gif" width="600" height="338"/>
 
 * Several system taskbar theme : Clear, Blur, Fluent..
 * Can adapt taskbar color based on live wallpaper color.
-* [Learn more..](https://github.com/rocksdanister/lively/wiki/Taskbar)
+* [Learn more..](https://github.com/LivelyWallpaper/lively/wiki/Taskbar)
 #### & more
 - Easy to use; Just drag'n'drop media files & webpages into lively window to set it as wallpaper.
 - Hardware accelerated video playback, powered by mpv player.
@@ -114,25 +114,25 @@ Its super easy.. barely an inconvenience, just drag & drop the files or webpages
 
 **_I'm not officially affiliated with Unity technologies, godot, shadertoy;_**
 ## Download
-##### Latest version: v1.7.4.2 (Windows 10 1903 or above)[What's new?](https://github.com/rocksdanister/lively/releases/tag/v1.7.4.2)
+##### Latest version: v1.7.4.2 (Windows 10 1903 or above)[What's new?](https://github.com/LivelyWallpaper/lively/releases/tag/v1.7.4.2)
 - [`Installer`][direct-full-win32] 
 
 SHA256: 0683fe78bede802eece570da143e8c26c75753374f57c964907c672b66d12b6e
      
-[direct-full-win32]: https://github.com/rocksdanister/lively/releases/download/v1.7.4.2/lively_setup_x86_full_v1742.exe
+[direct-full-win32]: https://github.com/LivelyWallpaper/lively/releases/download/v1.7.4.2/lively_setup_x86_full_v1742.exe
 
-Installer will give Smartscreen warning, [discussion.](https://github.com/rocksdanister/lively/issues/9)
+Installer will give Smartscreen warning, [discussion.](https://github.com/LivelyWallpaper/lively/issues/9)
 
 <a href='//www.microsoft.com/store/apps/9ntm2qc6qws7?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' width="142px" height="52px"/></a>
 
-[Which version do I download?](https://github.com/rocksdanister/lively/wiki/Differences-Between-Distributions)
+[Which version do I download?](https://github.com/LivelyWallpaper/lively/wiki/Differences-Between-Distributions)
 ## Problems
-See github [issues.](https://github.com/rocksdanister/lively/issues)
+See github [issues.](https://github.com/LivelyWallpaper/lively/issues)
 
 ## Contributing
 
 #### Coding
-Pull requests are welcome, check [guidelines](https://github.com/rocksdanister/lively/wiki/Contributing-Guidelines) for further instructions.
+Pull requests are welcome, check [guidelines](https://github.com/LivelyWallpaper/lively/wiki/Contributing-Guidelines) for further instructions.
 
 #### Translation
 Help translate lively to other <a href="https://github.com/rocksdanister/lively-translations">languages.</a>
