@@ -4,7 +4,7 @@
   
 # Download Latest Release
 <ul dir="auto">
-<li><a href="https://github.com/LivelyWallpaper/lively/releases/download/v2.0.4.0/lively_setup_x86_full_v2040.zip"><code>Installer</code></a></li>
+<li><a href="https://github.com/LivelyWallpaper/lively/releases/download/v2.0.5.0/lively_setup_x86_full_v2050.zip"><code>Installer</code></a></li>
 </ul>
   
 # Lively Wallpaper
@@ -124,7 +124,7 @@ Its super easy... barely an inconvenience, just drag & drop the files or webpage
 
 SHA256: 0683fe78bede802eece570da143e8c26c75753374f57c964907c672b66d12b6e
      
-[direct-full-win32]: https://github.com/LivelyWallpaper/lively/releases/download/v2.0.4.0/lively_setup_x86_full_v2040.zip
+[direct-full-win32]: https://github.com/LivelyWallpaper/lively/releases/download/v2.0.5.0/lively_setup_x86_full_v2050.zip
 
 Installer will give Smartscreen warning, [discussion.](https://github.com/LivelyWallpaper/lively/issues/9)
 
